@@ -1,0 +1,301 @@
+TDisassembletron
+v7
+r0
+t282009321.436274
+cCheck dependencies
+cProcessInfoPlistFile /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Info.plist Info.plist
+cCpResource build/Debug/Disassembletron.app/Contents/Resources/English.lproj/Credits.rtf English.lproj/Credits.rtf
+cCopyStringsFile /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Users/Mlamb/Disassembletron/English.lproj/MyDocument.xib
+cCompileXIB /Users/Mlamb/Disassembletron/English.lproj/MainMenu.xib
+cProcessPCH /var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Disassembletron_Prefix-bxjbumthecuntsgdeibopgelpdhm/Disassembletron_Prefix.pch.gch Disassembletron_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/MyDocument.o /Users/Mlamb/Disassembletron/MyDocument.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/main.o /Users/Mlamb/Disassembletron/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/MyApplicationDelegate.o /Users/Mlamb/Disassembletron/MyApplicationDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/PluginManager.o /Users/Mlamb/Disassembletron/PluginManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/MacOS/Disassembletron normal i386
+cTouch /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004A49A9E400000000000000EE
+t1246341604
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004864A1C900000000000012EE
+t1214554569
+s4846
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/Mlamb/Disassembletron/Disassembletron_Prefix.pch
+c000000004B1EE0D300000000000000A1
+t1260314835
+s161
+i<Cocoa/Cocoa.h>
+
+N/Users/Mlamb/Disassembletron/English.lproj/Credits.rtf
+c000000004A80AB5100000000000001B4
+t1249946449
+s436
+
+N/Users/Mlamb/Disassembletron/English.lproj/InfoPlist.strings
+c000000004A80AB51000000000000005C
+t1249946449
+s92
+
+N/Users/Mlamb/Disassembletron/English.lproj/MainMenu.xib
+c000000004ACD3AA900000000000200ED
+t1254963881
+s131309
+
+N/Users/Mlamb/Disassembletron/English.lproj/MyDocument.xib
+c000000004A8CE8240000000000002A25
+t1250748452
+s10789
+
+N/Users/Mlamb/Disassembletron/MyApplicationDelegate.h
+c000000004ADF96EF000000000000011A
+t1256167151
+s282
+i<Cocoa/Cocoa.h>
+i"PluginManager.h"
+
+N/Users/Mlamb/Disassembletron/MyApplicationDelegate.m
+c000000004AE8FE89000000000000019D
+t1256783497
+s413
+i"MyApplicationDelegate.h"
+i"PluginManager.h"
+
+N/Users/Mlamb/Disassembletron/MyDocument.h
+c000000004B1EE0DC0000000000000133
+t1260314844
+s307
+i<Cocoa/Cocoa.h>
+
+N/Users/Mlamb/Disassembletron/MyDocument.m
+c000000004B1EE0DC000000000000114F
+t1260314844
+s4431
+i"PluginManager.h"
+i"MyDocument.h"
+
+N/Users/Mlamb/Disassembletron/PluginManager.h
+c000000004B1EE0F70000000000000273
+t1260314871
+s627
+i<Foundation/Foundation.h>
+
+N/Users/Mlamb/Disassembletron/PluginManager.m
+c000000004B1EE68C0000000000001001
+t1260316300
+s4097
+i"PluginManager.h"
+
+N/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app
+t1260316319
+s102
+
+N/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Info.plist
+t1260315066
+s2126
+
+N/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/MacOS/Disassembletron
+t1260316319
+s26700
+
+N/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PkgInfo
+t1260315066
+s8
+
+N/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Resources/English.lproj/Credits.rtf
+t1260315067
+s436
+
+N/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1260315068
+s92
+
+N/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Resources/English.lproj/MainMenu.nib
+t1260315069
+s27810
+
+N/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Resources/English.lproj/MyDocument.nib
+t1260315069
+s3544
+
+N/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/Disassembletron.LinkFileList
+c000000004B1EE1BA00000000000001E0
+t1260315066
+s480
+
+N/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/MyApplicationDelegate.o
+t1260315073
+s15140
+
+N/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/MyDocument.o
+t1260315073
+s25988
+
+N/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/PluginManager.o
+t1260316317
+s17852
+
+N/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/main.o
+t1260315073
+s4836
+
+N/Users/Mlamb/Disassembletron/main.m
+c000000004B1EE0DC0000000000000105
+t1260314844
+s261
+i<Cocoa/Cocoa.h>
+
+N/var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Disassembletron_Prefix-bxjbumthecuntsgdeibopgelpdhm/Disassembletron_Prefix.pch.gch
+t1260315073
+s54084016
+
+NInfo.plist
+c000000004A89ED24000000000000096C
+t1250553124
+s2412
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies282009321#282009321#0(0"0(0#1#0"4300882208#0"0#
+
+CCompileC build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/MyApplicationDelegate.o /Users/Mlamb/Disassembletron/MyApplicationDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282007873.784890
+e282007874.014178
+r1
+xCompileC
+xbuild/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/MyApplicationDelegate.o
+x/Users/Mlamb/Disassembletron/MyApplicationDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/Mlamb/Disassembletron/MyApplicationDelegate.m282007873#282007874#0(0"0(0#0#52"/Users/Mlamb/Disassembletron/MyApplicationDelegate.m4300882208#1526"    cd /Users/Mlamb/Disassembletron    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-generated-files.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-own-target-headers.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-all-target-headers.hmap -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-project-headers.hmap -F/Users/Mlamb/Disassembletron/build/Debug -I/Users/Mlamb/Disassembletron/build/Debug/include -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/DerivedSources/i386 -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/DerivedSources -include /var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Disassembletron_Prefix-bxjbumthecuntsgdeibopgelpdhm/Disassembletron_Prefix.pch -c /Users/Mlamb/Disassembletron/MyApplicationDelegate.m -o /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/MyApplicationDelegate.o0#
+
+CCompileC build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/MyDocument.o /Users/Mlamb/Disassembletron/MyDocument.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282007873.527429
+e282007873.814979
+r1
+xCompileC
+xbuild/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/MyDocument.o
+x/Users/Mlamb/Disassembletron/MyDocument.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@49"Compile /Users/Mlamb/Disassembletron/MyDocument.m282007873#282007873#0(0"0(0#0#41"/Users/Mlamb/Disassembletron/MyDocument.m4300882208#1504"    cd /Users/Mlamb/Disassembletron    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-generated-files.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-own-target-headers.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-all-target-headers.hmap -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-project-headers.hmap -F/Users/Mlamb/Disassembletron/build/Debug -I/Users/Mlamb/Disassembletron/build/Debug/include -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/DerivedSources/i386 -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/DerivedSources -include /var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Disassembletron_Prefix-bxjbumthecuntsgdeibopgelpdhm/Disassembletron_Prefix.pch -c /Users/Mlamb/Disassembletron/MyDocument.m -o /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/MyDocument.o0#
+
+CCompileC build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/PluginManager.o /Users/Mlamb/Disassembletron/PluginManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282009102.979593
+e282009117.630652
+r1
+xCompileC
+xbuild/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/PluginManager.o
+x/Users/Mlamb/Disassembletron/PluginManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@52"Compile /Users/Mlamb/Disassembletron/PluginManager.m282009102#282009117#0(0"0(0#0#44"/Users/Mlamb/Disassembletron/PluginManager.m4300882208#1510"    cd /Users/Mlamb/Disassembletron    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-generated-files.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-own-target-headers.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-all-target-headers.hmap -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-project-headers.hmap -F/Users/Mlamb/Disassembletron/build/Debug -I/Users/Mlamb/Disassembletron/build/Debug/include -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/DerivedSources/i386 -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/DerivedSources -include /var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Disassembletron_Prefix-bxjbumthecuntsgdeibopgelpdhm/Disassembletron_Prefix.pch -c /Users/Mlamb/Disassembletron/PluginManager.m -o /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/PluginManager.o0#
+
+CCompileC build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/main.o /Users/Mlamb/Disassembletron/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282007873.528273
+e282007873.784799
+r1
+xCompileC
+xbuild/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/main.o
+x/Users/Mlamb/Disassembletron/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@43"Compile /Users/Mlamb/Disassembletron/main.m282007873#282007873#0(0"0(0#0#35"/Users/Mlamb/Disassembletron/main.m4300882208#1492"    cd /Users/Mlamb/Disassembletron    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-generated-files.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-own-target-headers.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-all-target-headers.hmap -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-project-headers.hmap -F/Users/Mlamb/Disassembletron/build/Debug -I/Users/Mlamb/Disassembletron/build/Debug/include -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/DerivedSources/i386 -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/DerivedSources -include /var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Disassembletron_Prefix-bxjbumthecuntsgdeibopgelpdhm/Disassembletron_Prefix.pch -c /Users/Mlamb/Disassembletron/main.m -o /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/Mlamb/Disassembletron/English.lproj/MainMenu.xib
+s282007868.082076
+e282007869.448647
+r1
+xCompileXIB
+x/Users/Mlamb/Disassembletron/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib282007868#282007869#0(0"0(0#0#55"/Users/Mlamb/Disassembletron/English.lproj/MainMenu.xib4300882208#305"    cd /Users/Mlamb/Disassembletron    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Resources/English.lproj/MainMenu.nib /Users/Mlamb/Disassembletron/English.lproj/MainMenu.xib0#
+
+CCompileXIB /Users/Mlamb/Disassembletron/English.lproj/MyDocument.xib
+s282007867.102240
+e282007869.405295
+r1
+xCompileXIB
+x/Users/Mlamb/Disassembletron/English.lproj/MyDocument.xib
+lSLF07#2@39"CompileXIB English.lproj/MyDocument.xib282007867#282007869#0(0"0(0#0#57"/Users/Mlamb/Disassembletron/English.lproj/MyDocument.xib4300882208#309"    cd /Users/Mlamb/Disassembletron    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Resources/English.lproj/MyDocument.nib /Users/Mlamb/Disassembletron/English.lproj/MyDocument.xib0#
+
+CCopyStringsFile /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s282007866.893290
+e282007868.081984
+r1
+xCopyStringsFile
+x/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings282007866#282007868#0(0"0(0#0#60"/Users/Mlamb/Disassembletron/English.lproj/InfoPlist.strings4300882208#354"    cd /Users/Mlamb/Disassembletron    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Resources/English.lproj0#
+
+CCpResource build/Debug/Disassembletron.app/Contents/Resources/English.lproj/Credits.rtf English.lproj/Credits.rtf
+s282007866.849881
+e282007867.102150
+r1
+xCpResource
+xbuild/Debug/Disassembletron.app/Contents/Resources/English.lproj/Credits.rtf
+xEnglish.lproj/Credits.rtf
+lSLF07#2@30"Copy English.lproj/Credits.rtf282007866#282007867#0(0"0(0#0#54"/Users/Mlamb/Disassembletron/English.lproj/Credits.rtf4300882208#333"    cd /Users/Mlamb/Disassembletron    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Mlamb/Disassembletron/English.lproj/Credits.rtf /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Resources/English.lproj0#
+
+CLd /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/MacOS/Disassembletron normal i386
+s282009117.630814
+e282009119.151298
+r1
+xLd
+x/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/MacOS/Disassembletron
+xnormal
+xi386
+lSLF07#2@96"Link /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/MacOS/Disassembletron282009117#282009119#0(0"0(0#0#0"4300882208#528"    cd /Users/Mlamb/Disassembletron    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/Mlamb/Disassembletron/build/Debug -F/Users/Mlamb/Disassembletron/build/Debug -filelist /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Objects-normal/i386/Disassembletron.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -o /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/MacOS/Disassembletron0#
+
+CProcessInfoPlistFile /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Info.plist Info.plist
+s282007866.805945
+e282007866.846355
+r1
+xProcessInfoPlistFile
+x/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist282007866#282007866#0(0"0(0#0#39"/Users/Mlamb/Disassembletron/Info.plist30399718398689380#288"    cd /Users/Mlamb/Disassembletron    builtin-infoPlistUtility Info.plist -genpkginfo /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Disassembletron_Prefix-bxjbumthecuntsgdeibopgelpdhm/Disassembletron_Prefix.pch.gch Disassembletron_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s282007869.448816
+e282007873.527257
+r1
+xProcessPCH
+x/var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Disassembletron_Prefix-bxjbumthecuntsgdeibopgelpdhm/Disassembletron_Prefix.pch.gch
+xDisassembletron_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@37"Precompile Disassembletron_Prefix.pch282007869#282007873#0(0"0(0#0#55"/Users/Mlamb/Disassembletron/Disassembletron_Prefix.pch4300882208#1402"    cd /Users/Mlamb/Disassembletron    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-generated-files.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-own-target-headers.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-all-target-headers.hmap -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/Disassembletron-project-headers.hmap -F/Users/Mlamb/Disassembletron/build/Debug -I/Users/Mlamb/Disassembletron/build/Debug/include -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/DerivedSources/i386 -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/Disassembletron.build/DerivedSources -c /Users/Mlamb/Disassembletron/Disassembletron_Prefix.pch -o /var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Disassembletron_Prefix-bxjbumthecuntsgdeibopgelpdhm/Disassembletron_Prefix.pch.gch0#
+
+CTouch /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app
+s282009119.151462
+e282009119.183603
+r1
+xTouch
+x/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app
+lSLF07#2@66"Touch /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app282009119#282009119#0(0"0(0#0#0"4300882208#119"    cd /Users/Mlamb/Disassembletron    /usr/bin/touch -c /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app0#
+
