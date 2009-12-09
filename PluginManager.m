@@ -58,8 +58,8 @@ static PluginManager* _sharedPluginManager = nil;
 				
 
 				//if ([pluginClass conformsToProtocol:@protocol(PAPluginProtocol)] && [pluginClass isKindOfClass:[NSObject class]] && [pluginClass initializeClass:pluginBundle]) {
-				//[_pluginClasses addObject:pluginClass]; 
-				[_pluginClasses setValue:pluginClass forKey:[pluginClass className]];
+				[_pluginClasses addObject:pluginClass]; 
+				//[_pluginClasses setValue:pluginClass forKey:[pluginClass className]];
 				
 				// TODO: query the plugin for additional configuration
 				// use [pluginBundle objectForInfoDictionaryKey:@"somekey"]; to get the key out of the info.plist
@@ -121,7 +121,7 @@ static PluginManager* _sharedPluginManager = nil;
 			NSArray* bundlePathsForPlugins = [NSBundle pathsForResourcesOfType:@"plugin" inDirectory:pluginPath];
 			for(NSString* bundlePathForPlugin in bundlePathsForPlugins) {
 				NSLog(@"Found plugin: %@",bundlePathForPlugin);
-				[self activatePlugin:bundlePathForPlugin];
+				//[self activatePlugin:bundlePathForPlugin];
 			}
 		}
 		

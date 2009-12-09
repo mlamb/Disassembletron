@@ -1,0 +1,12 @@
+{
+    IBClasses = (
+        {
+            CLASS = AppImagePlugin; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {imageView = NSView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

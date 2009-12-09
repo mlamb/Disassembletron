@@ -13,8 +13,8 @@
 
 
 @interface PluginManager : NSObject {
-	//NSMutableArray* _pluginClasses;
-	NSMutableDictionary* _pluginClasses;
+	NSMutableArray* _pluginClasses;
+	//NSMutableDictionary* _pluginClasses;
 }
 
 +(id)alloc;
@@ -24,6 +24,6 @@
 -(NSArray*) pluginPathsForDirectoriesInDomains;
 -(void) activatePlugin:(NSString*)path;
 
-//@property (nonatomic,retain) NSMutableArray* _pluginClasses;		//	an array of stuff
-@property (nonatomic,retain) NSMutableDictionary* _pluginClasses;		//	an array of stuff
+@property (nonatomic,retain) NSMutableArray* _pluginClasses;		//	an array of stuff
+//@property (nonatomic,retain) NSMutableDictionary* _pluginClasses;		//	an array of stuff
 @end
