@@ -10,6 +10,18 @@
 		1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* MyDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
 		7B6B4023108506C1004FB44D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		7B72CAEF10CF44E6003C5BBC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAE410CF44E6003C5BBC /* Info.plist */; };
+		7B72CAF010CF44E6003C5BBC /* Application Plug-in in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAE610CF44E6003C5BBC /* Application Plug-in */; };
+		7B72CAF110CF44E6003C5BBC /* pbdevelopment.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAE710CF44E6003C5BBC /* pbdevelopment.plist */; };
+		7B72CAF210CF44E6003C5BBC /* ImageView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAE910CF44E6003C5BBC /* ImageView.nib */; };
+		7B72CAF310CF44E6003C5BBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAEB10CF44E6003C5BBC /* InfoPlist.strings */; };
+		7B72CAF410CF44E6003C5BBC /* TextView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAED10CF44E6003C5BBC /* TextView.nib */; };
+		7B72CAF510CF44E6003C5BBC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAE410CF44E6003C5BBC /* Info.plist */; };
+		7B72CAF610CF44E6003C5BBC /* Application Plug-in in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAE610CF44E6003C5BBC /* Application Plug-in */; };
+		7B72CAF710CF44E6003C5BBC /* pbdevelopment.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAE710CF44E6003C5BBC /* pbdevelopment.plist */; };
+		7B72CAF810CF44E6003C5BBC /* ImageView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAE910CF44E6003C5BBC /* ImageView.nib */; };
+		7B72CAF910CF44E6003C5BBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAEB10CF44E6003C5BBC /* InfoPlist.strings */; };
+		7B72CAFA10CF44E6003C5BBC /* TextView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7B72CAED10CF44E6003C5BBC /* TextView.nib */; };
 		7B7420E81075705300670A2F /* DisassembletronTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */; };
 		7B9C2819104DE64E00F588D4 /* PluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */; };
 		7BA964B110327F970025FCF1 /* MyApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */; };
@@ -44,6 +56,12 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* Disassembletron_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disassembletron_Prefix.pch; sourceTree = "<group>"; };
 		7B52318A10B229F0005B8B73 /* CodeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeParser.h; sourceTree = "<group>"; };
+		7B72CAE410CF44E6003C5BBC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../Application Plug-in.plugin/Contents/Info.plist"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B72CAE610CF44E6003C5BBC /* Application Plug-in */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "Application Plug-in"; sourceTree = "<group>"; };
+		7B72CAE710CF44E6003C5BBC /* pbdevelopment.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = pbdevelopment.plist; path = "../../Application Plug-in.plugin/Contents/pbdevelopment.plist"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B72CAEA10CF44E6003C5BBC /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ImageView.nib; sourceTree = "<group>"; };
+		7B72CAEC10CF44E6003C5BBC /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B72CAEE10CF44E6003C5BBC /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/TextView.nib; sourceTree = "<group>"; };
 		7B7420C810740EB400670A2F /* MyUnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyUnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7420C910740EB400670A2F /* MyUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyUnitTest-Info.plist"; sourceTree = "<group>"; };
 		7B7420E61075705300670A2F /* DisassembletronTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisassembletronTests.h; sourceTree = "<group>"; };
@@ -142,6 +160,7 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7B72CAC310CF4319003C5BBC /* PlugIns */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
@@ -159,6 +178,55 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		7B72CAC310CF4319003C5BBC /* PlugIns */ = {
+			isa = PBXGroup;
+			children = (
+				7B72CAE210CF44E5003C5BBC /* Application Plug-in.plugin */,
+			);
+			name = PlugIns;
+			path = ../..;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B72CAE210CF44E5003C5BBC /* Application Plug-in.plugin */ = {
+			isa = PBXGroup;
+			children = (
+				7B72CAE310CF44E5003C5BBC /* Contents */,
+			);
+			path = "Application Plug-in.plugin";
+			sourceTree = "<group>";
+		};
+		7B72CAE310CF44E5003C5BBC /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				7B72CAE410CF44E6003C5BBC /* Info.plist */,
+				7B72CAE510CF44E6003C5BBC /* MacOS */,
+				7B72CAE710CF44E6003C5BBC /* pbdevelopment.plist */,
+				7B72CAE810CF44E6003C5BBC /* Resources */,
+			);
+			name = Contents;
+			path = "../../Application Plug-in.plugin/Contents";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B72CAE510CF44E6003C5BBC /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				7B72CAE610CF44E6003C5BBC /* Application Plug-in */,
+			);
+			name = MacOS;
+			path = "../../Application Plug-in.plugin/Contents/MacOS";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B72CAE810CF44E6003C5BBC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B72CAE910CF44E6003C5BBC /* ImageView.nib */,
+				7B72CAEB10CF44E6003C5BBC /* InfoPlist.strings */,
+				7B72CAED10CF44E6003C5BBC /* TextView.nib */,
+			);
+			name = Resources;
+			path = "../../Application Plug-in.plugin/Contents/Resources";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		7B7420E91075705E00670A2F /* UnitTests */ = {
 			isa = PBXGroup;
@@ -233,6 +301,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B72CAEF10CF44E6003C5BBC /* Info.plist in Resources */,
+				7B72CAF010CF44E6003C5BBC /* Application Plug-in in Resources */,
+				7B72CAF110CF44E6003C5BBC /* pbdevelopment.plist in Resources */,
+				7B72CAF210CF44E6003C5BBC /* ImageView.nib in Resources */,
+				7B72CAF310CF44E6003C5BBC /* InfoPlist.strings in Resources */,
+				7B72CAF410CF44E6003C5BBC /* TextView.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +318,12 @@
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
 				1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */,
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
+				7B72CAF510CF44E6003C5BBC /* Info.plist in Resources */,
+				7B72CAF610CF44E6003C5BBC /* Application Plug-in in Resources */,
+				7B72CAF710CF44E6003C5BBC /* pbdevelopment.plist in Resources */,
+				7B72CAF810CF44E6003C5BBC /* ImageView.nib in Resources */,
+				7B72CAF910CF44E6003C5BBC /* InfoPlist.strings in Resources */,
+				7B72CAFA10CF44E6003C5BBC /* TextView.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +407,33 @@
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
+		};
+		7B72CAE910CF44E6003C5BBC /* ImageView.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B72CAEA10CF44E6003C5BBC /* English */,
+			);
+			name = ImageView.nib;
+			path = "../../Application Plug-in.plugin/Contents/Resources";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B72CAEB10CF44E6003C5BBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B72CAEC10CF44E6003C5BBC /* English */,
+			);
+			name = InfoPlist.strings;
+			path = "../../Application Plug-in.plugin/Contents/Resources";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B72CAED10CF44E6003C5BBC /* TextView.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B72CAEE10CF44E6003C5BBC /* English */,
+			);
+			name = TextView.nib;
+			path = "../../Application Plug-in.plugin/Contents/Resources";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXVariantGroup section */
 
