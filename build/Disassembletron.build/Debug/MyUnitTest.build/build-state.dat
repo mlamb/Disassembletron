@@ -1,457 +1,0 @@
-TMyUnitTest
-v7
-r0
-t282083592.253453
-cCheck dependencies
-cProcessInfoPlistFile /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Info.plist MyUnitTest-Info.plist
-cCpResource "build/Debug/MyUnitTest.octest/Contents/Resources/Application Plug-in.plugin" "Application Plug-in.plugin"
-cCompileC build/Disassembletron.build/Debug/MyUnitTest.build/Objects-normal/i386/DisassembletronTests.o /Users/Mlamb/Disassembletron/DisassembletronTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/MacOS/MyUnitTest normal i386
-cPhaseScriptExecution "Run Script" /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Script-7B7420C610740EB400670A2F.sh
-cTouch /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/NSException_SenTestFailure.h
-c000000004A5830A50000000000000E17
-t1247293605
-s3607
-i<Foundation/Foundation.h>
-i"SenTestDefines.h"
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenInterfaceTestCase.h
-c000000004A5830A500000000000006F3
-t1247293605
-s1779
-i<Foundation/Foundation.h>
-i"SenTestCase.h"
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTest.h
-c000000004A5830A5000000000000084C
-t1247293605
-s2124
-i<Foundation/Foundation.h>
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestCase.h
-c000000004A5830A50000000000001651
-t1247293605
-s5713
-i<Foundation/NSObject.h>
-i"SenTest.h"
-i"SenTestCase_Macros.h"
-i"NSException_SenTestFailure.h"
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestCaseRun.h
-c000000004A5830A50000000000000844
-t1247293605
-s2116
-i"SenTestRun.h"
-i"SenTestDefines.h"
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestCase_Macros.h
-c000000004A5830A50000000000007F33
-t1247293605
-s32563
-i"SenTestingUtilities.h"
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestDefines.h
-c000000004A5830A50000000000000947
-t1247293605
-s2375
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestDistributedNotifier.h
-c000000004A5830A500000000000006E2
-t1247293605
-s1762
-i<Foundation/Foundation.h>
-i"SenTestObserver.h"
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestLog.h
-c000000004A5830A500000000000006C2
-t1247293605
-s1730
-i<Foundation/Foundation.h>
-i"SenTestObserver.h"
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestObserver.h
-c000000004A5830A500000000000008A7
-t1247293605
-s2215
-i<Foundation/Foundation.h>
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestProbe.h
-c000000004A5830A5000000000000094A
-t1247293605
-s2378
-i<Foundation/Foundation.h>
-i"SenTestDefines.h"
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestRun.h
-c000000004A5830A50000000000000A6B
-t1247293605
-s2667
-i<Foundation/NSObject.h>
-i"SenTest.h"
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestSuite.h
-c000000004A5830A50000000000000CB3
-t1247293605
-s3251
-i"SenTest.h"
-i"SenTestCase.h"
-i<Foundation/Foundation.h>
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestSuiteRun.h
-c000000004A5830A500000000000007B6
-t1247293605
-s1974
-i"SenTestRun.h"
-i"SenTestDefines.h"
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestingKit.h
-c000000004A5830A500000000000007E1
-t1247293605
-s2017
-i"SenTestDefines.h"
-i"SenTest.h"
-i"SenTestCase.h"
-i"SenTestSuite.h"
-i"SenTestObserver.h"
-i"NSException_SenTestFailure.h"
-i"SenTestLog.h"
-i"SenTestDistributedNotifier.h"
-i"SenTestRun.h"
-i"SenTestSuiteRun.h"
-i"SenTestCaseRun.h"
-i"SenInterfaceTestCase.h"
-i"SenTestProbe.h"
-i"SenTestingUtilities.h"
-
-N/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestingUtilities.h
-c000000004A5830A50000000000000C37
-t1247293605
-s3127
-i<Foundation/Foundation.h>
-
-N/Developer/SDKs/MacOSX10.5.sdk
-c000000004A49A9E400000000000000EE
-t1246341604
-s238
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSApplication.h
-c000000004864BB88000000000000407E
-t1214561160
-s16510
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000040C4AA6800000000000001E5
-t1086630504
-s485
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004864A1C900000000000012EE
-t1214554569
-s4846
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h
-c000000004864A1CB0000000000000CD5
-t1214554571
-s3285
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004A1F2D63000000000000A5E0
-t1243557219
-s42464
-
-N/Users/Mlamb/Disassembletron/Application Plug-in.plugin
-c000000004AE0EC360000000000000066
-t1256254518
-s102
-
-N/Users/Mlamb/Disassembletron/Application Plug-in.plugin/Contents/Info.plist
-c000000004ADFE30900000000000002BC
-t1256186633
-s700
-
-N/Users/Mlamb/Disassembletron/Application Plug-in.plugin/Contents/MacOS/Application Plug-in
-c000000004A92B43F0000000000006108
-t1251128383
-s24840
-
-N/Users/Mlamb/Disassembletron/Application Plug-in.plugin/Contents/Resources/English.lproj/ImageView.nib
-c000000004A92B43E00000000000000AA
-t1251128382
-s170
-
-N/Users/Mlamb/Disassembletron/Application Plug-in.plugin/Contents/Resources/English.lproj/InfoPlist.strings
-c000000004A92B43E0000000000000248
-t1251128382
-s584
-
-N/Users/Mlamb/Disassembletron/Application Plug-in.plugin/Contents/Resources/English.lproj/TextView.nib
-c000000004A92B43E00000000000000AA
-t1251128382
-s170
-
-N/Users/Mlamb/Disassembletron/Application Plug-in.plugin/Contents/pbdevelopment.plist
-c000000004A92B4960000000000000126
-t1251128470
-s294
-
-N/Users/Mlamb/Disassembletron/DisassembletronTests.h
-c000000004B1EE0DC000000000000014A
-t1260314844
-s330
-i<SenTestingKit/SenTestingKit.h>
-i"PluginManager.h"
-
-N/Users/Mlamb/Disassembletron/DisassembletronTests.m
-c000000004B200838000000000000112C
-t1260390456
-s4396
-i<AppKit/NSApplication.h>
-i"DisassembletronTests.h"
-i"PluginManager.h"
-i"MyApplicationDelegate.h"
-
-N/Users/Mlamb/Disassembletron/MyApplicationDelegate.h
-c000000004ADF96EF000000000000011A
-t1256167151
-s282
-i<Cocoa/Cocoa.h>
-i"PluginManager.h"
-
-N/Users/Mlamb/Disassembletron/PluginManager.h
-c000000004B2009820000000000000273
-t1260390786
-s627
-i<Foundation/Foundation.h>
-
-N/Users/Mlamb/Disassembletron/build/Debug/../../Application Plug-in.plugin/Contents/Info.plist
-c000000004ADFE30900000000000002BC
-t1256186633
-s700
-
-N/Users/Mlamb/Disassembletron/build/Debug/../../Application Plug-in.plugin/Contents/MacOS/Application Plug-in
-c000000004A92B43F0000000000006108
-t1251128383
-s24840
-
-N/Users/Mlamb/Disassembletron/build/Debug/../../Application Plug-in.plugin/Contents/Resources/English.lproj/ImageView.nib
-c000000004A92B43E00000000000000AA
-t1251128382
-s170
-
-N/Users/Mlamb/Disassembletron/build/Debug/../../Application Plug-in.plugin/Contents/Resources/English.lproj/InfoPlist.strings
-c000000004A92B43E0000000000000248
-t1251128382
-s584
-
-N/Users/Mlamb/Disassembletron/build/Debug/../../Application Plug-in.plugin/Contents/Resources/English.lproj/TextView.nib
-c000000004A92B43E00000000000000AA
-t1251128382
-s170
-
-N/Users/Mlamb/Disassembletron/build/Debug/../../Application Plug-in.plugin/Contents/pbdevelopment.plist
-c000000004A92B4960000000000000126
-t1251128470
-s294
-
-N/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest
-t1260390792
-s102
-
-N/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Info.plist
-t1260315074
-s610
-
-N/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/MacOS/MyUnitTest
-t1260390791
-s28692
-
-N/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/Application Plug-in
-t2
-s0
-
-N/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/Application Plug-in.plugin
-t1260390459
-s102
-
-N/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/English.lproj/ImageView.nib
-t2
-s0
-
-N/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/English.lproj/InfoPlist.strings
-t2
-s0
-
-N/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/English.lproj/TextView.nib
-t2
-s0
-
-N/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/Info.plist
-t2
-s0
-
-N/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/pbdevelopment.plist
-t2
-s0
-
-N/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Objects-normal/i386/DisassembletronTests.o
-t1260390791
-s39232
-
-N/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Objects-normal/i386/MyUnitTest.LinkFileList
-c000000004B1EE1C2000000000000007B
-t1260315074
-s123
-
-N/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Script-7B7420C610740EB400670A2F.sh
-c000000004B1EE1C20000000000000062
-t1260315074
-s98
-
-NMyUnitTest-Info.plist
-c000000004AC3D7340000000000000281
-t1254348596
-s641
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies282083589#282083589#0(0"0(0#1#0"4300882208#0"0#
-
-CCompileC build/Disassembletron.build/Debug/MyUnitTest.build/Objects-normal/i386/DisassembletronTests.o /Users/Mlamb/Disassembletron/DisassembletronTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s282083589.246461
-e282083591.667153
-r1
-xCompileC
-xbuild/Disassembletron.build/Debug/MyUnitTest.build/Objects-normal/i386/DisassembletronTests.o
-x/Users/Mlamb/Disassembletron/DisassembletronTests.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@59"Compile /Users/Mlamb/Disassembletron/DisassembletronTests.m282083589#282083591#0(0"0(0#0#51"/Users/Mlamb/Disassembletron/DisassembletronTests.m4300882208#1358"    cd /Users/Mlamb/Disassembletron    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/MyUnitTest-generated-files.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/MyUnitTest-own-target-headers.hmap -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/MyUnitTest-all-target-headers.hmap -iquote /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/MyUnitTest-project-headers.hmap -F/Users/Mlamb/Disassembletron/build/Debug -F/Developer/SDKs/MacOSX10.5.sdk/Developer/Library/Frameworks -F/Developer/Library/Frameworks -I/Users/Mlamb/Disassembletron/build/Debug/include -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/DerivedSources/i386 -I/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/DerivedSources -c /Users/Mlamb/Disassembletron/DisassembletronTests.m -o /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Objects-normal/i386/DisassembletronTests.o0#
-
-CCopyPlistFile /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/Info.plist "/Users/Mlamb/Disassembletron/build/Debug/../../Application Plug-in.plugin/Contents/Info.plist"
-r0
-
-CCopyPlistFile /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/Info.plist "Application Plug-in.plugin/Contents/Info.plist"
-r0
-
-CCopyPlistFile /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/pbdevelopment.plist "/Users/Mlamb/Disassembletron/build/Debug/../../Application Plug-in.plugin/Contents/pbdevelopment.plist"
-r0
-
-CCopyPlistFile /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/pbdevelopment.plist "Application Plug-in.plugin/Contents/pbdevelopment.plist"
-r0
-
-CCopyStringsFile /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/English.lproj/InfoPlist.strings "/Users/Mlamb/Disassembletron/build/Debug/../../Application Plug-in.plugin/Contents/Resources/English.lproj/InfoPlist.strings"
-r0
-
-CCopyStringsFile /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources/English.lproj/InfoPlist.strings "Application Plug-in.plugin/Contents/Resources/English.lproj/InfoPlist.strings"
-r0
-
-CCpResource "build/Debug/MyUnitTest.octest/Contents/Resources/Application Plug-in" "Application Plug-in.plugin/Contents/MacOS/Application Plug-in"
-r0
-
-CCpResource "build/Debug/MyUnitTest.octest/Contents/Resources/Application Plug-in" "build/Debug/../../Application Plug-in.plugin/Contents/MacOS/Application Plug-in"
-r0
-
-CCpResource "build/Debug/MyUnitTest.octest/Contents/Resources/Application Plug-in.plugin" "Application Plug-in.plugin"
-s282083259.247464
-e282083259.255318
-r1
-xCpResource
-xbuild/Debug/MyUnitTest.octest/Contents/Resources/Application Plug-in.plugin
-xApplication Plug-in.plugin
-lSLF07#2@31"Copy Application Plug-in.plugin282083259#282083259#0(0"0(0#0#55"/Users/Mlamb/Disassembletron/Application Plug-in.plugin4300882208#320"    cd /Users/Mlamb/Disassembletron    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/Mlamb/Disassembletron/Application Plug-in.plugin" /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Resources0#
-
-CLd /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/MacOS/MyUnitTest normal i386
-s282083591.667345
-e282083591.696449
-r1
-xLd
-x/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/MacOS/MyUnitTest
-xnormal
-xi386
-lSLF07#2@89"Link /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/MacOS/MyUnitTest282083591#282083591#0(0"0(0#0#0"4300882208#767"    cd /Users/Mlamb/Disassembletron    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/Mlamb/Disassembletron/build/Debug -F/Users/Mlamb/Disassembletron/build/Debug -F/Developer/SDKs/MacOSX10.5.sdk/Developer/Library/Frameworks -F/Developer/Library/Frameworks -filelist /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Objects-normal/i386/MyUnitTest.LinkFileList -mmacosx-version-min=10.5 -bundle_loader /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/MacOS/Disassembletron -framework Foundation -framework SenTestingKit -framework Cocoa -o /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/MacOS/MyUnitTest0#
-
-CPhaseScriptExecution "Run Script" /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Script-7B7420C610740EB400670A2F.sh
-s282083591.696550
-e282083592.248949
-r1
-xPhaseScriptExecution
-xRun Script
-x/Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Script-7B7420C610740EB400670A2F.sh
-o/Developer/Tools/RunPlatformUnitTests.include:266: note: Started tests for architectures 'i386'
-o/Developer/Tools/RunPlatformUnitTests.include:273: note: Running tests for architecture 'i386' (GC OFF)
-oobjc[11102]: GC: forcing GC OFF because OBJC_DISABLE_GC is set
-oTest Suite 'All tests' started at 2009-12-09 12:33:12 -0800
-oTest Suite '/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)' started at 2009-12-09 12:33:12 -0800
-oTest Suite 'DisassembletronTests' started at 2009-12-09 12:33:12 -0800
-oTest Case '-[DisassembletronTests testToolbar]' started.
-o2009-12-09 12:33:12.118 Disassembletron[11102:903] /Users/Mlamb/Library/Application Support/Disassembletron/PlugIns
-o2009-12-09 12:33:12.120 Disassembletron[11102:903] /Library/Application Support/Disassembletron/PlugIns
-o2009-12-09 12:33:12.125 Disassembletron[11102:903] /Network/Library/Application Support/Disassembletron/PlugIns
-o2009-12-09 12:33:12.130 Disassembletron[11102:903] /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns
-o2009-12-09 12:33:12.151 Disassembletron[11102:903] Found plugin: /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.plugin
-oTest Case '-[DisassembletronTests testToolbar]' passed (0.110 seconds).
-oTest Case '-[DisassembletronTests test_AppDelegateMethods]' started.
-oTest Case '-[DisassembletronTests test_AppDelegateMethods]' passed (0.000 seconds).
-oTest Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' started.
-o2009-12-09 12:33:12.230 Disassembletron[11102:903] AppTextPlugin
-oTest Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' passed (0.003 seconds).
-oTest Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' started.
-oTest Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' passed (0.000 seconds).
-oTest Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' started.
-oTest Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' passed (0.000 seconds).
-oTest Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' started.
-oTest Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' passed (0.000 seconds).
-oTest Suite 'DisassembletronTests' finished at 2009-12-09 12:33:12 -0800.
-oExecuted 6 tests, with 0 failures (0 unexpected) in 0.114 (0.115) seconds
-o
-oTest Suite '/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)' finished at 2009-12-09 12:33:12 -0800.
-oExecuted 6 tests, with 0 failures (0 unexpected) in 0.114 (0.117) seconds
-o
-oTest Suite '/Developer/Library/Frameworks/SenTestingKit.framework(Tests)' started at 2009-12-09 12:33:12 -0800
-oTest Suite 'SenInterfaceTestCase' started at 2009-12-09 12:33:12 -0800
-oTest Suite 'SenInterfaceTestCase' finished at 2009-12-09 12:33:12 -0800.
-oExecuted 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
-o
-oTest Suite '/Developer/Library/Frameworks/SenTestingKit.framework(Tests)' finished at 2009-12-09 12:33:12 -0800.
-oExecuted 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
-o
-oTest Suite 'All tests' finished at 2009-12-09 12:33:12 -0800.
-oExecuted 6 tests, with 0 failures (0 unexpected) in 0.114 (0.138) seconds
-o
-o/Developer/Tools/RunPlatformUnitTests.include:334: note: Passed tests for architecture 'i386' (GC OFF)
-o/Developer/Tools/RunPlatformUnitTests.include:345: note: Completed tests for architectures 'i386'
-lSLF07#2@36"Run custom shell script 'Run Script'282083591#282083592#1(20@47"Run unit tests for architecture 'i386' (GC OFF)282083591#282083592#1(20@24"Run test suite All tests282083592#282083592#2(20@80"Run test suite /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)282083592#282083592#1(20@35"Run test suite DisassembletronTests282083592#282083592#6(20@25"Run test case testToolbar282083592#282083592#0(760"Test Case '-[DisassembletronTests testToolbar]' started.2009-12-09 12:33:12.118 Disassembletron[11102:903] /Users/Mlamb/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.120 Disassembletron[11102:903] /Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.125 Disassembletron[11102:903] /Network/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.130 Disassembletron[11102:903] /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns2009-12-09 12:33:12.151 Disassembletron[11102:903] Found plugin: /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.pluginTest Case '-[DisassembletronTests testToolbar]' passed (0.110 seconds).0(0#0#0"13"0.110 seconds71"Test Case '-[DisassembletronTests testToolbar]' passed (0.110 seconds).11"testToolbar20@37"Run test case test_AppDelegateMethods282083592#282083592#0(153"Test Case '-[DisassembletronTests test_AppDelegateMethods]' started.Test Case '-[DisassembletronTests test_AppDelegateMethods]' passed (0.000 seconds).0(0#0#0"13"0.000 seconds83"Test Case '-[DisassembletronTests test_AppDelegateMethods]' passed (0.000 seconds).23"test_AppDelegateMethods20@46"Run test case test_sharedPlugin_ActivatePlugin282083592#282083592#0(236"Test Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' started.2009-12-09 12:33:12.230 Disassembletron[11102:903] AppTextPluginTest Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' passed (0.003 seconds).0(0#0#0"13"0.003 seconds92"Test Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' passed (0.003 seconds).32"test_sharedPlugin_ActivatePlugin20@45"Run test case test_sharedPlugin_PluginClasses282083592#282083592#0(169"Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' passed (0.000 seconds).0(0#0#0"13"0.000 seconds91"Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' passed (0.000 seconds).31"test_sharedPlugin_PluginClasses20@66"Run test case test_sharedPlugin_PluginPathsForDirectoriesInDomains282083592#282083592#0(211"Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' passed (0.000 seconds).0(0#0#0"13"0.000 seconds112"Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' passed (0.000 seconds).52"test_sharedPlugin_PluginPathsForDirectoriesInDomains20@46"Run test case test_sharedPlugin_SharedInstance282083592#282083592#0(171"Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' started.Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' passed (0.000 seconds).0(0#0#0"13"0.000 seconds92"Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' passed (0.000 seconds).32"test_sharedPlugin_SharedInstance1918"Test Suite 'DisassembletronTests' started at 2009-12-09 12:33:12 -0800Test Case '-[DisassembletronTests testToolbar]' started.2009-12-09 12:33:12.118 Disassembletron[11102:903] /Users/Mlamb/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.120 Disassembletron[11102:903] /Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.125 Disassembletron[11102:903] /Network/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.130 Disassembletron[11102:903] /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns2009-12-09 12:33:12.151 Disassembletron[11102:903] Found plugin: /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.pluginTest Case '-[DisassembletronTests testToolbar]' passed (0.110 seconds).Test Case '-[DisassembletronTests test_AppDelegateMethods]' started.Test Case '-[DisassembletronTests test_AppDelegateMethods]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' started.2009-12-09 12:33:12.230 Disassembletron[11102:903] AppTextPluginTest Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' passed (0.003 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' started.Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' passed (0.000 seconds).Test Suite 'DisassembletronTests' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.115) seconds0(0#0#23"6 out of 6 tests passed13"0.114 seconds73"Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.115) seconds20"DisassembletronTests2227"Test Suite '/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)' started at 2009-12-09 12:33:12 -0800Test Suite 'DisassembletronTests' started at 2009-12-09 12:33:12 -0800Test Case '-[DisassembletronTests testToolbar]' started.2009-12-09 12:33:12.118 Disassembletron[11102:903] /Users/Mlamb/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.120 Disassembletron[11102:903] /Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.125 Disassembletron[11102:903] /Network/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.130 Disassembletron[11102:903] /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns2009-12-09 12:33:12.151 Disassembletron[11102:903] Found plugin: /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.pluginTest Case '-[DisassembletronTests testToolbar]' passed (0.110 seconds).Test Case '-[DisassembletronTests test_AppDelegateMethods]' started.Test Case '-[DisassembletronTests test_AppDelegateMethods]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' started.2009-12-09 12:33:12.230 Disassembletron[11102:903] AppTextPluginTest Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' passed (0.003 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' started.Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' passed (0.000 seconds).Test Suite 'DisassembletronTests' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.115) secondsTest Suite '/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.117) seconds0(0#0#23"6 out of 6 tests passed13"0.114 seconds73"Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.117) seconds65"/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)20@75"Run test suite /Developer/Library/Frameworks/SenTestingKit.framework(Tests)282083592#282083592#1(20@35"Run test suite SenInterfaceTestCase282083592#282083592#0(218"Test Suite 'SenInterfaceTestCase' started at 2009-12-09 12:33:12 -0800Test Suite 'SenInterfaceTestCase' finished at 2009-12-09 12:33:12 -0800.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds0(0#0#23"0 out of 0 tests passed13"0.000 seconds73"Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds20"SenInterfaceTestCase517"Test Suite '/Developer/Library/Frameworks/SenTestingKit.framework(Tests)' started at 2009-12-09 12:33:12 -0800Test Suite 'SenInterfaceTestCase' started at 2009-12-09 12:33:12 -0800Test Suite 'SenInterfaceTestCase' finished at 2009-12-09 12:33:12 -0800.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite '/Developer/Library/Frameworks/SenTestingKit.framework(Tests)' finished at 2009-12-09 12:33:12 -0800.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds0(0#0#23"0 out of 0 tests passed13"0.001 seconds73"Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds60"/Developer/Library/Frameworks/SenTestingKit.framework(Tests)2942"Test Suite 'All tests' started at 2009-12-09 12:33:12 -0800Test Suite '/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)' started at 2009-12-09 12:33:12 -0800Test Suite 'DisassembletronTests' started at 2009-12-09 12:33:12 -0800Test Case '-[DisassembletronTests testToolbar]' started.2009-12-09 12:33:12.118 Disassembletron[11102:903] /Users/Mlamb/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.120 Disassembletron[11102:903] /Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.125 Disassembletron[11102:903] /Network/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.130 Disassembletron[11102:903] /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns2009-12-09 12:33:12.151 Disassembletron[11102:903] Found plugin: /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.pluginTest Case '-[DisassembletronTests testToolbar]' passed (0.110 seconds).Test Case '-[DisassembletronTests test_AppDelegateMethods]' started.Test Case '-[DisassembletronTests test_AppDelegateMethods]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' started.2009-12-09 12:33:12.230 Disassembletron[11102:903] AppTextPluginTest Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' passed (0.003 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' started.Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' passed (0.000 seconds).Test Suite 'DisassembletronTests' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.115) secondsTest Suite '/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.117) secondsTest Suite '/Developer/Library/Frameworks/SenTestingKit.framework(Tests)' started at 2009-12-09 12:33:12 -0800Test Suite 'SenInterfaceTestCase' started at 2009-12-09 12:33:12 -0800Test Suite 'SenInterfaceTestCase' finished at 2009-12-09 12:33:12 -0800.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite '/Developer/Library/Frameworks/SenTestingKit.framework(Tests)' finished at 2009-12-09 12:33:12 -0800.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) secondsTest Suite 'All tests' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.138) seconds0(0#0#23"6 out of 6 tests passed13"0.114 seconds73"Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.138) seconds9"All tests3213"/Developer/Tools/RunPlatformUnitTests.include:273: note: Running tests for architecture 'i386' (GC OFF)objc[11102]: GC: forcing GC OFF because OBJC_DISABLE_GC is setTest Suite 'All tests' started at 2009-12-09 12:33:12 -0800Test Suite '/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)' started at 2009-12-09 12:33:12 -0800Test Suite 'DisassembletronTests' started at 2009-12-09 12:33:12 -0800Test Case '-[DisassembletronTests testToolbar]' started.2009-12-09 12:33:12.118 Disassembletron[11102:903] /Users/Mlamb/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.120 Disassembletron[11102:903] /Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.125 Disassembletron[11102:903] /Network/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.130 Disassembletron[11102:903] /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns2009-12-09 12:33:12.151 Disassembletron[11102:903] Found plugin: /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.pluginTest Case '-[DisassembletronTests testToolbar]' passed (0.110 seconds).Test Case '-[DisassembletronTests test_AppDelegateMethods]' started.Test Case '-[DisassembletronTests test_AppDelegateMethods]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' started.2009-12-09 12:33:12.230 Disassembletron[11102:903] AppTextPluginTest Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' passed (0.003 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' started.Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' passed (0.000 seconds).Test Suite 'DisassembletronTests' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.115) secondsTest Suite '/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.117) secondsTest Suite '/Developer/Library/Frameworks/SenTestingKit.framework(Tests)' started at 2009-12-09 12:33:12 -0800Test Suite 'SenInterfaceTestCase' started at 2009-12-09 12:33:12 -0800Test Suite 'SenInterfaceTestCase' finished at 2009-12-09 12:33:12 -0800.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite '/Developer/Library/Frameworks/SenTestingKit.framework(Tests)' finished at 2009-12-09 12:33:12 -0800.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) secondsTest Suite 'All tests' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.138) seconds/Developer/Tools/RunPlatformUnitTests.include:334: note: Passed tests for architecture 'i386' (GC OFF)0(0#0#0"0"102"/Developer/Tools/RunPlatformUnitTests.include:334: note: Passed tests for architecture 'i386' (GC OFF)0"3407"/Developer/Tools/RunPlatformUnitTests.include:266: note: Started tests for architectures 'i386'/Developer/Tools/RunPlatformUnitTests.include:273: note: Running tests for architecture 'i386' (GC OFF)objc[11102]: GC: forcing GC OFF because OBJC_DISABLE_GC is setTest Suite 'All tests' started at 2009-12-09 12:33:12 -0800Test Suite '/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)' started at 2009-12-09 12:33:12 -0800Test Suite 'DisassembletronTests' started at 2009-12-09 12:33:12 -0800Test Case '-[DisassembletronTests testToolbar]' started.2009-12-09 12:33:12.118 Disassembletron[11102:903] /Users/Mlamb/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.120 Disassembletron[11102:903] /Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.125 Disassembletron[11102:903] /Network/Library/Application Support/Disassembletron/PlugIns2009-12-09 12:33:12.130 Disassembletron[11102:903] /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns2009-12-09 12:33:12.151 Disassembletron[11102:903] Found plugin: /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.pluginTest Case '-[DisassembletronTests testToolbar]' passed (0.110 seconds).Test Case '-[DisassembletronTests test_AppDelegateMethods]' started.Test Case '-[DisassembletronTests test_AppDelegateMethods]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' started.2009-12-09 12:33:12.230 Disassembletron[11102:903] AppTextPluginTest Case '-[DisassembletronTests test_sharedPlugin_ActivatePlugin]' passed (0.003 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginClasses]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' started.Test Case '-[DisassembletronTests test_sharedPlugin_PluginPathsForDirectoriesInDomains]' passed (0.000 seconds).Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' started.Test Case '-[DisassembletronTests test_sharedPlugin_SharedInstance]' passed (0.000 seconds).Test Suite 'DisassembletronTests' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.115) secondsTest Suite '/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest(Tests)' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.117) secondsTest Suite '/Developer/Library/Frameworks/SenTestingKit.framework(Tests)' started at 2009-12-09 12:33:12 -0800Test Suite 'SenInterfaceTestCase' started at 2009-12-09 12:33:12 -0800Test Suite 'SenInterfaceTestCase' finished at 2009-12-09 12:33:12 -0800.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite '/Developer/Library/Frameworks/SenTestingKit.framework(Tests)' finished at 2009-12-09 12:33:12 -0800.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) secondsTest Suite 'All tests' finished at 2009-12-09 12:33:12 -0800.Executed 6 tests, with 0 failures (0 unexpected) in 0.114 (0.138) seconds/Developer/Tools/RunPlatformUnitTests.include:334: note: Passed tests for architecture 'i386' (GC OFF)/Developer/Tools/RunPlatformUnitTests.include:345: note: Completed tests for architectures 'i386'0(0#0#0"4300882208#15873"    cd /Users/Mlamb/Disassembletron    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER Mlamb    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/Mlamb/Disassembletron/build    setenv BUILD_ROOT /Users/Mlamb/Disassembletron/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/Mlamb/Disassembletron/build/Debug    setenv BUNDLE_LOADER /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/MacOS/Disassembletron    setenv CACHE_ROOT /var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502    setenv CCHROOT /var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/Mlamb/Disassembletron/build/Debug    setenv CONFIGURATION_TEMP_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug    setenv CONTENTS_FOLDER_PATH MyUnitTest.octest/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/Disassembletron.dst    setenv DWARF_DSYM_FILE_NAME MyUnitTest.octest.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/Mlamb/Disassembletron/build/Debug    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH MyUnitTest.octest/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH MyUnitTest.octest/Contents/MacOS    setenv EXECUTABLE_NAME MyUnitTest    setenv EXECUTABLE_PATH MyUnitTest.octest/Contents/MacOS/MyUnitTest    setenv FILE_LIST /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH MyUnitTest.octest/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/Mlamb/Disassembletron/build/Debug\" \"/Developer/SDKs/MacOSX10.5.sdk/Developer/Library/Frameworks\" \"/Developer/Library/Frameworks\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME MyUnitTest.octest    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE NO    setenv GCC_ENABLE_OBJC_EXCEPTIONS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/Mlamb/Disassembletron/build/Debug/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE MyUnitTest-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH MyUnitTest.octest/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/Disassembletron.dst    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER Mlamb    setenv INSTALL_ROOT /tmp/Disassembletron.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH MyUnitTest.octest/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/MyUnitTest-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/Mlamb/Disassembletron/build/Debug\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Objects-normal/i386/MyUnitTest.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_bundle    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv MAC_OS_X_VERSION_ACTUAL 1062    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0602    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Objects-normal    setenv OBJROOT /Users/Mlamb/Disassembletron/build    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-framework Foundation -framework SenTestingKit"    setenv PACKAGE_TYPE com.apple.package-type.wrapper    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH MyUnitTest.octest/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/PkgInfo    setenv PKGINFO_PATH MyUnitTest.octest/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH MyUnitTest.octest/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH MyUnitTest.octest/Contents/PrivateHeaders    setenv PRODUCT_NAME MyUnitTest    setenv PRODUCT_SETTINGS_PATH /Users/Mlamb/Disassembletron/MyUnitTest-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.bundle    setenv PROFILING_CODE NO    setenv PROJECT Disassembletron    setenv PROJECT_DERIVED_FILE_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/DerivedSources    setenv PROJECT_DIR /Users/Mlamb/Disassembletron    setenv PROJECT_FILE_PATH /Users/Mlamb/Disassembletron/Disassembletron.xcodeproj    setenv PROJECT_NAME Disassembletron    setenv PROJECT_TEMP_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build    setenv PUBLIC_HEADERS_FOLDER_PATH MyUnitTest.octest/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/Mlamb/Disassembletron/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH MyUnitTest.octest/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/SDKs/MacOSX10.5.sdk    setenv SDK_DIR /Developer/SDKs/MacOSX10.5.sdk    setenv SDK_NAME macosx10.5    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/Mlamb/Disassembletron/build/Debug/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH MyUnitTest.octest/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/ZP/ZP84xxG7F5SNc+YWHtt1jU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH MyUnitTest.octest/Contents/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/Mlamb/Disassembletron    setenv SRCROOT /Users/Mlamb/Disassembletron    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE non-global    setenv SYMBOL_REPOSITORY_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/SymbolRepositories    setenv SYMROOT /Users/Mlamb/Disassembletron/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME MyUnitTest    setenv TARGET_BUILD_DIR /Users/Mlamb/Disassembletron/build/Debug    setenv TARGET_NAME MyUnitTest    setenv TARGET_TEMP_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build    setenv TEMP_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build    setenv TEMP_FILES_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build    setenv TEMP_FILE_DIR /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build    setenv TEMP_ROOT /Users/Mlamb/Disassembletron/build    setenv TEST_HOST /Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/MacOS/Disassembletron    setenv UID 502    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH MyUnitTest.octest/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER Mlamb    setenv USER_APPS_DIR /Users/Mlamb/Applications    setenv USER_LIBRARY_DIR /Users/Mlamb/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH MyUnitTest.octest/Contents/version.plist    setenv VERSION_INFO_BUILDER Mlamb    setenv VERSION_INFO_FILE MyUnitTest_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:MyUnitTest  PROJECT:Disassembletron-\""    setenv WRAPPER_EXTENSION octest    setenv WRAPPER_NAME MyUnitTest.octest    setenv WRAPPER_SUFFIX .octest    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0320    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Users/Mlamb/Disassembletron/build/Disassembletron.build/Debug/MyUnitTest.build/Script-7B7420C610740EB400670A2F.sh0#
-
-CProcessInfoPlistFile /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Info.plist MyUnitTest-Info.plist
-s282007874.985328
-e282007874.988209
-r1
-xProcessInfoPlistFile
-x/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Info.plist
-xMyUnitTest-Info.plist
-lSLF07#2@29"Process MyUnitTest-Info.plist282007874#282007874#0(0"0(0#0#50"/Users/Mlamb/Disassembletron/MyUnitTest-Info.plist4300882208#207"    cd /Users/Mlamb/Disassembletron    builtin-infoPlistUtility MyUnitTest-Info.plist -expandbuildsettings -platform macosx -o /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest/Contents/Info.plist0#
-
-CStripNIB "/Users/Mlamb/Disassembletron/Application Plug-in.plugin/Contents/Resources/English.lproj/ImageView.nib"
-r0
-
-CStripNIB "/Users/Mlamb/Disassembletron/Application Plug-in.plugin/Contents/Resources/English.lproj/TextView.nib"
-r0
-
-CStripNIB "/Users/Mlamb/Disassembletron/build/Debug/../../Application Plug-in.plugin/Contents/Resources/English.lproj/ImageView.nib"
-r0
-
-CStripNIB "/Users/Mlamb/Disassembletron/build/Debug/../../Application Plug-in.plugin/Contents/Resources/English.lproj/TextView.nib"
-r0
-
-CTouch /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest
-s282083592.249023
-e282083592.253423
-r1
-xTouch
-x/Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest
-lSLF07#2@64"Touch /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest282083592#282083592#0(0"0(0#0#0"4300882208#117"    cd /Users/Mlamb/Disassembletron    /usr/bin/touch -c /Users/Mlamb/Disassembletron/build/Debug/MyUnitTest.octest0#
-
