@@ -16,7 +16,6 @@
 			8D15AC270486D014006FF6A4 /* Disassembletron */,
 		);
 		breakpoints = (
-			7BC9C3D110D5B3840028B570 /* PluginManager.m:75 */,
 		);
 		codeSenseManager = 7BB4F2451030E2F30047326A /* Code sense */;
 		executables = (
@@ -80,7 +79,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					992,
+					1177,
 					20,
 					48,
 					43,
@@ -290,6 +289,63 @@
 			7BC9C53010D5C6310028B570 /* PBXTextBookmark */ = 7BC9C53010D5C6310028B570 /* PBXTextBookmark */;
 			7BC9C53210D5C64D0028B570 /* PBXTextBookmark */ = 7BC9C53210D5C64D0028B570 /* PBXTextBookmark */;
 			7BC9C53310D5C64F0028B570 /* PBXTextBookmark */ = 7BC9C53310D5C64F0028B570 /* PBXTextBookmark */;
+			7BC9C53410D5CCAB0028B570 /* PBXTextBookmark */ = 7BC9C53410D5CCAB0028B570 /* PBXTextBookmark */;
+			7BC9C53910D5CD140028B570 /* PBXTextBookmark */ = 7BC9C53910D5CD140028B570 /* PBXTextBookmark */;
+			7BC9C53B10D5E0010028B570 /* PBXTextBookmark */ = 7BC9C53B10D5E0010028B570 /* PBXTextBookmark */;
+			7BC9C54B10D5EA720028B570 /* PBXTextBookmark */ = 7BC9C54B10D5EA720028B570 /* PBXTextBookmark */;
+			7BC9C54C10D5EA720028B570 /* PBXTextBookmark */ = 7BC9C54C10D5EA720028B570 /* PBXTextBookmark */;
+			7BC9C54D10D5EA720028B570 /* PBXTextBookmark */ = 7BC9C54D10D5EA720028B570 /* PBXTextBookmark */;
+			7BC9C54E10D5EA720028B570 /* PBXTextBookmark */ = 7BC9C54E10D5EA720028B570 /* PBXTextBookmark */;
+			7BC9C54F10D5EA720028B570 /* PBXTextBookmark */ = 7BC9C54F10D5EA720028B570 /* PBXTextBookmark */;
+			7BC9C55010D5EA720028B570 /* PBXTextBookmark */ = 7BC9C55010D5EA720028B570 /* PBXTextBookmark */;
+			7BC9C55110D5EA720028B570 /* PBXTextBookmark */ = 7BC9C55110D5EA720028B570 /* PBXTextBookmark */;
+			7BC9C55710D5EB120028B570 /* PBXTextBookmark */ = 7BC9C55710D5EB120028B570 /* PBXTextBookmark */;
+			7BC9C55810D5EB120028B570 /* PBXTextBookmark */ = 7BC9C55810D5EB120028B570 /* PBXTextBookmark */;
+			7BC9C55910D5EB120028B570 /* PBXTextBookmark */ = 7BC9C55910D5EB120028B570 /* PBXTextBookmark */;
+			7BC9C55D10D5EB410028B570 /* PBXTextBookmark */ = 7BC9C55D10D5EB410028B570 /* PBXTextBookmark */;
+			7BC9C56410D5ECEA0028B570 /* PBXTextBookmark */ = 7BC9C56410D5ECEA0028B570 /* PBXTextBookmark */;
+			7BC9C56510D5ECEA0028B570 /* PBXTextBookmark */ = 7BC9C56510D5ECEA0028B570 /* PBXTextBookmark */;
+			7BC9C56610D5ECEA0028B570 /* PBXTextBookmark */ = 7BC9C56610D5ECEA0028B570 /* PBXTextBookmark */;
+			7BC9C57110D60B0D0028B570 /* XCBuildMessageTextBookmark */ = 7BC9C57110D60B0D0028B570 /* XCBuildMessageTextBookmark */;
+			7BC9C57610D60B400028B570 /* PBXTextBookmark */ = 7BC9C57610D60B400028B570 /* PBXTextBookmark */;
+			7BC9C57710D60B400028B570 /* PBXTextBookmark */ = 7BC9C57710D60B400028B570 /* PBXTextBookmark */;
+			7BC9C57810D60B400028B570 /* PBXTextBookmark */ = 7BC9C57810D60B400028B570 /* PBXTextBookmark */;
+			7BC9C57910D60B400028B570 /* PBXTextBookmark */ = 7BC9C57910D60B400028B570 /* PBXTextBookmark */;
+			7BC9C57C10D60B400028B570 /* PBXTextBookmark */ = 7BC9C57C10D60B400028B570 /* PBXTextBookmark */;
+			7BC9C57E10D60B720028B570 /* PBXTextBookmark */ = 7BC9C57E10D60B720028B570 /* PBXTextBookmark */;
+			7BC9C57F10D60B720028B570 /* XCBuildMessageTextBookmark */ = 7BC9C57F10D60B720028B570 /* XCBuildMessageTextBookmark */;
+			7BC9C58010D60B720028B570 /* PBXTextBookmark */ = 7BC9C58010D60B720028B570 /* PBXTextBookmark */;
+			7BC9C58F10D610180028B570 /* XCBuildMessageTextBookmark */ = 7BC9C58F10D610180028B570 /* XCBuildMessageTextBookmark */;
+			7BC9C59010D610180028B570 /* PBXTextBookmark */ = 7BC9C59010D610180028B570 /* PBXTextBookmark */;
+			7BC9C59810D6108E0028B570 /* PBXTextBookmark */ = 7BC9C59810D6108E0028B570 /* PBXTextBookmark */;
+			7BC9C59910D6108E0028B570 /* PBXTextBookmark */ = 7BC9C59910D6108E0028B570 /* PBXTextBookmark */;
+			7BC9C59A10D6108E0028B570 /* XCBuildMessageTextBookmark */ = 7BC9C59A10D6108E0028B570 /* XCBuildMessageTextBookmark */;
+			7BC9C59B10D6108E0028B570 /* PBXTextBookmark */ = 7BC9C59B10D6108E0028B570 /* PBXTextBookmark */;
+			7BC9C59D10D610950028B570 /* PBXTextBookmark */ = 7BC9C59D10D610950028B570 /* PBXTextBookmark */;
+			7BC9C5A210D610C10028B570 /* PBXTextBookmark */ = 7BC9C5A210D610C10028B570 /* PBXTextBookmark */;
+			7BC9C5A310D610C10028B570 /* PBXTextBookmark */ = 7BC9C5A310D610C10028B570 /* PBXTextBookmark */;
+			7BC9C5A410D610C10028B570 /* PBXTextBookmark */ = 7BC9C5A410D610C10028B570 /* PBXTextBookmark */;
+			7BC9C5A810D610E40028B570 /* PBXTextBookmark */ = 7BC9C5A810D610E40028B570 /* PBXTextBookmark */;
+			7BC9C5B410D6134B0028B570 /* XCBuildMessageTextBookmark */ = 7BC9C5B410D6134B0028B570 /* XCBuildMessageTextBookmark */;
+			7BC9C5B510D6134B0028B570 /* PBXTextBookmark */ = 7BC9C5B510D6134B0028B570 /* PBXTextBookmark */;
+			7BC9C5B910D614CC0028B570 /* PBXTextBookmark */ = 7BC9C5B910D614CC0028B570 /* PBXTextBookmark */;
+			7BC9C5BA10D614DC0028B570 /* PBXTextBookmark */ = 7BC9C5BA10D614DC0028B570 /* PBXTextBookmark */;
+			7BC9C5BB10D614DC0028B570 /* PBXTextBookmark */ = 7BC9C5BB10D614DC0028B570 /* PBXTextBookmark */;
+			7BC9C5BC10D614DC0028B570 /* XCBuildMessageTextBookmark */ = 7BC9C5BC10D614DC0028B570 /* XCBuildMessageTextBookmark */;
+			7BC9C5BD10D614DC0028B570 /* PBXTextBookmark */ = 7BC9C5BD10D614DC0028B570 /* PBXTextBookmark */;
+			7BC9C5BE10D614DE0028B570 /* PBXTextBookmark */ = 7BC9C5BE10D614DE0028B570 /* PBXTextBookmark */;
+			7BC9C5C910D616A70028B570 /* PBXTextBookmark */ = 7BC9C5C910D616A70028B570 /* PBXTextBookmark */;
+			7BC9C5CA10D616A70028B570 /* XCBuildMessageTextBookmark */ = 7BC9C5CA10D616A70028B570 /* XCBuildMessageTextBookmark */;
+			7BC9C5CB10D616A70028B570 /* PBXTextBookmark */ = 7BC9C5CB10D616A70028B570 /* PBXTextBookmark */;
+			7BC9C5CE10D616BF0028B570 /* PBXTextBookmark */ = 7BC9C5CE10D616BF0028B570 /* PBXTextBookmark */;
+			7BC9C5CF10D616BF0028B570 /* PBXTextBookmark */ = 7BC9C5CF10D616BF0028B570 /* PBXTextBookmark */;
+			7BC9C5D010D616BF0028B570 /* PBXTextBookmark */ = 7BC9C5D010D616BF0028B570 /* PBXTextBookmark */;
+			7BC9C5D110D616BF0028B570 /* PBXTextBookmark */ = 7BC9C5D110D616BF0028B570 /* PBXTextBookmark */;
+			7BC9C5D210D616BF0028B570 /* PBXTextBookmark */ = 7BC9C5D210D616BF0028B570 /* PBXTextBookmark */;
+			7BC9C5D710D6172E0028B570 /* PBXTextBookmark */ = 7BC9C5D710D6172E0028B570 /* PBXTextBookmark */;
+			7BC9C5DF10D618700028B570 /* PBXTextBookmark */ = 7BC9C5DF10D618700028B570 /* PBXTextBookmark */;
+			7BC9C5E010D618700028B570 /* PBXTextBookmark */ = 7BC9C5E010D618700028B570 /* PBXTextBookmark */;
+			7BC9C5E110D618700028B570 /* PBXTextBookmark */ = 7BC9C5E110D618700028B570 /* PBXTextBookmark */;
 			7BD0BD6E108FCE630016ABCC = 7BD0BD6E108FCE630016ABCC /* PBXTextBookmark */;
 			7BD0BDAB108FD0410016ABCC = 7BD0BDAB108FD0410016ABCC /* PBXTextBookmark */;
 			7BD0BF0B1090152F0016ABCC = 7BD0BF0B1090152F0016ABCC /* PBXTextBookmark */;
@@ -303,17 +359,17 @@
 	};
 	2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1170, 1872}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1170, 1703}}";
 			sepNavSelRange = "{296, 25}";
-			sepNavVisRange = "{197, 1300}";
+			sepNavVisRange = "{1243, 2009}";
 			sepNavWindowFrame = "{{646, 51}, {1092, 757}}";
 		};
 	};
 	2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {877, 338}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1170, 623}}";
 			sepNavSelRange = "{226, 0}";
-			sepNavVisRange = "{0, 301}";
+			sepNavVisRange = "{0, 307}";
 			sepNavWindowFrame = "{{15, 416}, {1092, 757}}";
 		};
 	};
@@ -363,7 +419,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 36";
 		rLen = 0;
-		rLoc = 1134;
+		rLoc = 1362;
 		rType = 0;
 		vrLen = 2747;
 		vrLoc = 939;
@@ -456,9 +512,9 @@
 	};
 	7B7420E71075705300670A2F /* DisassembletronTests.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1115, 1417}}";
-			sepNavSelRange = "{1413, 84}";
-			sepNavVisRange = "{939, 925}";
+			sepNavIntBoundsRect = "{{0, 0}, {1355, 1625}}";
+			sepNavSelRange = "{4483, 0}";
+			sepNavVisRange = "{2522, 3288}";
 			sepNavWindowFrame = "{{54, 257}, {1079, 871}}";
 		};
 	};
@@ -477,7 +533,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 61";
 		rLen = 0;
-		rLoc = 1869;
+		rLoc = 1827;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 0;
@@ -497,24 +553,24 @@
 		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
 		name = "MyApplicationDelegate.m: 13";
 		rLen = 0;
-		rLoc = 454;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 0;
 	};
 	7B9C2817104DE64E00F588D4 /* PluginManager.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1170, 600}}";
-			sepNavSelRange = "{534, 0}";
-			sepNavVisRange = "{0, 627}";
+			sepNavIntBoundsRect = "{{0, 0}, {1033, 621}}";
+			sepNavSelRange = "{477, 0}";
+			sepNavVisRange = "{0, 787}";
 			sepNavWindowFrame = "{{38, 395}, {1092, 757}}";
 		};
 	};
 	7B9C2818104DE64E00F588D4 /* PluginManager.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1170, 2015}}";
-			sepNavSelRange = "{1859, 0}";
-			sepNavVisRange = "{813, 2042}";
+			sepNavIntBoundsRect = "{{0, 0}, {1170, 2522}}";
+			sepNavSelRange = "{2381, 0}";
+			sepNavVisRange = "{0, 1007}";
 			sepNavWindowFrame = "{{15, 416}, {1092, 757}}";
 		};
 	};
@@ -544,9 +600,9 @@
 	};
 	7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1191, 300}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1170, 600}}";
 			sepNavSelRange = "{455, 0}";
-			sepNavVisRange = "{0, 464}";
+			sepNavVisRange = "{0, 465}";
 			sepNavWindowFrame = "{{15, 416}, {1092, 757}}";
 		};
 	};
@@ -654,7 +710,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 62";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 1532;
@@ -665,7 +721,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 45;
+		rLoc = 49;
 		rType = 1;
 	};
 	7BC9C31810D5A74D0028B570 /* PBXTextBookmark */ = {
@@ -673,7 +729,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 44";
 		rLen = 0;
-		rLoc = 1379;
+		rLoc = 1607;
 		rType = 0;
 		vrLen = 1012;
 		vrLoc = 1094;
@@ -693,7 +749,7 @@
 		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
 		name = "PluginManager.h: 28";
 		rLen = 0;
-		rLoc = 534;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 0;
@@ -703,7 +759,7 @@
 		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
 		name = "MyApplicationDelegate.m: 13";
 		rLen = 0;
-		rLoc = 454;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 0;
@@ -723,7 +779,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 52";
 		rLen = 0;
-		rLoc = 1770;
+		rLoc = 3462;
 		rType = 0;
 		vrLen = 2445;
 		vrLoc = 337;
@@ -733,7 +789,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 63";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1756;
 		vrLoc = 764;
@@ -743,7 +799,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 62";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1756;
 		vrLoc = 764;
@@ -760,7 +816,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 62";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1779;
 		vrLoc = 764;
@@ -770,7 +826,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 62";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1756;
 		vrLoc = 764;
@@ -780,7 +836,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 44";
 		rLen = 0;
-		rLoc = 1379;
+		rLoc = 1607;
 		rType = 0;
 		vrLen = 1012;
 		vrLoc = 1094;
@@ -790,7 +846,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 71";
 		rLen = 0;
-		rLoc = 3100;
+		rLoc = 4826;
 		rType = 0;
 		vrLen = 521;
 		vrLoc = 0;
@@ -800,7 +856,7 @@
 		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
 		name = "MyApplicationDelegate.m: 13";
 		rLen = 0;
-		rLoc = 454;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 0;
@@ -810,7 +866,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 126";
 		rLen = 0;
-		rLoc = 4337;
+		rLoc = 5405;
 		rType = 0;
 		vrLen = 1422;
 		vrLoc = 2666;
@@ -820,7 +876,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 52";
 		rLen = 0;
-		rLoc = 1770;
+		rLoc = 3462;
 		rType = 0;
 		vrLen = 2546;
 		vrLoc = 322;
@@ -830,7 +886,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 29";
 		rLen = 0;
-		rLoc = 563;
+		rLoc = 791;
 		rType = 0;
 		vrLen = 1638;
 		vrLoc = 0;
@@ -840,7 +896,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 29";
 		rLen = 0;
-		rLoc = 563;
+		rLoc = 791;
 		rType = 0;
 		vrLen = 1638;
 		vrLoc = 0;
@@ -850,7 +906,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 20";
 		rLen = 0;
-		rLoc = 373;
+		rLoc = 402;
 		rType = 0;
 		vrLen = 1088;
 		vrLoc = 46;
@@ -860,7 +916,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 62";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1749;
 		vrLoc = 988;
@@ -870,7 +926,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 71";
 		rLen = 0;
-		rLoc = 3100;
+		rLoc = 4826;
 		rType = 0;
 		vrLen = 924;
 		vrLoc = 0;
@@ -880,7 +936,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 63";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1771;
 		vrLoc = 762;
@@ -890,7 +946,7 @@
 		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
 		name = "PluginManager.h: 28";
 		rLen = 0;
-		rLoc = 554;
+		rLoc = 714;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 0;
@@ -910,7 +966,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 62";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1762;
 		vrLoc = 546;
@@ -920,7 +976,7 @@
 		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
 		name = "PluginManager.h: 28";
 		rLen = 0;
-		rLoc = 554;
+		rLoc = 714;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 0;
@@ -930,7 +986,7 @@
 		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
 		name = "MyApplicationDelegate.m: 13";
 		rLen = 0;
-		rLoc = 454;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 0;
@@ -950,7 +1006,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 62";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 3;
@@ -960,7 +1016,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 62";
 		rLen = 0;
-		rLoc = 2053;
+		rLoc = 2132;
 		rType = 0;
 		vrLen = 1789;
 		vrLoc = 1157;
@@ -970,7 +1026,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 62";
 		rLen = 0;
-		rLoc = 2053;
+		rLoc = 2132;
 		rType = 0;
 		vrLen = 1789;
 		vrLoc = 1157;
@@ -980,7 +1036,7 @@
 		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
 		name = "PluginManager.h: 22";
 		rLen = 0;
-		rLoc = 348;
+		rLoc = 394;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 0;
@@ -990,7 +1046,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 62";
 		rLen = 0;
-		rLoc = 2053;
+		rLoc = 2132;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 0;
@@ -1000,7 +1056,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 63";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1731;
 		vrLoc = 688;
@@ -1010,7 +1066,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 62";
 		rLen = 0;
-		rLoc = 1869;
+		rLoc = 1827;
 		rType = 0;
 		vrLen = 1733;
 		vrLoc = 688;
@@ -1020,7 +1076,7 @@
 		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
 		name = "PluginManager.h: 28";
 		rLen = 0;
-		rLoc = 534;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 629;
 		vrLoc = 0;
@@ -1030,7 +1086,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 64";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1891;
 		vrLoc = 690;
@@ -1041,7 +1097,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 45;
+		rLoc = 49;
 		rType = 1;
 	};
 	7BC9C38210D5ADAE0028B570 /* PBXTextBookmark */ = {
@@ -1049,7 +1105,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 46";
 		rLen = 0;
-		rLoc = 1413;
+		rLoc = 1641;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 0;
@@ -1060,7 +1116,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 45;
+		rLoc = 49;
 		rType = 1;
 	};
 	7BC9C38610D5ADEC0028B570 /* PBXTextBookmark */ = {
@@ -1068,7 +1124,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 57";
 		rLen = 0;
-		rLoc = 2160;
+		rLoc = 3815;
 		rType = 0;
 		vrLen = 548;
 		vrLoc = 3923;
@@ -1078,7 +1134,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 46";
 		rLen = 0;
-		rLoc = 1413;
+		rLoc = 1641;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 0;
@@ -1088,7 +1144,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 64";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 930;
 		vrLoc = 0;
@@ -1098,7 +1154,7 @@
 		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
 		name = "PluginManager.h: 28";
 		rLen = 0;
-		rLoc = 534;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 629;
 		vrLoc = 0;
@@ -1108,7 +1164,7 @@
 		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
 		name = "PluginManager.h: 28";
 		rLen = 0;
-		rLoc = 534;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 0;
@@ -1138,7 +1194,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 63";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1864;
 		vrLoc = 779;
@@ -1148,7 +1204,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 52";
 		rLen = 0;
-		rLoc = 1770;
+		rLoc = 3462;
 		rType = 0;
 		vrLen = 2580;
 		vrLoc = 541;
@@ -1158,7 +1214,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 64";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1088;
 		vrLoc = 46;
@@ -1168,7 +1224,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 127";
 		rLen = 0;
-		rLoc = 4290;
+		rLoc = 5279;
 		rType = 0;
 		vrLen = 1245;
 		vrLoc = 2978;
@@ -1179,7 +1235,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 56;
+		rLoc = 82;
 		rType = 1;
 	};
 	7BC9C3AB10D5B2270028B570 /* PBXTextBookmark */ = {
@@ -1187,7 +1243,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 59";
 		rLen = 0;
-		rLoc = 2279;
+		rLoc = 3934;
 		rType = 0;
 		vrLen = 1509;
 		vrLoc = 1525;
@@ -1198,7 +1254,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 0;
+		rLoc = 53;
 		rType = 1;
 	};
 	7BC9C3B010D5B2700028B570 /* PBXTextBookmark */ = {
@@ -1226,7 +1282,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 127";
 		rLen = 0;
-		rLoc = 4290;
+		rLoc = 5279;
 		rType = 0;
 		vrLen = 1361;
 		vrLoc = 2862;
@@ -1237,7 +1293,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 46;
+		rLoc = 50;
 		rType = 1;
 	};
 	7BC9C3B910D5B2D00028B570 /* PBXTextBookmark */ = {
@@ -1245,7 +1301,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 47";
 		rLen = 0;
-		rLoc = 1500;
+		rLoc = 1764;
 		rType = 0;
 		vrLen = 2474;
 		vrLoc = 787;
@@ -1255,7 +1311,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 47";
 		rLen = 0;
-		rLoc = 1500;
+		rLoc = 1764;
 		rType = 0;
 		vrLen = 916;
 		vrLoc = 939;
@@ -1265,7 +1321,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 47";
 		rLen = 0;
-		rLoc = 1500;
+		rLoc = 1764;
 		rType = 0;
 		vrLen = 916;
 		vrLoc = 939;
@@ -1275,7 +1331,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 47";
 		rLen = 0;
-		rLoc = 1500;
+		rLoc = 1764;
 		rType = 0;
 		vrLen = 916;
 		vrLoc = 939;
@@ -1285,7 +1341,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 47";
 		rLen = 0;
-		rLoc = 1500;
+		rLoc = 1764;
 		rType = 0;
 		vrLen = 2474;
 		vrLoc = 787;
@@ -1295,7 +1351,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 47";
 		rLen = 0;
-		rLoc = 1500;
+		rLoc = 1764;
 		rType = 0;
 		vrLen = 2474;
 		vrLoc = 787;
@@ -1305,7 +1361,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 63";
 		rLen = 0;
-		rLoc = 2053;
+		rLoc = 2132;
 		rType = 0;
 		vrLen = 1872;
 		vrLoc = 777;
@@ -1325,7 +1381,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 47";
 		rLen = 0;
-		rLoc = 1500;
+		rLoc = 1764;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 939;
@@ -1339,24 +1395,6 @@
 		rType = 0;
 		vrLen = 1752;
 		vrLoc = 2679;
-	};
-	7BC9C3D110D5B3840028B570 /* PluginManager.m:75 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
-		functionName = "-activatePlugin:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 75;
-		location = Disassembletron;
-		modificationTime = 282445360.727405;
-		originalNumberOfMultipleMatches = 1;
-		state = 2;
 	};
 	7BC9C3D510D5B38A0028B570 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1373,7 +1411,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 64";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1872;
 		vrLoc = 777;
@@ -1383,7 +1421,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 64";
 		rLen = 0;
-		rLoc = 2307;
+		rLoc = 2386;
 		rType = 0;
 		vrLen = 1872;
 		vrLoc = 777;
@@ -1393,7 +1431,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 127";
 		rLen = 0;
-		rLoc = 4290;
+		rLoc = 5279;
 		rType = 0;
 		vrLen = 1357;
 		vrLoc = 2862;
@@ -1403,7 +1441,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 47";
 		rLen = 0;
-		rLoc = 1500;
+		rLoc = 1764;
 		rType = 0;
 		vrLen = 2474;
 		vrLoc = 787;
@@ -1413,7 +1451,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 52";
 		rLen = 0;
-		rLoc = 1770;
+		rLoc = 3462;
 		rType = 0;
 		vrLen = 2483;
 		vrLoc = 787;
@@ -1423,7 +1461,7 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 52";
 		rLen = 0;
-		rLoc = 1770;
+		rLoc = 3462;
 		rType = 0;
 		vrLen = 2483;
 		vrLoc = 787;
@@ -1433,7 +1471,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 66";
 		rLen = 0;
-		rLoc = 2312;
+		rLoc = 2391;
 		rType = 0;
 		vrLen = 1244;
 		vrLoc = 2981;
@@ -1514,15 +1552,15 @@
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 45;
+		rLoc = 49;
 		rType = 1;
 	};
 	7BC9C42510D5BB270028B570 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 46";
-		rLen = 84;
-		rLoc = 1413;
+		rLen = 120;
+		rLoc = 1641;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 939;
@@ -1532,7 +1570,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 69";
 		rLen = 0;
-		rLoc = 2144;
+		rLoc = 2223;
 		rType = 0;
 		vrLen = 1899;
 		vrLoc = 1131;
@@ -1561,8 +1599,8 @@
 		isa = PBXTextBookmark;
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 46";
-		rLen = 84;
-		rLoc = 1413;
+		rLen = 120;
+		rLoc = 1641;
 		rType = 0;
 		vrLen = 925;
 		vrLoc = 939;
@@ -1571,8 +1609,8 @@
 		isa = PBXTextBookmark;
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 46";
-		rLen = 84;
-		rLoc = 1413;
+		rLen = 120;
+		rLoc = 1641;
 		rType = 0;
 		vrLen = 925;
 		vrLoc = 939;
@@ -1618,7 +1656,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 71";
 		rLen = 0;
-		rLoc = 2150;
+		rLoc = 2229;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 1109;
@@ -1628,7 +1666,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 72";
 		rLen = 0;
-		rLoc = 2222;
+		rLoc = 2301;
 		rType = 0;
 		vrLen = 1478;
 		vrLoc = 3116;
@@ -1637,8 +1675,8 @@
 		isa = PBXTextBookmark;
 		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
 		name = "DisassembletronTests.m: 46";
-		rLen = 84;
-		rLoc = 1413;
+		rLen = 120;
+		rLoc = 1641;
 		rType = 0;
 		vrLen = 925;
 		vrLoc = 939;
@@ -1697,7 +1735,7 @@
 		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
 		name = "MyApplicationDelegate.m: 14";
 		rLen = 0;
-		rLoc = 454;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 464;
 		vrLoc = 0;
@@ -1707,7 +1745,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 76";
 		rLen = 0;
-		rLoc = 2302;
+		rLoc = 2381;
 		rType = 0;
 		vrLen = 1947;
 		vrLoc = 829;
@@ -1717,7 +1755,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 71";
 		rLen = 0;
-		rLoc = 2144;
+		rLoc = 2223;
 		rType = 0;
 		vrLen = 2053;
 		vrLoc = 829;
@@ -1767,7 +1805,7 @@
 		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
 		name = "MyApplicationDelegate.m: 14";
 		rLen = 0;
-		rLoc = 454;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 464;
 		vrLoc = 0;
@@ -1787,7 +1825,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 71";
 		rLen = 0;
-		rLoc = 2144;
+		rLoc = 2223;
 		rType = 0;
 		vrLen = 977;
 		vrLoc = 0;
@@ -1797,7 +1835,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 71";
 		rLen = 0;
-		rLoc = 2144;
+		rLoc = 2223;
 		rType = 0;
 		vrLen = 1829;
 		vrLoc = 1109;
@@ -1807,7 +1845,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 73";
 		rLen = 0;
-		rLoc = 2216;
+		rLoc = 2295;
 		rType = 0;
 		vrLen = 1997;
 		vrLoc = 1109;
@@ -1847,7 +1885,7 @@
 		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
 		name = "MyApplicationDelegate.m: 14";
 		rLen = 0;
-		rLoc = 454;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 464;
 		vrLoc = 0;
@@ -1867,7 +1905,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 71";
 		rLen = 0;
-		rLoc = 2144;
+		rLoc = 2223;
 		rType = 0;
 		vrLen = 1872;
 		vrLoc = 1183;
@@ -1877,7 +1915,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 71";
 		rLen = 0;
-		rLoc = 2144;
+		rLoc = 2223;
 		rType = 0;
 		vrLen = 1907;
 		vrLoc = 1183;
@@ -1887,7 +1925,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 71";
 		rLen = 0;
-		rLoc = 2144;
+		rLoc = 2223;
 		rType = 0;
 		vrLen = 1907;
 		vrLoc = 1183;
@@ -1897,7 +1935,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 71";
 		rLen = 0;
-		rLoc = 2144;
+		rLoc = 2223;
 		rType = 0;
 		vrLen = 1872;
 		vrLoc = 1183;
@@ -1907,7 +1945,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 71";
 		rLen = 0;
-		rLoc = 2144;
+		rLoc = 2223;
 		rType = 0;
 		vrLen = 1923;
 		vrLoc = 1183;
@@ -1917,7 +1955,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 63";
 		rLen = 0;
-		rLoc = 1869;
+		rLoc = 1827;
 		rType = 0;
 		vrLen = 1937;
 		vrLoc = 1183;
@@ -1927,7 +1965,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 47";
 		rLen = 0;
-		rLoc = 997;
+		rLoc = 985;
 		rType = 0;
 		vrLen = 2033;
 		vrLoc = 633;
@@ -1937,7 +1975,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 47";
 		rLen = 0;
-		rLoc = 979;
+		rLoc = 985;
 		rType = 0;
 		vrLen = 2039;
 		vrLoc = 633;
@@ -1947,7 +1985,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 47";
 		rLen = 0;
-		rLoc = 995;
+		rLoc = 985;
 		rType = 0;
 		vrLen = 2055;
 		vrLoc = 633;
@@ -1957,7 +1995,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 47";
 		rLen = 0;
-		rLoc = 997;
+		rLoc = 985;
 		rType = 0;
 		vrLen = 2066;
 		vrLoc = 633;
@@ -1967,7 +2005,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 47";
 		rLen = 0;
-		rLoc = 997;
+		rLoc = 985;
 		rType = 0;
 		vrLen = 2066;
 		vrLoc = 633;
@@ -1987,7 +2025,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 130";
 		rLen = 0;
-		rLoc = 3687;
+		rLoc = 4545;
 		rType = 0;
 		vrLen = 1479;
 		vrLoc = 3386;
@@ -1997,7 +2035,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 130";
 		rLen = 0;
-		rLoc = 3687;
+		rLoc = 4545;
 		rType = 0;
 		vrLen = 1479;
 		vrLoc = 3386;
@@ -2007,7 +2045,7 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 61";
 		rLen = 0;
-		rLoc = 1859;
+		rLoc = 1817;
 		rType = 0;
 		vrLen = 2042;
 		vrLoc = 813;
@@ -2027,10 +2065,573 @@
 		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
 		name = "PluginManager.m: 61";
 		rLen = 0;
-		rLoc = 1859;
+		rLoc = 1817;
 		rType = 0;
 		vrLen = 2042;
 		vrLoc = 813;
+	};
+	7BC9C53410D5CCAB0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 52";
+		rLen = 0;
+		rLoc = 1212;
+		rType = 0;
+		vrLen = 1964;
+		vrLoc = 813;
+	};
+	7BC9C53910D5CD140028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 134";
+		rLen = 0;
+		rLoc = 4990;
+		rType = 0;
+		vrLen = 1293;
+		vrLoc = 3340;
+	};
+	7BC9C53B10D5E0010028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 135";
+		rLen = 0;
+		rLoc = 5160;
+		rType = 0;
+		vrLen = 1482;
+		vrLoc = 3344;
+	};
+	7BC9C54B10D5EA720028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */;
+		name = "MyDocument.m: 20";
+		rLen = 25;
+		rLoc = 296;
+		rType = 0;
+		vrLen = 1324;
+		vrLoc = 196;
+	};
+	7BC9C54C10D5EA720028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
+		name = "MyApplicationDelegate.m: 14";
+		rLen = 0;
+		rLoc = 455;
+		rType = 0;
+		vrLen = 464;
+		vrLoc = 0;
+	};
+	7BC9C54D10D5EA720028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */;
+		name = "MyDocument.h: 12";
+		rLen = 0;
+		rLoc = 226;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 0;
+	};
+	7BC9C54E10D5EA720028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
+		name = "PluginManager.h: 29";
+		rLen = 0;
+		rLoc = 543;
+		rType = 0;
+		vrLen = 747;
+		vrLoc = 0;
+	};
+	7BC9C54F10D5EA720028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 54";
+		rLen = 0;
+		rLoc = 2016;
+		rType = 0;
+		vrLen = 2876;
+		vrLoc = 787;
+	};
+	7BC9C55010D5EA720028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 123";
+		rLen = 0;
+		rLoc = 3758;
+		rType = 0;
+		vrLen = 1575;
+		vrLoc = 3340;
+	};
+	7BC9C55110D5EA720028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 121";
+		rLen = 3;
+		rLoc = 3727;
+		rType = 0;
+		vrLen = 1053;
+		vrLoc = 2711;
+	};
+	7BC9C55710D5EB120028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 129";
+		rLen = 0;
+		rLoc = 3770;
+		rType = 0;
+		vrLen = 1065;
+		vrLoc = 2994;
+	};
+	7BC9C55810D5EB120028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
+		name = "PluginManager.h: 29";
+		rLen = 0;
+		rLoc = 543;
+		rType = 0;
+		vrLen = 747;
+		vrLoc = 0;
+	};
+	7BC9C55910D5EB120028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
+		name = "PluginManager.h: 29";
+		rLen = 0;
+		rLoc = 534;
+		rType = 0;
+		vrLen = 747;
+		vrLoc = 0;
+	};
+	7BC9C55D10D5EB410028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
+		name = "PluginManager.h: 29";
+		rLen = 0;
+		rLoc = 534;
+		rType = 0;
+		vrLen = 747;
+		vrLoc = 0;
+	};
+	7BC9C56410D5ECEA0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
+		name = "PluginManager.h: 29";
+		rLen = 0;
+		rLoc = 534;
+		rType = 0;
+		vrLen = 747;
+		vrLoc = 0;
+	};
+	7BC9C56510D5ECEA0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 124";
+		rLen = 0;
+		rLoc = 3754;
+		rType = 0;
+		vrLen = 1131;
+		vrLoc = 3008;
+	};
+	7BC9C56610D5ECEA0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 62";
+		rLen = 0;
+		rLoc = 3452;
+		rType = 0;
+		vrLen = 2973;
+		vrLoc = 787;
+	};
+	7BC9C57110D60B0D0028B570 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ')' before 'NSStrin'";
+		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 26;
+		rType = 1;
+	};
+	7BC9C57610D60B400028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 66";
+		rLen = 0;
+		rLoc = 2671;
+		rType = 0;
+		vrLen = 2752;
+		vrLoc = 787;
+	};
+	7BC9C57710D60B400028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
+		name = "PluginManager.h: 27";
+		rLen = 0;
+		rLoc = 475;
+		rType = 0;
+		vrLen = 787;
+		vrLoc = 0;
+	};
+	7BC9C57810D60B400028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 143";
+		rLen = 0;
+		rLoc = 4085;
+		rType = 0;
+		vrLen = 1346;
+		vrLoc = 3672;
+	};
+	7BC9C57910D60B400028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 138";
+		rLen = 0;
+		rLoc = 3952;
+		rType = 0;
+		vrLen = 1305;
+		vrLoc = 3672;
+	};
+	7BC9C57C10D60B400028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2817104DE64E00F588D4 /* PluginManager.h */;
+		name = "PluginManager.h: 27";
+		rLen = 0;
+		rLoc = 477;
+		rType = 0;
+		vrLen = 787;
+		vrLoc = 0;
+	};
+	7BC9C57E10D60B720028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 138";
+		rLen = 0;
+		rLoc = 3923;
+		rType = 0;
+		vrLen = 361;
+		vrLoc = 3765;
+	};
+	7BC9C57F10D60B720028B570 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "\"[_pluginManager isPluginDisabled:@\"/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.plugin\"]\" should be false. Application Plugin is disabled";
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 54;
+		rType = 1;
+	};
+	7BC9C58010D60B720028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 53";
+		rLen = 0;
+		rLoc = 2016;
+		rType = 0;
+		vrLen = 1142;
+		vrLoc = 1137;
+	};
+	7BC9C58F10D610180028B570 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "\"[_pluginManager._pluginClasses count] > 0\" should be true. Plugin count is 0";
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 49;
+		rType = 1;
+	};
+	7BC9C59010D610180028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 46";
+		rLen = 120;
+		rLoc = 1641;
+		rType = 0;
+		vrLen = 928;
+		vrLoc = 1094;
+	};
+	7BC9C59810D6108E0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
+		name = "MyApplicationDelegate.m: 14";
+		rLen = 0;
+		rLoc = 455;
+		rType = 0;
+		vrLen = 464;
+		vrLoc = 0;
+	};
+	7BC9C59910D6108E0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 124";
+		rLen = 0;
+		rLoc = 3754;
+		rType = 0;
+		vrLen = 1081;
+		vrLoc = 3011;
+	};
+	7BC9C59A10D6108E0028B570 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "\"[_pluginManager isPluginDisabled:@\"/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.plugin\"]\" should be true. Application Plugin is disabled";
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 72;
+		rType = 1;
+	};
+	7BC9C59B10D6108E0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 69";
+		rLen = 0;
+		rLoc = 3049;
+		rType = 0;
+		vrLen = 3036;
+		vrLoc = 1788;
+	};
+	7BC9C59D10D610950028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 69";
+		rLen = 0;
+		rLoc = 3049;
+		rType = 0;
+		vrLen = 1336;
+		vrLoc = 2706;
+	};
+	7BC9C5A210D610C10028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 155";
+		rLen = 0;
+		rLoc = 4545;
+		rType = 0;
+		vrLen = 1459;
+		vrLoc = 4073;
+	};
+	7BC9C5A310D610C10028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 69";
+		rLen = 0;
+		rLoc = 3049;
+		rType = 0;
+		vrLen = 3065;
+		vrLoc = 1787;
+	};
+	7BC9C5A410D610C10028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 69";
+		rLen = 0;
+		rLoc = 3036;
+		rType = 0;
+		vrLen = 3015;
+		vrLoc = 1787;
+	};
+	7BC9C5A810D610E40028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 74";
+		rLen = 0;
+		rLoc = 3462;
+		rType = 0;
+		vrLen = 3006;
+		vrLoc = 1787;
+	};
+	7BC9C5B410D6134B0028B570 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "\"newCount > count\" should be true. activatePlugin did not add the plugin. newcount = 2 count = 2";
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 82;
+		rType = 1;
+	};
+	7BC9C5B510D6134B0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 78";
+		rLen = 0;
+		rLoc = 3813;
+		rType = 0;
+		vrLen = 1468;
+		vrLoc = 3323;
+	};
+	7BC9C5B910D614CC0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 78";
+		rLen = 0;
+		rLoc = 3813;
+		rType = 0;
+		vrLen = 1469;
+		vrLoc = 3323;
+	};
+	7BC9C5BA10D614DC0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 78";
+		rLen = 0;
+		rLoc = 3813;
+		rType = 0;
+		vrLen = 1469;
+		vrLoc = 3323;
+	};
+	7BC9C5BB10D614DC0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 75";
+		rLen = 0;
+		rLoc = 2381;
+		rType = 0;
+		vrLen = 681;
+		vrLoc = 2054;
+	};
+	7BC9C5BC10D614DC0028B570 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Compile /Users/Mlamb/Disassembletron/MyApplicationDelegate.m";
+		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 12;
+		rType = 1;
+	};
+	7BC9C5BD10D614DC0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
+		name = "MyApplicationDelegate.m: 13";
+		rLen = 0;
+		rLoc = 351;
+		rType = 0;
+		vrLen = 584;
+		vrLoc = 0;
+	};
+	7BC9C5BE10D614DE0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
+		name = "MyApplicationDelegate.m: 13";
+		rLen = 0;
+		rLoc = 351;
+		rType = 0;
+		vrLen = 584;
+		vrLoc = 0;
+	};
+	7BC9C5C910D616A70028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
+		name = "MyApplicationDelegate.m: 13";
+		rLen = 0;
+		rLoc = 351;
+		rType = 0;
+		vrLen = 631;
+		vrLoc = 0;
+	};
+	7BC9C5CA10D616A70028B570 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected '{' before 'withPluginName'";
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 127;
+		rType = 1;
+	};
+	7BC9C5CB10D616A70028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 121";
+		rLen = 0;
+		rLoc = 6138;
+		rType = 0;
+		vrLen = 770;
+		vrLoc = 5628;
+	};
+	7BC9C5CE10D616BF0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
+		name = "MyApplicationDelegate.m: 16";
+		rLen = 0;
+		rLoc = 455;
+		rType = 0;
+		vrLen = 631;
+		vrLoc = 0;
+	};
+	7BC9C5CF10D616BF0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */;
+		name = "PluginManager.m: 75";
+		rLen = 0;
+		rLoc = 2381;
+		rType = 0;
+		vrLen = 1007;
+		vrLoc = 0;
+	};
+	7BC9C5D010D616BF0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */;
+		name = "MyDocument.m: 20";
+		rLen = 25;
+		rLoc = 296;
+		rType = 0;
+		vrLen = 2009;
+		vrLoc = 1243;
+	};
+	7BC9C5D110D616BF0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 121";
+		rLen = 0;
+		rLoc = 6138;
+		rType = 0;
+		vrLen = 2367;
+		vrLoc = 4037;
+	};
+	7BC9C5D210D616BF0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 122";
+		rLen = 0;
+		rLoc = 6138;
+		rType = 0;
+		vrLen = 2365;
+		vrLoc = 4037;
+	};
+	7BC9C5D710D6172E0028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 71";
+		rLen = 0;
+		rLoc = 3413;
+		rType = 0;
+		vrLen = 2859;
+		vrLoc = 1994;
+	};
+	7BC9C5DF10D618700028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */;
+		name = "MyApplicationDelegate.m: 15";
+		rLen = 0;
+		rLoc = 455;
+		rType = 0;
+		vrLen = 465;
+		vrLoc = 0;
+	};
+	7BC9C5E010D618700028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 88";
+		rLen = 0;
+		rLoc = 4208;
+		rType = 0;
+		vrLen = 2160;
+		vrLoc = 3934;
+	};
+	7BC9C5E110D618700028B570 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */;
+		name = "DisassembletronTests.m: 90";
+		rLen = 0;
+		rLoc = 4483;
+		rType = 0;
+		vrLen = 3288;
+		vrLoc = 2522;
 	};
 	7BD0BD6E108FCE630016ABCC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;

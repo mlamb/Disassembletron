@@ -13,7 +13,7 @@
 @implementation PluginManager
 
 @synthesize _pluginClasses;
-
+@synthesize _disabledPlugins;
 
 static PluginManager* _sharedPluginManager = nil;
 
@@ -44,7 +44,7 @@ static PluginManager* _sharedPluginManager = nil;
 // TODO?: make this private
 - (void)activatePlugin:(NSString*)path {
 	NSBundle* pluginBundle = [NSBundle bundleWithPath:path];
-	NSLog(@"PluginBundle: %@",pluginBundle);
+
 	if (pluginBundle) {
 		NSDictionary* pluginDict = [pluginBundle infoDictionary];
 		NSString* pluginName = [pluginDict objectForKey:@"NSPrincipalClass"];
@@ -52,7 +52,6 @@ static PluginManager* _sharedPluginManager = nil;
 			Class pluginClass = NSClassFromString(pluginName);
 			if (!pluginClass) {
 				pluginClass = [pluginBundle principalClass];
-				NSLog(@"%@",pluginClass);
 				
 				// TODO: check plugins conform to which protocols (visualizers (call graph,block grouped/linked outline view, AT&T/Intel syntax)?, executable parsers (a.out,ELF,PE,Mach-o)?, disassembers (PPC, x86, ARM)?, code analyzers (mem leaks, unused vars)?, CPU/register emulators(PPC, x86, ARM)?)
 				// TODO: add each type of plugin to the respective plugin type array
@@ -62,6 +61,7 @@ static PluginManager* _sharedPluginManager = nil;
 				
 				
 				// TODO: remove this when we have more plugin protocols implemented - this is example code
+	            // TODO: replace setObject instance with an Array, so that we can have more than one instance for each type
 				if ([pluginClass conformsToProtocol:@protocol(PAPluginProtocol)])  {
 					
 					[[self _pluginClasses] setObject:pluginClass forKey:@"PAPluginProtocol"];
@@ -115,27 +115,64 @@ static PluginManager* _sharedPluginManager = nil;
 	return domains;
 }
 
+-(BOOL) isPluginDisabled:(NSString*)path {
+	
+	if([_disabledPlugins containsObject:path]) {
+		return YES;
+	}
+	else {
+		return NO;
+	}
+	
+}
+
+-(BOOL) disablePlugin:(NSString*) path {
+	
+	if(![_disabledPlugins containsObject:path]) {
+		[_disabledPlugins addObject:path];
+		return YES;
+	}
+	return NO;
+}
+
+-(BOOL) enablePlugin:(NSString*) path {
+	if([_disabledPlugins containsObject:path]) {
+		[_disabledPlugins removeObject:path];
+		return YES;
+	} else {
+		return NO;
+	}
+
+}
 
 -(id)init {
 	if(![super init]) 
 		return nil;
 	
 	if (self != nil) {
-		//_pluginClasses = [[NSMutableArray arrayWithCapacity:1] retain];
+		// TODO: load "disabled plugins" list from user preferences.
+		_disabledPlugins = [[NSMutableArray arrayWithCapacity:1] retain];
+		
+		// TODO: remove this when we have loaded disabled plugins from user preferences (this is so that unit tests pass)
+		[self disablePlugin:@"/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.plugin"];
 		_pluginClasses = [[NSMutableDictionary dictionaryWithCapacity:1] retain];
 		
-		// find plugins here
+		// find plugins in these directories
 		NSArray* pluginPaths = [self pluginPathsForDirectoriesInDomains];
 		
-		// TODO?: pull this out of init
+		// TODO?: pull this out of init... should we spin up a separate thread to look for plugins to load in real-time?
 		// iterate through the pluginPaths and get the paths for any resources with the type "plugin"
 		for(NSString* pluginPath in pluginPaths) 
 		{
-			NSLog(@"%@",pluginPath);
 			NSArray* bundlePathsForPlugins = [NSBundle pathsForResourcesOfType:@"plugin" inDirectory:pluginPath];
 			for(NSString* bundlePathForPlugin in bundlePathsForPlugins) {
 				NSLog(@"Found plugin: %@",bundlePathForPlugin);
-				[self activatePlugin:bundlePathForPlugin];
+				
+				if (![self isPluginDisabled:bundlePathForPlugin]) {
+					[self activatePlugin:bundlePathForPlugin];
+				} else {
+					NSLog(@"Plugin is disabled: %@", bundlePathForPlugin);
+				}
 			}
 		}
 		

@@ -252,7 +252,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>298</real>
+								<real>482</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -264,6 +264,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>2A37F4AAFDCFA73011CA2CEA</string>
+								<string>7B7420E91075705E00670A2F</string>
 								<string>2A37F4ABFDCFA73011CA2CEA</string>
 								<string>2A37F4AFFDCFA73011CA2CEA</string>
 								<string>2A37F4B8FDCFA73011CA2CEA</string>
@@ -278,12 +279,12 @@
 							<array>
 								<array>
 									<integer>4</integer>
-									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {298, 818}}</string>
+							<string>{{0, 0}, {482, 1060}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -295,19 +296,19 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {315, 836}}</string>
+						<string>{{0, 0}, {499, 1078}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>298</real>
+							<real>482</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>76 116 1551 877 0 0 1920 1178 </string>
+						<string>0 59 1920 1119 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>315pt</string>
+					<string>499pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -320,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PluginManager.m</string>
+								<string>DisassembletronTests.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PluginManager.m</string>
+										<string>DisassembletronTests.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7BC9C53310D5C64F0028B570</string>
+										<string>7BC9C5E110D618700028B570</string>
 										<key>history</key>
 										<array>
 											<string>7BB4F25F1030E6BA0047326A</string>
@@ -342,21 +343,21 @@
 											<string>7B6B40411085078B004FB44D</string>
 											<string>7B6B40C910858D13004FB44D</string>
 											<string>7B6B40F11085983E004FB44D</string>
-											<string>7BD0BD6E108FCE630016ABCC</string>
 											<string>7BD0BF0B1090152F0016ABCC</string>
 											<string>7BD0BF0D1090152F0016ABCC</string>
 											<string>7B72CB3810D00324003C5BBC</string>
 											<string>7B5B131910D045EF004C77D9</string>
 											<string>7BC9C32910D5A75D0028B570</string>
-											<string>7BC9C38F10D5B0EF0028B570</string>
-											<string>7BC9C3E110D5B4A10028B570</string>
 											<string>7BC9C45F10D5BC8A0028B570</string>
 											<string>7BC9C48510D5BDE00028B570</string>
 											<string>7BC9C49410D5BE6A0028B570</string>
 											<string>7BC9C4BE10D5BFAD0028B570</string>
-											<string>7BC9C4BF10D5BFAD0028B570</string>
-											<string>7BC9C4C010D5BFAD0028B570</string>
-											<string>7BC9C52F10D5C6310028B570</string>
+											<string>7BC9C54D10D5EA720028B570</string>
+											<string>7BC9C57710D60B400028B570</string>
+											<string>7BC9C5CF10D616BF0028B570</string>
+											<string>7BC9C5D010D616BF0028B570</string>
+											<string>7BC9C5DF10D618700028B570</string>
+											<string>7BC9C5E010D618700028B570</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -368,14 +369,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1231, 640}}</string>
+								<string>{{0, 0}, {1416, 761}}</string>
 								<key>RubberWindowFrame</key>
-								<string>76 116 1551 877 0 0 1920 1178 </string>
+								<string>0 59 1920 1119 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>640pt</string>
+							<string>761pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -388,18 +389,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 645}, {1231, 191}}</string>
+								<string>{{0, 766}, {1416, 312}}</string>
 								<key>RubberWindowFrame</key>
-								<string>76 116 1551 877 0 0 1920 1178 </string>
+								<string>0 59 1920 1119 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>191pt</string>
+							<string>312pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1231pt</string>
+					<string>1416pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -552,17 +553,17 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>7BC9C53110D5C6310028B570</string>
+		<string>7BC9C5E210D618700028B570</string>
 		<string>7BC9C33D10D5A7890028B570</string>
 		<string>7BC9C33010D5A75D0028B570</string>
 		<string>7BC9C33110D5A75D0028B570</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>7BB4F2511030E6A20047326A</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/Mlamb/Disassembletron/Disassembletron.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>76 116 1551 877 0 0 1920 1178 </string>
+	<string>0 59 1920 1119 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -578,14 +579,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PluginManager.m</string>
+								<string>DisassembletronTests.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -602,6 +601,8 @@
 							<string>285pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -943,7 +944,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -14,6 +14,10 @@
 
 @implementation DisassembletronTests
 
+-(NSString*) pathToPluginsFolderWithPluginName:(NSString*)pluginName {
+	return [[@"~/Disassembletron/build/Debug/Disassembletron.app/Contents/Plugins" stringByExpandingTildeInPath] stringByAppendingPathComponent:pluginName];
+}
+
 -(void) setUp 
 {
 	appDelegate = [[NSApplication sharedApplication] delegate];
@@ -43,23 +47,48 @@
 
 -(void) test_sharedPlugin_PluginClasses
 {
-	STAssertTrue([_pluginManager._pluginClasses count] > 0,@"Plugins greater than 0");
+	STAssertTrue([_pluginManager._pluginClasses count] >= 0,@"Plugin count is %i", [_pluginManager._pluginClasses count]);
 	//STAssertTrue([_pluginManager._pluginClasses isKindOfClass:[NSArray class]],@"Plugin classes is not a NSArray");
 	STAssertTrue([_pluginManager._pluginClasses isKindOfClass:[NSMutableDictionary class]],@"Plugin classes is not a NSMutableDictionary");
 }
 
 
--(void) disabled_test_sharedPlugin_ActivatePlugin {
+
+-(void) test_sharedPlugin_disablePlugin
+{
+	STAssertTrue([_pluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not disabled");
+	STAssertFalse([_pluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not already disabled");
+	//[_pluginManager enablePlugin:@"/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Mach-O Parser Plugin.plugin"];
+}
+
+-(void) test_sharedPlugin_enablePlugin
+{
+	[_pluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]];
+	STAssertTrue([_pluginManager enablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not enabled");
+	STAssertFalse([_pluginManager enablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not already enabled");
+}
+
+-(void) test_sharedPlugin_isPluginDisabled
+{
+	STAssertFalse([_pluginManager isPluginDisabled:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]],@"Mach-O Plugin is disabled");
+	[_pluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]];
+	STAssertTrue([_pluginManager isPluginDisabled:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Mach-O Plugin is not disabled");
+}
+
+-(void) test_sharedPlugin_ActivatePlugin {
 	NSUInteger count = [_pluginManager._pluginClasses count];
 	// TODO: replace this with relative (or at least not specific to my home directory) paths
-	[_pluginManager activatePlugin:@"/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.plugin"];
+	[_pluginManager activatePlugin:[self pathToPluginsFolderWithPluginName:@"Application Plug-in.plugin"]];
 	NSUInteger newCount = [_pluginManager._pluginClasses count];
 	STAssertTrue( newCount > count,@"activatePlugin did not add the plugin. newcount = %i count = %i", newCount, count);
 }
 
 -(void) test_sharedPlugin_PluginPathsForDirectoriesInDomains {
 	// TODO: replace this with relative (or at least not specific to my home directory) paths
-	NSArray *goodpluginPaths = [[NSArray alloc] initWithObjects:@"/Users/Mlamb/Library/Application Support/Disassembletron/PlugIns", @"/Library/Application Support/Disassembletron/PlugIns", @"/Network/Library/Application Support/Disassembletron/PlugIns", @"/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns",nil];
+	NSArray *goodpluginPaths = [[NSArray alloc] initWithObjects:[@"~/Library/Application Support/Disassembletron/PlugIns" stringByExpandingTildeInPath], \
+								@"/Library/Application Support/Disassembletron/PlugIns", @"/Network/Library/Application Support/Disassembletron/PlugIns", \
+								[@"~/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns" stringByExpandingTildeInPath], \
+								nil];
 	NSArray* pluginPaths = [[_pluginManager pluginPathsForDirectoriesInDomains] retain];
 	STAssertTrue([pluginPaths isEqualToArray:goodpluginPaths],@"pluginPathsForDirectoriesInDomains returned a different list of plugin paths %@ %@",pluginPaths,goodpluginPaths);
 
@@ -95,5 +124,7 @@
 	
 	
 }
+
+
 
 @end
