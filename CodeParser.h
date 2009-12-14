@@ -28,13 +28,14 @@
 + (NSArray*) registerFileTypesHandled;
 
 
+@optional
 // parse parses the file into it's component parts.  Is called after file is opened
-- (BOOL) parse
+- (BOOL) parse;
 
 // accessors for the respective parts of a binary
-- (NSArray*) getSegments
-- (NSArray*) getSections
-- (NSArray*) getSymbols
+- (NSArray*) getSegments;
+- (NSArray*) getSections;
+- (NSArray*) getSymbols;
 
 // accessors for arbitrary memory locations  (may not be needed)  TODO: decide on "ForMemory" vs "ForAddress" vs "ForMemoryAddress" or maybe even "ForVMAddress"
 - (id) getSegmentForMemory:(id) address;

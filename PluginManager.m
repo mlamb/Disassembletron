@@ -7,8 +7,8 @@
 //
 
 #import "PluginManager.h"
-
-
+#import "CodeParser.h"
+#import "PluginInterface.h"
 
 @implementation PluginManager
 
@@ -44,6 +44,7 @@ static PluginManager* _sharedPluginManager = nil;
 // TODO?: make this private
 - (void)activatePlugin:(NSString*)path {
 	NSBundle* pluginBundle = [NSBundle bundleWithPath:path];
+	NSLog(@"PluginBundle: %@",pluginBundle);
 	if (pluginBundle) {
 		NSDictionary* pluginDict = [pluginBundle infoDictionary];
 		NSString* pluginName = [pluginDict objectForKey:@"NSPrincipalClass"];
@@ -58,8 +59,20 @@ static PluginManager* _sharedPluginManager = nil;
 				
 
 				//if ([pluginClass conformsToProtocol:@protocol(PAPluginProtocol)] && [pluginClass isKindOfClass:[NSObject class]] && [pluginClass initializeClass:pluginBundle]) {
-				[_pluginClasses addObject:pluginClass]; 
-				//[_pluginClasses setValue:pluginClass forKey:[pluginClass className]];
+				
+				
+				// TODO: remove this when we have more plugin protocols implemented - this is example code
+				if ([pluginClass conformsToProtocol:@protocol(PAPluginProtocol)])  {
+					
+					[[self _pluginClasses] setObject:pluginClass forKey:@"PAPluginProtocol"];
+					
+				}
+				
+				if ([pluginClass conformsToProtocol:@protocol(CodeParser)])  {
+					
+					[[self _pluginClasses] setObject:pluginClass forKey:@"CodeParser"];
+					
+				}
 				
 				// TODO: query the plugin for additional configuration
 				// use [pluginBundle objectForInfoDictionaryKey:@"somekey"]; to get the key out of the info.plist
@@ -108,7 +121,8 @@ static PluginManager* _sharedPluginManager = nil;
 		return nil;
 	
 	if (self != nil) {
-		_pluginClasses = [[NSMutableArray arrayWithCapacity:1] retain];
+		//_pluginClasses = [[NSMutableArray arrayWithCapacity:1] retain];
+		_pluginClasses = [[NSMutableDictionary dictionaryWithCapacity:1] retain];
 		
 		// find plugins here
 		NSArray* pluginPaths = [self pluginPathsForDirectoriesInDomains];
@@ -121,7 +135,7 @@ static PluginManager* _sharedPluginManager = nil;
 			NSArray* bundlePathsForPlugins = [NSBundle pathsForResourcesOfType:@"plugin" inDirectory:pluginPath];
 			for(NSString* bundlePathForPlugin in bundlePathsForPlugins) {
 				NSLog(@"Found plugin: %@",bundlePathForPlugin);
-				//[self activatePlugin:bundlePathForPlugin];
+				[self activatePlugin:bundlePathForPlugin];
 			}
 		}
 		

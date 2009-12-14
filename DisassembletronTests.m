@@ -44,12 +44,12 @@
 -(void) test_sharedPlugin_PluginClasses
 {
 	STAssertTrue([_pluginManager._pluginClasses count] > 0,@"Plugins greater than 0");
-	STAssertTrue([_pluginManager._pluginClasses isKindOfClass:[NSArray class]],@"Plugin classes is not a NSArray");
-	//STAssertTrue([_pluginManager._pluginClasses isKindOfClass:[NSMutableDictionary class]],@"Plugin classes is not a NSArray");
+	//STAssertTrue([_pluginManager._pluginClasses isKindOfClass:[NSArray class]],@"Plugin classes is not a NSArray");
+	STAssertTrue([_pluginManager._pluginClasses isKindOfClass:[NSMutableDictionary class]],@"Plugin classes is not a NSMutableDictionary");
 }
 
 
--(void) test_sharedPlugin_ActivatePlugin {
+-(void) disabled_test_sharedPlugin_ActivatePlugin {
 	NSUInteger count = [_pluginManager._pluginClasses count];
 	// TODO: replace this with relative (or at least not specific to my home directory) paths
 	[_pluginManager activatePlugin:@"/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.plugin"];
