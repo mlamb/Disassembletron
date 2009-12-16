@@ -14,7 +14,7 @@
 
 @implementation DisassembletronTests
 
--(NSString*) pathToPluginsFolderWithPluginName:(NSString*)pluginName 
+-(NSString*) pathToPluginsFolderWithPluginName:(NSString*) pluginName 
 {
 	return [[@"~/Disassembletron/build/Debug/Disassembletron.app/Contents/Plugins" stringByExpandingTildeInPath] stringByAppendingPathComponent:pluginName];
 }

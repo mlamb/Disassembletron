@@ -191,10 +191,12 @@ static PluginManager* _sharedPluginManager = nil;
 		for (NSString* pluginPath in pluginPaths) 
 		{
 			NSArray* bundlePathsForPlugins = [NSBundle pathsForResourcesOfType:@"plugin" inDirectory:pluginPath];
-			for (NSString* bundlePathForPlugin in bundlePathsForPlugins) {
+			for (NSString* bundlePathForPlugin in bundlePathsForPlugins) 
+			{
 				NSLog (@"Found plugin: %@", bundlePathForPlugin);
 				
-				if (![self isPluginDisabled:bundlePathForPlugin]) {
+				if (![self isPluginDisabled:bundlePathForPlugin]) 
+				{
 					[self activatePlugin:bundlePathForPlugin];
 				} 
 				else 

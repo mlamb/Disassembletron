@@ -19,7 +19,7 @@
 //	initialization fails, it should return NO, and the plug-in won't be called again.
 
 // TODO: investigate handing off an NSData object to the CodeParser so that it can get byte specific data.  (not sure if this should be in initialize, or parse though.
-+(BOOL) initializeClass:(NSBundle*)theBundle; //withData:(NSData*);
++(BOOL) initializeClass:(NSBundle*) theBundle; //withData:(NSData*);
 
 
 // registerFileTypesHandled: is called during plugin discovery to register the file types that 

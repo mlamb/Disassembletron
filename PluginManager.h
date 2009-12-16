@@ -19,10 +19,10 @@
 +(PluginManager*) sharedInstance;
 
 -(NSArray*) pluginPathsForDirectoriesInDomains;
--(void) activatePlugin:(NSString*)path;
--(BOOL) isPluginDisabled:(NSString*)path;
--(BOOL) disablePlugin:(NSString*)path;
--(BOOL) enablePlugin:(NSString*)path;
+-(void) activatePlugin:(NSString*) path;
+-(BOOL) isPluginDisabled:(NSString*) path;
+-(BOOL) disablePlugin:(NSString*) path;
+-(BOOL) enablePlugin:(NSString*) path;
 
 
 @property (nonatomic,retain) NSMutableArray* _disabledPlugins;		//	an array of disabled plugins
