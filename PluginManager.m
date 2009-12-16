@@ -102,6 +102,7 @@ static PluginManager* _sharedPluginManager = nil;
 {
 	// domain paths are used as a basis for searching for plugins.
 	// appending subfolders like 'plugins' to them should list all folders that are used to store plugins.
+	
 	// TODO: move this to an ivar
 	static NSMutableArray* domains;
 	

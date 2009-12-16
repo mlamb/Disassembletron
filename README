@@ -1,3 +1,32 @@
-This is a test.
+Notes on disassembler:
 
-This is another test.
+Openfilefordatatype() or whatever the nsdocument method name is -  
+should check against the "file" shell command to see what type of file  
+then use a registered "file parser" plugin
+
+Open the app bundle, read all resources 
+(icon,images,bundles,frameworksetc) open the default binary, parse  
+sections, put code into blocks, pass blocks to visualizer, visualizer  
+displays blocks
+
+Apply hex patches.  Roll-back patches.
+
+Allow editing of symbols, save as standard debug symbol formats.
+
+Visualizers: call graph, outline (collapsible) view with arrow/links,  
+hex view, ????
+
+Parsers: mach-o binary, pe binary, elf binary
+
+CPU emulators: x86, x86_64, ppc, ARM
+
+Intel vs AT&T syntax
+
+Need Plugin UI to disable plugins on startup, should be persistent  
+file (provide a separate app to manage if main app crashes?)
+
+Plugins should have info.plist entries for the prefs interface
+
+Investigate Apple's documentation of nsbundle contexthelpforkey as it  
+has info on help files
+
