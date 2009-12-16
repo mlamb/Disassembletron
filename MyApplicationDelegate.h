@@ -2,11 +2,12 @@
 #import "PluginManager.h"
 
 
-@interface MyApplicationDelegate : NSObject {
+@interface MyApplicationDelegate : NSObject 
+{
 	PluginManager* _thePluginManager;
 }
 
-- (BOOL) applicationShouldOpenUntitledFile:(NSApplication*) sender;
-- (void) applicationDidFinishLaunching:(NSNotification *)aNotification;
+-(BOOL) applicationShouldOpenUntitledFile:(NSApplication*) sender;
+-(void) applicationDidFinishLaunching:(NSNotification*) aNotification;
 
 @end

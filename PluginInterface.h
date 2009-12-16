@@ -29,12 +29,12 @@
 //	This method should do all global plug-in initialization, such as loading preferences; if
 //	initialization fails, it should return NO, and the plug-in won't be called again.
 
-+ (BOOL)initializeClass:(NSBundle*)theBundle;
++(BOOL) initializeClass:(NSBundle*) theBundle;
 
 //	terminateClass is called once when the plug-in won't be used again. NSBundle-based plug-ins
 //	can't be unloaded at present, this capability may be added to Cocoa in the future.
 
-+ (void)terminateClass;
++(void) terminateClass;
 
 //	pluginsFor: is called whenever the calling application wants to instantiate a plug-in class.
 //	An object is passed in as argument; this object might be validated by the plug-in class to
@@ -44,17 +44,17 @@
 //	itself, and the plug-in instances are all autoreleased, so the calling application needs to retain
 //	whatever it wants to keep. If no instances were generated, this returns nil.
 
-+ (NSEnumerator*)pluginsFor:(id)anObject;
++(NSEnumerator*) pluginsFor:(id) anObject;
 
 //	theView returns a plug-in instance's view. In the example, this is inserted into the main
 //	window's tab view.
 
-- (NSView*)theView;
+-(NSView*) theView;
 
 //	theViewName returns the name associated with a plug-in instance's view. In the example, this
 //	is the label given to the tab.
 
-- (NSString*)theViewName;
+-(NSString*) theViewName;
 
 @end
 

@@ -10,8 +10,8 @@
 #import "PluginManager.h"
 
 
-@interface DisassembletronTests : SenTestCase {
-
+@interface DisassembletronTests : SenTestCase 
+{
 	PluginManager* _pluginManager;
 	id appDelegate;
 }

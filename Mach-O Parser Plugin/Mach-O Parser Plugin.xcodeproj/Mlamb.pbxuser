@@ -56,22 +56,13 @@
 			PBXWorkspaceStateSaveDate = 282442723;
 		};
 		perUserProjectItems = {
-			7BC9C41510D5BAA20028B570 = 7BC9C41510D5BAA20028B570 /* PBXTextBookmark */;
-			7BC9C41710D5BAA20028B570 = 7BC9C41710D5BAA20028B570 /* PBXTextBookmark */;
-			7BC9C43310D5BB700028B570 = 7BC9C43310D5BB700028B570 /* PBXTextBookmark */;
-			7BC9C43410D5BB700028B570 = 7BC9C43410D5BB700028B570 /* PBXTextBookmark */;
-			7BC9C43510D5BB700028B570 = 7BC9C43510D5BB700028B570 /* PBXTextBookmark */;
-			7BC9C44F10D5BBEC0028B570 /* PBXTextBookmark */ = 7BC9C44F10D5BBEC0028B570 /* PBXTextBookmark */;
-			7BC9C45010D5BBEC0028B570 /* PBXTextBookmark */ = 7BC9C45010D5BBEC0028B570 /* PBXTextBookmark */;
-			7BC9C45110D5BBEC0028B570 /* PBXTextBookmark */ = 7BC9C45110D5BBEC0028B570 /* PBXTextBookmark */;
 			7BC9C50710D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50710D5C4D50028B570 /* PBXTextBookmark */;
 			7BC9C50810D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50810D5C4D50028B570 /* PBXTextBookmark */;
 			7BC9C50910D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50910D5C4D50028B570 /* PBXTextBookmark */;
 			7BC9C50A10D5C4D50028B570 /* PlistBookmark */ = 7BC9C50A10D5C4D50028B570 /* PlistBookmark */;
 			7BC9C50B10D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50B10D5C4D50028B570 /* PBXTextBookmark */;
 			7BC9C50C10D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50C10D5C4D50028B570 /* PBXTextBookmark */;
-			7BC9C50D10D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50D10D5C4D50028B570 /* PBXTextBookmark */;
-			7BC9C51410D5C52F0028B570 /* PBXTextBookmark */ = 7BC9C51410D5C52F0028B570 /* PBXTextBookmark */;
+			7BC9C5E410D619030028B570 /* PBXTextBookmark */ = 7BC9C5E410D619030028B570 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 7BC9C40A10D5BA170028B570 /* Source Control */;
 		userBuildSettings = {
@@ -128,86 +119,6 @@
 			sepNavVisRange = "{46, 317}";
 			sepNavWindowFrame = "{{15, 302}, {1079, 871}}";
 		};
-	};
-	7BC9C41510D5BAA20028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 32DBCF630370AF2F00C91783 /* Mach-O Parser Plugin_Prefix.pch */;
-		name = "Mach-O Parser Plugin_Prefix.pch: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 172;
-		vrLoc = 0;
-	};
-	7BC9C41710D5BAA20028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7BC9C41110D5BA490028B570 /* MachOParser.h */;
-		name = "MachOParser.h: 10";
-		rLen = 0;
-		rLoc = 199;
-		rType = 0;
-		vrLen = 259;
-		vrLoc = 0;
-	};
-	7BC9C43310D5BB700028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7BC9C41210D5BA490028B570 /* MachOParser.m */;
-		name = "MachOParser.m: 22";
-		rLen = 0;
-		rLoc = 357;
-		rType = 0;
-		vrLen = 317;
-		vrLoc = 46;
-	};
-	7BC9C43410D5BB700028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7BC9C40C10D5BA180028B570 /* CodeParser.h */;
-		name = "CodeParser.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 545;
-		vrLoc = 0;
-	};
-	7BC9C43510D5BB700028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7BC9C40C10D5BA180028B570 /* CodeParser.h */;
-		name = "CodeParser.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 545;
-		vrLoc = 0;
-	};
-	7BC9C44F10D5BBEC0028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7BC9C40C10D5BA180028B570 /* CodeParser.h */;
-		name = "CodeParser.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 545;
-		vrLoc = 0;
-	};
-	7BC9C45010D5BBEC0028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 32DBCF630370AF2F00C91783 /* Mach-O Parser Plugin_Prefix.pch */;
-		name = "Mach-O Parser Plugin_Prefix.pch: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 172;
-		vrLoc = 0;
-	};
-	7BC9C45110D5BBEC0028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7BC9C41210D5BA490028B570 /* MachOParser.m */;
-		name = "MachOParser.m: 22";
-		rLen = 0;
-		rLoc = 357;
-		rType = 0;
-		vrLen = 317;
-		vrLoc = 46;
 	};
 	7BC9C50710D5C4D50028B570 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -271,17 +182,7 @@
 		vrLen = 259;
 		vrLoc = 0;
 	};
-	7BC9C50D10D5C4D50028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7BC9C41110D5BA490028B570 /* MachOParser.h */;
-		name = "MachOParser.h: 10";
-		rLen = 0;
-		rLoc = 199;
-		rType = 0;
-		vrLen = 259;
-		vrLoc = 0;
-	};
-	7BC9C51410D5C52F0028B570 /* PBXTextBookmark */ = {
+	7BC9C5E410D619030028B570 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 7BC9C41110D5BA490028B570 /* MachOParser.h */;
 		name = "MachOParser.h: 10";

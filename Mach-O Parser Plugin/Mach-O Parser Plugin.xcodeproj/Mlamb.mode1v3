@@ -334,7 +334,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7BC9C51410D5C52F0028B570</string>
+										<string>7BC9C5E410D619030028B570</string>
 										<key>history</key>
 										<array>
 											<string>7BC9C50710D5C4D50028B570</string>
@@ -541,7 +541,6 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>7BC9C41D10D5BAA20028B570</string>
-		<string>/Users/Mlamb/Disassembletron/Mach-O Parser Plugin/Mach-O Parser Plugin.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>182 650 788 504 0 0 1920 1178 </string>

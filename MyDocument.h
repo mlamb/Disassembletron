@@ -9,7 +9,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-static NSString *ToolbarIdentifier = @"ToolBarIdentifier";
+static NSString* ToolbarIdentifier = @"ToolBarIdentifier";
 
 @interface MyDocument : NSDocument
 {

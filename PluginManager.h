@@ -8,28 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
-
-
-
-
-@interface PluginManager : NSObject {
-	//NSMutableArray* _pluginClasses;
+@interface PluginManager : NSObject 
+{
 	NSMutableDictionary* _pluginClasses;
 	NSMutableArray* _disabledPlugins;
 }
 
 +(id)alloc;
 -(id)init;
-+(PluginManager *) sharedInstance;
-
++(PluginManager*) sharedInstance;
 
 -(NSArray*) pluginPathsForDirectoriesInDomains;
--(void) activatePlugin:(NSString *)path;
--(BOOL) isPluginDisabled:(NSString *)path;
--(BOOL) disablePlugin:(NSString *)path;
--(BOOL) enablePlugin:(NSString *)path;
+-(void) activatePlugin:(NSString*)path;
+-(BOOL) isPluginDisabled:(NSString*)path;
+-(BOOL) disablePlugin:(NSString*)path;
+-(BOOL) enablePlugin:(NSString*)path;
 
 
-@property (nonatomic,retain) NSMutableArray* _disabledPlugins;		//	an array of stuff
-@property (nonatomic,retain) NSMutableDictionary* _pluginClasses;		//	an array of stuff
+@property (nonatomic,retain) NSMutableArray* _disabledPlugins;		//	an array of disabled plugins
+@property (nonatomic,retain) NSMutableDictionary* _pluginClasses;		//	all the plugin classes accessible by category key
+
 @end
