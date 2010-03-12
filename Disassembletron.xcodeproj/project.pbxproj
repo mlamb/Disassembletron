@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* MyDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
+		7B566A3310D8AEDF00272483 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B566A3210D8AEDF00272483 /* Preferences.xib */; };
 		7B6B4023108506C1004FB44D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		7B7420E81075705300670A2F /* DisassembletronTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */; };
+		7B7A41A51149D1BD00646F29 /* DisassembleTron.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7B7A41A41149D1BD00646F29 /* DisassembleTron.icns */; };
+		7B7A41A61149D1BD00646F29 /* DisassembleTron.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7B7A41A41149D1BD00646F29 /* DisassembleTron.icns */; };
 		7B9C2819104DE64E00F588D4 /* PluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */; };
 		7BA964B110327F970025FCF1 /* MyApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */; };
 		7BB4A16310D03F05009A81A2 /* Application Plug-in.plugin in Resources */ = {isa = PBXBuildFile; fileRef = 7BB4A15310D03F05009A81A2 /* Application Plug-in.plugin */; };
@@ -73,10 +76,12 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* Disassembletron_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disassembletron_Prefix.pch; sourceTree = "<group>"; };
 		7B52318A10B229F0005B8B73 /* CodeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeParser.h; sourceTree = "<group>"; };
+		7B566A3210D8AEDF00272483 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		7B7420C810740EB400670A2F /* MyUnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyUnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7420C910740EB400670A2F /* MyUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyUnitTest-Info.plist"; sourceTree = "<group>"; };
 		7B7420E61075705300670A2F /* DisassembletronTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisassembletronTests.h; sourceTree = "<group>"; };
 		7B7420E71075705300670A2F /* DisassembletronTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisassembletronTests.m; sourceTree = "<group>"; };
+		7B7A41A41149D1BD00646F29 /* DisassembleTron.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DisassembleTron.icns; sourceTree = "<group>"; };
 		7B9C2817104DE64E00F588D4 /* PluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginManager.h; sourceTree = "<group>"; };
 		7B9C2818104DE64E00F588D4 /* PluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginManager.m; sourceTree = "<group>"; };
 		7BA964AF10327F970025FCF1 /* MyApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApplicationDelegate.h; sourceTree = "<group>"; };
@@ -175,6 +180,7 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7B7A41A41149D1BD00646F29 /* DisassembleTron.icns */,
 				7BC9C46910D5BCFC0028B570 /* Mach-O Parser Plugin.plugin */,
 				7BB4A15310D03F05009A81A2 /* Application Plug-in.plugin */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
@@ -182,6 +188,7 @@
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
 				1DDD58280DA1D0D100B32029 /* MyDocument.xib */,
 				1DDD582A0DA1D0D100B32029 /* MainMenu.xib */,
+				7B566A3210D8AEDF00272483 /* Preferences.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -212,11 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B7420CD10740EB500670A2F /* Build configuration list for PBXNativeTarget "MyUnitTest" */;
 			buildPhases = (
+				7BB4A11C10D03CFF009A81A2 /* CopyFiles */,
 				7B7420C310740EB400670A2F /* Resources */,
 				7B7420C410740EB400670A2F /* Sources */,
 				7B7420C510740EB400670A2F /* Frameworks */,
 				7B7420C610740EB400670A2F /* ShellScript */,
-				7BB4A11C10D03CFF009A81A2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -272,6 +279,7 @@
 			files = (
 				7BB4A16310D03F05009A81A2 /* Application Plug-in.plugin in Resources */,
 				7BC9C47610D5BCFC0028B570 /* Mach-O Parser Plugin.plugin in Resources */,
+				7B7A41A61149D1BD00646F29 /* DisassembleTron.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,8 @@
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
 				7BB4A16410D03F05009A81A2 /* Application Plug-in.plugin in Resources */,
 				7BC9C47710D5BCFC0028B570 /* Mach-O Parser Plugin.plugin in Resources */,
+				7B566A3310D8AEDF00272483 /* Preferences.xib in Resources */,
+				7B7A41A51149D1BD00646F29 /* DisassembleTron.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@
 {
 	NSMutableDictionary* _pluginClasses;
 	NSMutableArray* _disabledPlugins;
+	NSMutableArray* domains;
 }
 
 +(id)alloc;

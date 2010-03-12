@@ -13,7 +13,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					396,
 					20,
 					48,
 					43,
@@ -52,17 +52,17 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 282442723;
-			PBXWorkspaceStateSaveDate = 282442723;
+			PBXPerProjectTemplateStateSaveDate = 283841783;
+			PBXWorkspaceStateSaveDate = 283841783;
 		};
 		perUserProjectItems = {
 			7BC9C50710D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50710D5C4D50028B570 /* PBXTextBookmark */;
 			7BC9C50810D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50810D5C4D50028B570 /* PBXTextBookmark */;
 			7BC9C50910D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50910D5C4D50028B570 /* PBXTextBookmark */;
-			7BC9C50A10D5C4D50028B570 /* PlistBookmark */ = 7BC9C50A10D5C4D50028B570 /* PlistBookmark */;
-			7BC9C50B10D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50B10D5C4D50028B570 /* PBXTextBookmark */;
-			7BC9C50C10D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50C10D5C4D50028B570 /* PBXTextBookmark */;
-			7BC9C5E410D619030028B570 /* PBXTextBookmark */ = 7BC9C5E410D619030028B570 /* PBXTextBookmark */;
+			7BE3940610EB1507009EC77F /* PBXTextBookmark */ = 7BE3940610EB1507009EC77F /* PBXTextBookmark */;
+			7BE3940710EB1507009EC77F /* PBXTextBookmark */ = 7BE3940710EB1507009EC77F /* PBXTextBookmark */;
+			7BE3940810EB1507009EC77F /* PlistBookmark */ = 7BE3940810EB1507009EC77F /* PlistBookmark */;
+			7BE3945110EBBE44009EC77F /* PlistBookmark */ = 7BE3945110EBBE44009EC77F /* PlistBookmark */;
 		};
 		sourceControlManager = 7BC9C40A10D5BA170028B570 /* Source Control */;
 		userBuildSettings = {
@@ -70,7 +70,7 @@
 	};
 	089C167EFE841241C02AAC07 /* English */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {519, 252}}";
+			sepNavIntBoundsRect = "{{0, 0}, {519, 243}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 45}";
 		};
@@ -106,7 +106,7 @@
 	};
 	7BC9C41110D5BA490028B570 /* MachOParser.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {519, 252}}";
+			sepNavIntBoundsRect = "{{0, 0}, {519, 243}}";
 			sepNavSelRange = "{199, 0}";
 			sepNavVisRange = "{0, 259}";
 			sepNavWindowFrame = "{{61, 260}, {1079, 871}}";
@@ -150,19 +150,17 @@
 		vrLen = 317;
 		vrLoc = 46;
 	};
-	7BC9C50A10D5C4D50028B570 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			NSPrincipalClass,
-		);
-		name = "/Users/Mlamb/Disassembletron/Mach-O Parser Plugin/Info.plist";
+	7BE3940610EB1507009EC77F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BC9C41110D5BA490028B570 /* MachOParser.h */;
+		name = "MachOParser.h: 10";
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 199;
+		rType = 0;
+		vrLen = 259;
+		vrLoc = 0;
 	};
-	7BC9C50B10D5C4D50028B570 /* PBXTextBookmark */ = {
+	7BE3940710EB1507009EC77F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 089C167EFE841241C02AAC07 /* English */;
 		name = "InfoPlist.strings: 1";
@@ -172,25 +170,31 @@
 		vrLen = 45;
 		vrLoc = 0;
 	};
-	7BC9C50C10D5C4D50028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7BC9C41110D5BA490028B570 /* MachOParser.h */;
-		name = "MachOParser.h: 10";
+	7BE3940810EB1507009EC77F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			NSPrincipalClass,
+		);
+		name = "/Users/Mlamb/Disassembletron/Mach-O Parser Plugin/Info.plist";
 		rLen = 0;
-		rLoc = 199;
-		rType = 0;
-		vrLen = 259;
-		vrLoc = 0;
+		rLoc = 0;
 	};
-	7BC9C5E410D619030028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7BC9C41110D5BA490028B570 /* MachOParser.h */;
-		name = "MachOParser.h: 10";
+	7BE3945110EBBE44009EC77F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			DAPluginConfig,
+			HandledFileTypes,
+			0,
+		);
+		name = "/Users/Mlamb/Disassembletron/Mach-O Parser Plugin/Info.plist";
 		rLen = 0;
-		rLoc = 199;
-		rType = 0;
-		vrLen = 259;
-		vrLoc = 0;
+		rLoc = 9223372036854775807;
 	};
 	8D5B49AC048680CD000E48DA /* Mach-O Parser Plugin */ = {
 		activeExec = 0;

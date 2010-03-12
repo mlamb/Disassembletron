@@ -74,20 +74,28 @@
 	return nil;
 }
 
--(BOOL) readFromData:(NSData*)data ofType:(NSString*) typeName error:(NSError**) outError
-{
-    // Insert code here to read your document from the given data of the specified type.  If the given outError != NULL, ensure that you set *outError when returning NO.
 
-    // You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead. 
-    
-    // For applications targeted for Panther or earlier systems, you should use the deprecated API -loadDataRepresentation:ofType. In this case you can also choose to override -readFromFile:ofType: or -loadFileWrapperRepresentation:ofType: instead.
-    
-    if (outError != NULL) 
+-(BOOL) readFromFileWrapper:(NSFileWrapper *)fileWrapper ofType:(NSString *)typeName error:(NSError **)outError
+{
+	NSString *fileType = nil;
+	
+	if ([fileWrapper isDirectory]) {
+		fileType = [typeName stringByAppendingFormat:@" %@", @"Directory"];
+	}
+	if ([fileWrapper isRegularFile]) {
+		fileType = [typeName stringByAppendingFormat:@" %@", @"RegularFile"];
+	}
+	
+	
+	NSRunAlertPanel(@"readFromFileWrapper - " , fileType, @"Ok", nil, nil);
+	
+	if (outError != NULL) 
 	{
 		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
 	}
     return YES;
 }
+
 
 #pragma mark -
 #pragma mark NSToolbar delegate methods

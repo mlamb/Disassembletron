@@ -66,24 +66,31 @@ static PluginManager* _sharedPluginManager = nil;
 				// TODO: add each type of plugin to the respective plugin type array
 				
 
-				//if ([pluginClass conformsToProtocol:@protocol(PAPluginProtocol)] && [pluginClass isKindOfClass:[NSObject class]] && [pluginClass initializeClass:pluginBundle]) {
+				//[pluginClass isKindOfClass:[NSObject class]] && [pluginClass initializeClass:pluginBundle]
 				
 				
-				// TODO: remove this when we have more plugin protocols implemented - this is example code
-	            // TODO: replace setObject instance with an Array, so that we can have more than one instance for each type
-				if ([pluginClass conformsToProtocol:@protocol(PAPluginProtocol)])  
-				{
+				
+				// TODO: move this block to somewhere more "global" and maybe make it more elegant
+				NSArray *supportedPluginProtocols;
+				
+				supportedPluginProtocols = [[NSArray alloc] initWithObjects:@"PAPluginProtocol",@"CodeParser",nil];
+				
+
+				// loop through the supported plugin types and check if the plugin in question conforms to the protocol
+				Protocol *pluginProtocol;
+				
+				for (NSString *pluginTypeKey in supportedPluginProtocols) {
+					pluginProtocol = NSProtocolFromString(pluginTypeKey);
 					
-					[[self _pluginClasses] setObject:pluginClass forKey:@"PAPluginProtocol"];
-					
+					if([pluginClass conformsToProtocol:pluginProtocol]) {
+						// TODO: replace setObject with an NSArray addObject, so that we can have more than one instance for each type
+						[[self _pluginClasses] setObject:pluginClass forKey: pluginTypeKey];
+					}
 				}
 				
-				if ([pluginClass conformsToProtocol:@protocol(CodeParser)])  
-				{
-					
-					[[self _pluginClasses] setObject:pluginClass forKey:@"CodeParser"];
-					
-				}
+				// clean up 
+				[supportedPluginProtocols release];
+				
 				
 				// TODO: query the plugin for additional configuration
 				// use [pluginBundle objectForInfoDictionaryKey:@"somekey"]; to get the key out of the info.plist
@@ -104,7 +111,7 @@ static PluginManager* _sharedPluginManager = nil;
 	// appending subfolders like 'plugins' to them should list all folders that are used to store plugins.
 	
 	// TODO: move this to an ivar
-	static NSMutableArray* domains;
+	//static NSMutableArray* domains;
 	
 	if (domains)
 	{
@@ -169,27 +176,9 @@ static PluginManager* _sharedPluginManager = nil;
 
 }
 
--(id) init {
-	if (![super init]) 
-	{
-		return nil;
-	}
-	
-	if (self != nil) 
-	{
-		// TODO: load "disabled plugins" list from user preferences.
-		_disabledPlugins = [[NSMutableArray arrayWithCapacity:1] retain];
-		
-		// TODO: remove this when we have loaded disabled plugins from user preferences (this is so that unit tests pass)
-		[self disablePlugin:@"/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.plugin"];
-		_pluginClasses = [[NSMutableDictionary dictionaryWithCapacity:1] retain];
-		
-		// find plugins in these directories
-		NSArray* pluginPaths = [self pluginPathsForDirectoriesInDomains];
-		
-		// TODO?: pull this out of init... should we spin up a separate thread to look for plugins to load in real-time?
+- (void) findAndActivatePluginsForDirectories: (NSArray *) pluginPaths  {
 		// iterate through the pluginPaths and get the paths for any resources with the type "plugin"
-		for (NSString* pluginPath in pluginPaths) 
+		  for (NSString* pluginPath in pluginPaths) 
 		{
 			NSArray* bundlePathsForPlugins = [NSBundle pathsForResourcesOfType:@"plugin" inDirectory:pluginPath];
 			for (NSString* bundlePathForPlugin in bundlePathsForPlugins) 
@@ -206,8 +195,29 @@ static PluginManager* _sharedPluginManager = nil;
 				}
 			}
 		}
+
+}
+-(id) init {
+	if (![super init]) 
+	{
+		return nil;
+	}
+	
+	if (self != nil) 
+	{
+		// TODO: load "disabled plugins" list from user preferences.
+		_disabledPlugins = [[NSMutableArray arrayWithCapacity:1] retain];
+		
+		// TODO: remove this when we have loaded disabled plugins from user preferences (this is so that unit tests pass)
+		[self disablePlugin:@"/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.plugin"];
+		_pluginClasses = [[NSMutableDictionary dictionaryWithCapacity:1] retain];
 		
 		// TODO?: create a thread to scan standard directories for new plugins (load them into running instance asap)
+		// find plugins in these directories		
+		[self findAndActivatePluginsForDirectories: [self pluginPathsForDirectoriesInDomains]];
+
+		
+		
 	}
 	
 	return self;

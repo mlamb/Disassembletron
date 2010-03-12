@@ -24,5 +24,14 @@
 	<string>1.0</string>
 	<key>NSPrincipalClass</key>
 	<string>MachOParser</string>
+	<key>DAPluginConfig</key>
+	<dict>
+		<key>Category</key>
+		<string>CodeParser</string>
+		<key>HandledFileTypes</key>
+		<array>
+			<string>Application/</string>
+		</array>
+	</dict>
 </dict>
 </plist>
