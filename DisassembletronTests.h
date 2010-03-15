@@ -14,6 +14,7 @@
 {
 	PluginManager* _pluginManager;
 	id appDelegate;
+	NSString *appPluginPath;
 }
 
 @end

@@ -16,11 +16,14 @@
 
 -(NSString*) pathToPluginsFolderWithPluginName:(NSString*) pluginName 
 {
-	return [[@"~/Disassembletron/build/Debug/Disassembletron.app/Contents/Plugins" stringByExpandingTildeInPath] stringByAppendingPathComponent:pluginName];
+	return [[appPluginPath stringByExpandingTildeInPath] stringByAppendingPathComponent:pluginName];
 }
 
 -(void) setUp 
 {
+	// TODO: change this to a preprocessor macro that expands to the build output location
+	appPluginPath = @"~/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns";
+	
 	appDelegate = [[NSApplication sharedApplication] delegate];
 	STAssertNotNil(appDelegate, @"Cannot find the application delegate");
 	_pluginManager = [PluginManager sharedInstance];
@@ -87,7 +90,7 @@
 {
 	NSArray *goodpluginPaths = [[NSArray alloc] initWithObjects:[@"~/Library/Application Support/Disassembletron/PlugIns" stringByExpandingTildeInPath], \
 								@"/Library/Application Support/Disassembletron/PlugIns", @"/Network/Library/Application Support/Disassembletron/PlugIns", \
-								[@"~/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns" stringByExpandingTildeInPath], \
+								[appPluginPath stringByExpandingTildeInPath], \
 								nil];
 	NSArray* pluginPaths = [[_pluginManager pluginPathsForDirectoriesInDomains] retain];
 	STAssertTrue([pluginPaths isEqualToArray:goodpluginPaths],@"pluginPathsForDirectoriesInDomains returned a different list of plugin paths %@ %@",pluginPaths,goodpluginPaths);

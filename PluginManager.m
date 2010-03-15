@@ -176,7 +176,7 @@ static PluginManager* _sharedPluginManager = nil;
 
 }
 
-- (void) findAndActivatePluginsForDirectories: (NSArray *) pluginPaths  {
+- (void) findAndActivatePluginsForPaths: (NSArray *) pluginPaths  {
 		// iterate through the pluginPaths and get the paths for any resources with the type "plugin"
 		  for (NSString* pluginPath in pluginPaths) 
 		{
@@ -214,7 +214,7 @@ static PluginManager* _sharedPluginManager = nil;
 		
 		// TODO?: create a thread to scan standard directories for new plugins (load them into running instance asap)
 		// find plugins in these directories		
-		[self findAndActivatePluginsForDirectories: [self pluginPathsForDirectoriesInDomains]];
+		[self findAndActivatePluginsForPaths: [self pluginPathsForDirectoriesInDomains]];
 
 		
 		
