@@ -30,4 +30,4 @@ Plugins should have info.plist entries for the prefs interface
 Investigate Apple's documentation of nsbundle contexthelpforkey as it  
 has info on help files
 
-Investigate Apple's documentation of how to add scripting support
+Investigate Apple's documentation of how to add scripting support (http://developer.apple.com/mac/library/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40001982-BCICHGIE)
