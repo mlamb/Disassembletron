@@ -52,17 +52,18 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 283841783;
-			PBXWorkspaceStateSaveDate = 283841783;
+			PBXPerProjectTemplateStateSaveDate = 291858659;
+			PBXWorkspaceStateSaveDate = 291858659;
 		};
 		perUserProjectItems = {
-			7BC9C50710D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50710D5C4D50028B570 /* PBXTextBookmark */;
-			7BC9C50810D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50810D5C4D50028B570 /* PBXTextBookmark */;
-			7BC9C50910D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50910D5C4D50028B570 /* PBXTextBookmark */;
-			7BE3940610EB1507009EC77F /* PBXTextBookmark */ = 7BE3940610EB1507009EC77F /* PBXTextBookmark */;
-			7BE3940710EB1507009EC77F /* PBXTextBookmark */ = 7BE3940710EB1507009EC77F /* PBXTextBookmark */;
-			7BE3940810EB1507009EC77F /* PlistBookmark */ = 7BE3940810EB1507009EC77F /* PlistBookmark */;
-			7BE3945110EBBE44009EC77F /* PlistBookmark */ = 7BE3945110EBBE44009EC77F /* PlistBookmark */;
+			7BA45CD1116568EF00BA5F3B /* PlistBookmark */ = 7BA45CD1116568EF00BA5F3B /* PlistBookmark */;
+			7BC9C50710D5C4D50028B570 = 7BC9C50710D5C4D50028B570 /* PBXTextBookmark */;
+			7BC9C50810D5C4D50028B570 = 7BC9C50810D5C4D50028B570 /* PBXTextBookmark */;
+			7BC9C50910D5C4D50028B570 = 7BC9C50910D5C4D50028B570 /* PBXTextBookmark */;
+			7BE3940610EB1507009EC77F = 7BE3940610EB1507009EC77F /* PBXTextBookmark */;
+			7BE3940710EB1507009EC77F = 7BE3940710EB1507009EC77F /* PBXTextBookmark */;
+			7BE3940810EB1507009EC77F = 7BE3940810EB1507009EC77F /* PlistBookmark */;
+			7BE3945110EBBE44009EC77F = 7BE3945110EBBE44009EC77F /* PlistBookmark */;
 		};
 		sourceControlManager = 7BC9C40A10D5BA170028B570 /* Source Control */;
 		userBuildSettings = {
@@ -81,6 +82,20 @@
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 172}";
 		};
+	};
+	7BA45CD1116568EF00BA5F3B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			DAPluginConfig,
+			HandledFileTypes,
+			0,
+		);
+		name = "/Users/Mlamb/Disassembletron/Mach-O Parser Plugin/Info.plist";
+		rLen = 0;
+		rLoc = 0;
 	};
 	7BC9C40A10D5BA170028B570 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -194,7 +209,7 @@
 		);
 		name = "/Users/Mlamb/Disassembletron/Mach-O Parser Plugin/Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	8D5B49AC048680CD000E48DA /* Mach-O Parser Plugin */ = {
 		activeExec = 0;

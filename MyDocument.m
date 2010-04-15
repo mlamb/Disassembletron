@@ -7,6 +7,7 @@
 //
 
 #import "PluginManager.h"
+#import "CodeParser.h"
 #import "MyDocument.h"
 
 
@@ -86,7 +87,15 @@
 		fileType = [typeName stringByAppendingFormat:@" %@", @"RegularFile"];
 	}
 	
+	id plugin;
 	
+	plugin = [[PluginManager sharedInstance]._pluginClasses objectForKey:@"CodeParser"];
+		if ([[plugin registerFileTypesHandled] containsObject:typeName]) {
+			id pluginInstance = [[plugin alloc] init];
+			NSLog(@"%@",pluginInstance);
+		}
+	
+
 	NSRunAlertPanel(@"readFromFileWrapper - " , fileType, @"Ok", nil, nil);
 	
 	if (outError != NULL) 

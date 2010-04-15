@@ -12,7 +12,11 @@
 @implementation MachOParser
 
 + (NSArray*) registerFileTypesHandled {
-	return [[[NSArray alloc] init] retain];
+	NSArray* tempArray;
+	
+	tempArray = [NSArray arrayWithObject:@"com.apple.application-bundle"];
+	return tempArray;
+	//return [[[NSArray alloc] initWith] retain];
 }
 
 + (BOOL) initializeClass:(NSBundle *)theBundle {
