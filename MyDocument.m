@@ -10,7 +10,6 @@
 #import "CodeParser.h"
 #import "MyDocument.h"
 
-
 @implementation MyDocument
 
 
@@ -87,13 +86,17 @@
 		fileType = [typeName stringByAppendingFormat:@" %@", @"RegularFile"];
 	}
 	
-	id plugin;
+	id plugins;
 	
-	plugin = [[PluginManager sharedInstance]._pluginClasses objectForKey:@"CodeParser"];
-		if ([[plugin registerFileTypesHandled] containsObject:typeName]) {
-			id pluginInstance = [[plugin alloc] init];
-			NSLog(@"%@",pluginInstance);
-		}
+	plugins = [[PluginManager sharedInstance].plugins objectForKey:@"CodeParser"];
+	
+	
+	// TODO: conflict resolution.  what do we do if two (or more) plugins register the same file type handled?
+	// TODO: rather than searching each plugin, this should be a pluginManager list, and mapped to the plugin that handles it
+	if ([[[[plugins objectAtIndex:0] _PluginPrincipalClass] registerFileTypesHandled] containsObject:typeName]) {
+			id pluginInstance = [[[[[plugins objectAtIndex:0] _PluginPrincipalClass] alloc] init] autorelease];
+			DebugLog(@"%@",pluginInstance);
+		} 
 	
 
 	NSRunAlertPanel(@"readFromFileWrapper - " , fileType, @"Ok", nil, nil);

@@ -12,8 +12,7 @@
 
 @implementation PluginManager
 
-@synthesize _pluginClasses;
-@synthesize _disabledPlugins;
+@synthesize disabledPlugins;
 @synthesize parserFiletypes;
 @synthesize plugins;
 @synthesize supportedPluginProtocols;
@@ -66,14 +65,9 @@ static PluginManager* _sharedPluginManager = nil;
 	
 	if (self != nil) 
 	{
-		
-		// TODO: move the support plugin protocls to somewhere more "global" and maybe make it more elegant
-		// TODO: pull plugin meta-data from info.plist
-		
 		// TODO: investigate modifying this to be an enum
-		
-		
 		supportedPluginProtocols = [[NSArray alloc] initWithObjects:@"PAPluginProtocol",@"CodeParser",nil];
+		
 		plugins = [[NSMutableDictionary dictionaryWithCapacity:1] retain];
 		
 		for (id pluginType in supportedPluginProtocols) 
@@ -81,9 +75,8 @@ static PluginManager* _sharedPluginManager = nil;
 			[plugins setObject:[[[NSMutableArray alloc] init] autorelease] forKey:pluginType];
 		}
 											
-		
 		// TODO: load "disabled plugins" list from user preferences.
-		_disabledPlugins = [[NSMutableArray arrayWithCapacity:1] retain];
+		disabledPlugins = [[NSMutableArray arrayWithCapacity:1] retain];
 		
 		// TODO: remove this when we have loaded disabled plugins from user preferences (this is so that unit tests pass)
 		[self disablePlugin:@"/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.plugin"];
@@ -147,14 +140,8 @@ static PluginManager* _sharedPluginManager = nil;
 			}
 			
 				// TODO: check plugins conform to which protocols (visualizers (call graph,block grouped/linked outline view, AT&T/Intel syntax)?, executable parsers (a.out,ELF,PE,Mach-o)?, disassembers (PPC, x86, ARM)?, code analyzers (mem leaks, unused vars)?, CPU/register emulators(PPC, x86, ARM)?)
-				// TODO: add each type of plugin to the respective plugin type array
-				
-
-				//[pluginClass isKindOfClass:[NSObject class]] && [pluginClass initializeClass:pluginBundle]
-				
-				
-				
-				
+				// TODO: figure out how to handle plugin type specific requirements (code parser needs to register file types, how do we do that in a generic loop like we have below?)
+			
 
 				// loop through the supported plugin types and check if the plugin in question conforms to the protocol
 				Protocol *pluginProtocol;
@@ -163,15 +150,12 @@ static PluginManager* _sharedPluginManager = nil;
 					pluginProtocol = NSProtocolFromString(pluginTypeKey);
 					
 					if([pluginClass conformsToProtocol:pluginProtocol]) {
-						
-						// TODO: refactor to create a new "plugin" object that grabs all the meta-data about a plugin.  Then add it to the plugins array.
-						
-						
 						Plugin* thePlugin;
 						
 						thePlugin = [[Plugin alloc] init];
 						
-						thePlugin._PluginName = [pluginDict objectForKey: @"DAPluginName"];
+						// set all the attributes from the plugin objects info dictionary
+						thePlugin._PluginName = [pluginBundle objectForInfoDictionaryKey: @"DAPluginName"];
 						thePlugin._PluginType = pluginTypeKey;
 						thePlugin._PluginAuthor = [pluginDict objectForKey: @"DAPluginAuthorName"];
 						thePlugin._PluginAuthorWebsite = [pluginDict objectForKey: @"DAPluginAuthorWebsite"];
@@ -185,7 +169,7 @@ static PluginManager* _sharedPluginManager = nil;
 						//thePlugin._PluginEnabled = [pluginDict objectForKey: @"DAPluginEnabledState"];
 						//thePlugin._PluginNibLoaded = YES;
 						
-						
+						// add object to the plugins array
 						[[plugins objectForKey:pluginTypeKey] addObject:thePlugin];
 						
 						[thePlugin release];
@@ -243,7 +227,7 @@ static PluginManager* _sharedPluginManager = nil;
 
 -(BOOL) isPluginDisabled:(NSString*)path {
 	
-	if ([_disabledPlugins containsObject:path]) 
+	if ([disabledPlugins containsObject:path]) 
 	{
 		return YES;
 	}
@@ -256,9 +240,9 @@ static PluginManager* _sharedPluginManager = nil;
 
 -(BOOL) disablePlugin:(NSString*) path 
 {	
-	if(![_disabledPlugins containsObject:path]) 
+	if(![disabledPlugins containsObject:path]) 
 	{
-		[_disabledPlugins addObject:path];
+		[disabledPlugins addObject:path];
 		return YES;
 	}
 	else 
@@ -269,9 +253,9 @@ static PluginManager* _sharedPluginManager = nil;
 
 -(BOOL) enablePlugin:(NSString*) path 
 {
-	if ([_disabledPlugins containsObject:path]) 
+	if ([disabledPlugins containsObject:path]) 
 	{
-		[_disabledPlugins removeObject:path];
+		[disabledPlugins removeObject:path];
 		return YES;
 	} 
 	else 
@@ -285,6 +269,9 @@ static PluginManager* _sharedPluginManager = nil;
 
 
 @end
+
+#pragma mark -
+#pragma mark Plugin object definition
 
 @implementation Plugin
 

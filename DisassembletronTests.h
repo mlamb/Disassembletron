@@ -12,7 +12,7 @@
 
 @interface DisassembletronTests : SenTestCase 
 {
-	PluginManager* _pluginManager;
+	PluginManager* thePluginManager;
 	id appDelegate;
 	NSString *appPluginPath;
 }

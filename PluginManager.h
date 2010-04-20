@@ -1,20 +1,18 @@
 //
-//  SingletonTest.h
+//  PluginManager.h
 //  Disassembletron
 //
-//  Created by Michael Lamb on 9/1/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Created by Michael Lamb on 8/10/09.
+//  Copyright __MyCompanyName__ 2009 . All rights reserved.
 //
 
+#import "Disassembletron.h"
 #import <Foundation/Foundation.h>
 
 @interface PluginManager : NSObject 
 {
-	
-	// TODO: rename ivars without _
-	NSMutableDictionary* _pluginClasses;
 	NSMutableDictionary* plugins;
-	NSMutableArray* _disabledPlugins;
+	NSMutableArray* disabledPlugins;
 	NSMutableArray* domains;
 	NSArray* parserFiletypes;
 	NSArray *supportedPluginProtocols;
@@ -32,9 +30,8 @@
 -(BOOL) enablePlugin:(NSString*) path;
 
 @property (nonatomic,retain) NSArray* supportedPluginProtocols;
-@property (nonatomic,retain) NSMutableDictionary* plugins;
-@property (nonatomic,retain) NSMutableArray* _disabledPlugins;		//	an array of disabled plugins
-@property (nonatomic,retain) NSMutableDictionary* _pluginClasses;		//	all the plugin classes accessible by category key
+@property (nonatomic,retain) NSMutableDictionary* plugins;			//	all the plugins accessible by category key
+@property (nonatomic,retain) NSMutableArray* disabledPlugins;		//	an array of disabled plugins		
 @property (nonatomic,retain) NSArray* parserFiletypes;
 
 @end

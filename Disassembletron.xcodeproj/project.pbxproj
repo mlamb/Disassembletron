@@ -86,6 +86,7 @@
 		7B9C2818104DE64E00F588D4 /* PluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginManager.m; sourceTree = "<group>"; };
 		7BA964AF10327F970025FCF1 /* MyApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApplicationDelegate.h; sourceTree = "<group>"; };
 		7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApplicationDelegate.m; sourceTree = "<group>"; };
+		7BABB2D11178FACA00A0C664 /* Disassembletron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disassembletron.h; sourceTree = "<group>"; };
 		7BB4A15310D03F05009A81A2 /* Application Plug-in.plugin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.bundle"; path = "Application Plug-in.plugin"; sourceTree = "<group>"; };
 		7BC9C3EF10D5B5B50028B570 /* PluginInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginInterface.h; sourceTree = "<group>"; };
 		7BC9C46910D5BCFC0028B570 /* Mach-O Parser Plugin.plugin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.bundle"; name = "Mach-O Parser Plugin.plugin"; path = "Mach-O Parser Plugin/build/Debug/Mach-O Parser Plugin.plugin"; sourceTree = "<group>"; };
@@ -173,6 +174,7 @@
 				32DBCF750370BD2300C91783 /* Disassembletron_Prefix.pch */,
 				2A37F4B0FDCFA73011CA2CEA /* main.m */,
 				7B52318A10B229F0005B8B73 /* CodeParser.h */,
+				7BABB2D11178FACA00A0C664 /* Disassembletron.h */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";

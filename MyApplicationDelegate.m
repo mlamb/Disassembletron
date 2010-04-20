@@ -19,7 +19,7 @@
 	_thePluginManager = [PluginManager sharedInstance];
 	
 	// TODO: remove debugging log
-	NSLog (@"%@", [_thePluginManager _pluginClasses]);
+	DebugLog (@"%@", [_thePluginManager plugins]);
 
 }
 

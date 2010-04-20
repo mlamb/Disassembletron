@@ -26,7 +26,7 @@
 	
 	appDelegate = [[NSApplication sharedApplication] delegate];
 	STAssertNotNil(appDelegate, @"Cannot find the application delegate");
-	_pluginManager = [PluginManager sharedInstance];
+	thePluginManager = [PluginManager sharedInstance];
 }
 
 -(void) tearDown
@@ -46,46 +46,37 @@
 {
 	PluginManager* _anotherPluginManager = [PluginManager sharedInstance];
 	
-	STAssertNotNil(_pluginManager,@"Could not create instance of PluginManager.");	
-	STAssertEquals(_pluginManager,_anotherPluginManager,@"Plugins are equal");
+	STAssertNotNil(thePluginManager,@"Could not create instance of PluginManager.");	
+	STAssertEquals(thePluginManager,_anotherPluginManager,@"Plugins are equal");
 }
-
--(void) xtest_sharedPlugin_plugins
-{
-	// TODO: rewrite test to actually check each supportedProtocolType and see if there are more than zero plugins of that type
-	STAssertTrue([_pluginManager.plugins count] >= 0,@"Plugin count is %i", [_pluginManager.plugins count]);
-	STAssertTrue([_pluginManager.plugins isKindOfClass:[NSMutableDictionary class]],@"Plugin classes is not a NSMutableDictionary");
-}
-
 
 
 -(void) test_sharedPlugin_disablePlugin
 {
-	STAssertTrue([_pluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not disabled");
-	STAssertFalse([_pluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not already disabled");
+	STAssertTrue([thePluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not disabled");
+	STAssertFalse([thePluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not already disabled");
 }
 
 -(void) test_sharedPlugin_enablePlugin
 {
-	[_pluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]];
-	STAssertTrue([_pluginManager enablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not enabled");
-	STAssertFalse([_pluginManager enablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not already enabled");
+	[thePluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]];
+	STAssertTrue([thePluginManager enablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not enabled");
+	STAssertFalse([thePluginManager enablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Macho-O Plugin is not already enabled");
 }
 
 -(void) test_sharedPlugin_isPluginDisabled
 {
-	STAssertFalse([_pluginManager isPluginDisabled:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]],@"Mach-O Plugin is disabled");
-	[_pluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]];
-	STAssertTrue([_pluginManager isPluginDisabled:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Mach-O Plugin is not disabled");
+	STAssertFalse([thePluginManager isPluginDisabled:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]],@"Mach-O Plugin is disabled");
+	[thePluginManager disablePlugin:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]];
+	STAssertTrue([thePluginManager isPluginDisabled:[self pathToPluginsFolderWithPluginName:@"/Mach-O Parser Plugin.plugin"]], @"Mach-O Plugin is not disabled");
 }
 
--(void) xtest_sharedPlugin_ActivatePlugin 
+-(void) test_sharedPlugin_ActivatePlugin 
 {
-	// TODO: rewrite test... pluginclasses no longer holds the plugins
-	NSUInteger count = [_pluginManager._pluginClasses count];
-	[_pluginManager loadPlugin:[self pathToPluginsFolderWithPluginName:@"Application Plug-in.plugin"]];
-	NSUInteger newCount = [_pluginManager._pluginClasses count];
-	STAssertTrue( newCount > count,@"activatePlugin did not add the plugin. newcount = %i count = %i", newCount, count);
+	int count = [[thePluginManager.plugins objectForKey:@"PAPluginProtocol"] count];
+	[thePluginManager loadPlugin:[self pathToPluginsFolderWithPluginName:@"Application Plug-in.plugin"]];
+	int newCount = [[thePluginManager.plugins objectForKey:@"PAPluginProtocol"] count];
+	STAssertTrue( newCount > count, @"activatePlugin did not add the plugin. newcount = %i count = %i", newCount, count); 
 }
 
 -(void) test_sharedPlugin_PluginPathsForDirectoriesInDomains 
@@ -94,7 +85,7 @@
 								@"/Library/Application Support/Disassembletron/PlugIns", @"/Network/Library/Application Support/Disassembletron/PlugIns", \
 								[appPluginPath stringByExpandingTildeInPath], \
 								nil];
-	NSArray* pluginPaths = [[_pluginManager pluginPathsForDirectoriesInDomains] retain];
+	NSArray* pluginPaths = [[thePluginManager pluginPathsForDirectoriesInDomains] retain];
 	STAssertTrue([pluginPaths isEqualToArray:goodpluginPaths],@"pluginPathsForDirectoriesInDomains returned a different list of plugin paths %@ %@",pluginPaths,goodpluginPaths);
 
 	[pluginPaths release];
