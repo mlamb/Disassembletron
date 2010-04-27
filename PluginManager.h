@@ -9,33 +9,6 @@
 #import "Disassembletron.h"
 #import <Foundation/Foundation.h>
 
-@interface PluginManager : NSObject 
-{
-	NSMutableDictionary* plugins;
-	NSMutableArray* disabledPlugins;
-	NSMutableArray* domains;
-	NSArray* parserFiletypes;
-	NSArray *supportedPluginProtocols;
-}
-
-+(id)alloc;
--(id)init;
-+(PluginManager*) sharedInstance;
-- (void) findAndLoadPluginsForPaths: (NSArray *) pluginPaths;
-
--(NSArray*) pluginPathsForDirectoriesInDomains;
--(void) loadPlugin:(NSString*) path;
--(BOOL) isPluginDisabled:(NSString*) path;
--(BOOL) disablePlugin:(NSString*) path;
--(BOOL) enablePlugin:(NSString*) path;
-
-@property (nonatomic,retain) NSArray* supportedPluginProtocols;
-@property (nonatomic,retain) NSMutableDictionary* plugins;			//	all the plugins accessible by category key
-@property (nonatomic,retain) NSMutableArray* disabledPlugins;		//	an array of disabled plugins		
-@property (nonatomic,retain) NSArray* parserFiletypes;
-
-@end
-
 @interface Plugin : NSObject
 {
 	NSString* _PluginName;
@@ -57,7 +30,7 @@
 	NSString* _PluginAuthorEmail;
 	NSString* _PluginAuthorWebsite;
 	id _PluginInstance;
-
+	
 }
 
 @property (nonatomic,retain) NSString* _PluginName;
@@ -76,5 +49,36 @@
 @property (nonatomic,retain) id _PluginInstance;
 
 //TODO: implement initialization methods with sane defaults for ivars
+@end
+
+
+
+@interface PluginManager : NSObject 
+{
+	NSMutableDictionary* plugins;
+	NSMutableArray* disabledPlugins;
+	NSMutableArray* domains;
+	NSArray* parserFiletypes;
+	NSArray *supportedPluginProtocols;
+}
+
++(id)alloc;
+-(id)init;
++(PluginManager*) sharedInstance;
+- (void) findAndLoadPluginsForPaths: (NSArray *) pluginPaths;
+
+-(Plugin *) pluginForFileType: (NSString*) fileType;
+
+-(NSArray*) pluginPathsForDirectoriesInDomains;
+-(void) loadPlugin:(NSString*) path;
+-(BOOL) isPluginDisabled:(NSString*) path;
+-(BOOL) disablePlugin:(NSString*) path;
+-(BOOL) enablePlugin:(NSString*) path;
+
+@property (nonatomic,retain) NSArray* supportedPluginProtocols;
+@property (nonatomic,retain) NSMutableDictionary* plugins;			//	all the plugins accessible by category key
+@property (nonatomic,retain) NSMutableArray* disabledPlugins;		//	an array of disabled plugins		
+@property (nonatomic,retain) NSArray* parserFiletypes;
+
 @end
 

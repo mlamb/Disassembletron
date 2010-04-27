@@ -23,6 +23,15 @@ static PluginManager* _sharedPluginManager = nil;
 // TODO: include methods in PluginManager to register toolbar and menu items, so that developer can call them from pluginDidLoad
 // TODO: investigate using the delegate pattern for plugins 
 
+// Plugin Types
+// - visualizers (call graph,block grouped/linked outline view, AT&T/Intel syntax)?, 
+// - executable parsers (a.out,ELF,PE,Mach-o)?, 
+// - disassembers (PPC, x86, ARM)?, 
+// - code analyzers (mem leaks, unused vars)?, 
+// - CPU/register emulators(PPC, x86, ARM)?)
+
+// TODO: figure out how to handle plugin type specific requirements (code parser needs to register file types, how do we do that in a generic loop like in loadPlugins )
+
 //===========================================================================
 #pragma mark • INIT, DEALLOC & SETUP
 //===========================================================================
@@ -122,14 +131,22 @@ static PluginManager* _sharedPluginManager = nil;
 	
 }
 
+- (Plugin*) pluginForFileType: (NSString*) fileType {
+	// TODO: conflict resolution.  what do we do if two (or more) plugins register the same file type handled?
+	// TODO: rather than searching each plugin, this should be a pluginManager list, and mapped to the plugin that handles it
+	
+	NSRunAlertPanel(@"pluginForFileType - " , fileType, @"Ok", nil, nil);
+	return [[[Plugin alloc] init] autorelease];
+
+}
+
 -(void) loadPlugin:(NSString*)path 
 {
 	NSBundle* pluginBundle = [NSBundle bundleWithPath:path];
 
 	if (pluginBundle) 
 	{
-		NSDictionary* pluginDict = [pluginBundle infoDictionary];
-		NSString* pluginName = [pluginDict objectForKey:@"NSPrincipalClass"];
+		NSString* pluginName = [pluginBundle objectForInfoDictionaryKey:@"NSPrincipalClass"];
 		if (pluginName) 
 		{
 			Class pluginClass = NSClassFromString (pluginName);
@@ -138,10 +155,6 @@ static PluginManager* _sharedPluginManager = nil;
 				pluginClass = [pluginBundle principalClass];
 				
 			}
-			
-				// TODO: check plugins conform to which protocols (visualizers (call graph,block grouped/linked outline view, AT&T/Intel syntax)?, executable parsers (a.out,ELF,PE,Mach-o)?, disassembers (PPC, x86, ARM)?, code analyzers (mem leaks, unused vars)?, CPU/register emulators(PPC, x86, ARM)?)
-				// TODO: figure out how to handle plugin type specific requirements (code parser needs to register file types, how do we do that in a generic loop like we have below?)
-			
 
 				// loop through the supported plugin types and check if the plugin in question conforms to the protocol
 				Protocol *pluginProtocol;
@@ -157,36 +170,31 @@ static PluginManager* _sharedPluginManager = nil;
 						// set all the attributes from the plugin objects info dictionary
 						thePlugin._PluginName = [pluginBundle objectForInfoDictionaryKey: @"DAPluginName"];
 						thePlugin._PluginType = pluginTypeKey;
-						thePlugin._PluginAuthor = [pluginDict objectForKey: @"DAPluginAuthorName"];
-						thePlugin._PluginAuthorWebsite = [pluginDict objectForKey: @"DAPluginAuthorWebsite"];
-						thePlugin._PluginVersion = [pluginDict objectForKey: @"DAPluginVersion"];
-						thePlugin._PluginShortDescription = [pluginDict objectForKey: @"DAPluginShortDesc"];
-						thePlugin._PluginFullDescription = [pluginDict objectForKey: @"DAPluginFullDesc"];
-						thePlugin._PluginAuthorEmail = [pluginDict objectForKey: @"DAPluginAuthorEmail"];
+						thePlugin._PluginAuthor = [pluginBundle objectForInfoDictionaryKey: @"DAPluginAuthorName"];
+						thePlugin._PluginAuthorWebsite = [pluginBundle objectForInfoDictionaryKey: @"DAPluginAuthorWebsite"];
+						thePlugin._PluginVersion = [pluginBundle objectForInfoDictionaryKey: @"DAPluginVersion"];
+						thePlugin._PluginShortDescription = [pluginBundle objectForInfoDictionaryKey: @"DAPluginShortDesc"];
+						thePlugin._PluginFullDescription = [pluginBundle objectForInfoDictionaryKey: @"DAPluginFullDesc"];
+						thePlugin._PluginAuthorEmail = [pluginBundle objectForInfoDictionaryKey: @"DAPluginAuthorEmail"];
 						thePlugin._PluginPath = pluginBundle.bundlePath;
 						thePlugin._PluginBundle = pluginBundle;
 						thePlugin._PluginPrincipalClass = pluginClass;
-						//thePlugin._PluginEnabled = [pluginDict objectForKey: @"DAPluginEnabledState"];
+						
+						// TODO: if plugin is a CodeParser, register filetypes handled  - call a "doTypeSpecificSetup/Initialization/Loading" function to keep this method clean and use dependency injection pattern :)
+						
+						// Not sure if these are needed yet/at all
+						//thePlugin._PluginEnabled = [pluginBundle objectForInfoDictionaryKey: @"DAPluginEnabledState"];
 						//thePlugin._PluginNibLoaded = YES;
 						
 						// add object to the plugins array
 						[[plugins objectForKey:pluginTypeKey] addObject:thePlugin];
 						
+						// plugins array will retain, so we can safely clean up our reference
 						[thePlugin release];
 					}
 				}
 				
-				// clean up 
-				
-				
-				
-				// TODO: query the plugin for additional configuration
-				// use [pluginBundle objectForInfoDictionaryKey:@"somekey"]; to get the key out of the info.plist
-				// things like BOOLs for if it should be in the toolbar or not, display names?, etc.
-				
 				// TODO: update toolbar/menus/etc with new plugin features 
-				
-				//}*/
 
 		}
 	}
@@ -205,7 +213,6 @@ static PluginManager* _sharedPluginManager = nil;
 	domains = [[NSMutableArray alloc] init];
 	
 	//get the processes name, it's used as subfolder in the app-support folders
-	// TODO: revisit wisdom of using processName?
 	NSString* appName = [[NSProcessInfo processInfo] processName];
 	
 	NSArray* SearchPaths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSAllDomainsMask, YES);

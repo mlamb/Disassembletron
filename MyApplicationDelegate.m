@@ -16,10 +16,10 @@
 -(void) applicationDidFinishLaunching:(NSNotification*) aNotification 
 {
 	// TODO: put a pretty splash screen up
-	_thePluginManager = [PluginManager sharedInstance];
 	
-	// TODO: remove debugging log
-	DebugLog (@"%@", [_thePluginManager plugins]);
+	// start up the plugin manager
+	_thePluginManager = [PluginManager sharedInstance];
+
 
 }
 
