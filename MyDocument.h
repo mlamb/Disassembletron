@@ -9,7 +9,7 @@
 #import "Disassembletron.h"
 #import <Cocoa/Cocoa.h>
 
-static NSString* ToolbarIdentifier = @"ToolBarIdentifier";
+static NSString* ToolbarIdentifier = @"DAToolBarIdentifier";
 
 @interface MyDocument : NSDocument <NSToolbarDelegate>
 {
