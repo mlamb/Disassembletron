@@ -26,6 +26,8 @@
     return self;
 }
 
+
+
 -(NSString*) windowNibName
 {
     // Override returning the nib file name of the document
@@ -80,9 +82,16 @@
 	NSString *fileType = nil;
 	
 	if ([fileWrapper isDirectory]) {
-		fileType = [typeName stringByAppendingFormat:@" %@", @"Directory"];
+		// TODO: if the file is a directory, check to see it's an app, and open the info dict to find the main executable, and open that.
+		if ([typeName compare:@"com.apple.application-bundle"] == NSOrderedSame || [typeName compare:@"com.apple.framework"] == NSOrderedSame) {
+			fileType = [typeName stringByAppendingFormat:@" %@", @"BUNDLE FOUND!"];
+		} else {
+			fileType = typeName;
+		}
+
 	}
 	if ([fileWrapper isRegularFile]) {
+		// if the file is a regular file, open it up directly
 		fileType = [typeName stringByAppendingFormat:@" %@", @"RegularFile"];
 	}
 	

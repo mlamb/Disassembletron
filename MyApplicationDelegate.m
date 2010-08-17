@@ -1,5 +1,6 @@
 #import "MyApplicationDelegate.h"
 #import	"PluginManager.h"
+#import "PreferencesController.h"
 
 //NSString *DADisplayWindowAlphaKey = @"displayWindowAlpha";
 //NSString *DADisplayToolTipsKey = @"displayToolTips";
@@ -35,13 +36,38 @@
     [[NSUserDefaultsController sharedUserDefaultsController] setInitialValues:initialValues];
 }
 
+-(IBAction) openDocument: (id) sender {
+	
+	NSOpenPanel*    thePanel    = [NSOpenPanel openPanel];
+	
+	[thePanel setTreatsFilePackagesAsDirectories: YES];
+	[thePanel setCanChooseDirectories: YES];
+	
+	if ([thePanel runModalForTypes: nil] != NSFileHandlingPanelOKButton)
+		return;
+	
+	NSString*   theName = [[thePanel filenames] objectAtIndex: 0];
+	
+	NSRunAlertPanel(@"filename = " , theName, @"Ok", nil, nil);
+	
+	NSError* myError; 
+	
+	[[NSDocumentController sharedDocumentController] openDocumentWithContentsOfURL: [NSURL fileURLWithPath: theName] display: YES error:&myError];
+	
+} 
+
 
 -(IBAction) showPrefs:sender 
 {
     if (preferencesController == nil) 
 	{
-        preferencesController = [[NSWindowController alloc] initWithWindowNibName:@"Preferences"];
+        preferencesController = [[PreferencesController alloc] initWithWindowNibName:@"Preferences"];
     }
+	NSToolbarItem* theToolbarItem = [[NSToolbarItem alloc] initWithItemIdentifier:@"Plugins"];
+	[theToolbarItem setLabel:@"Plugins"];
+	
+	DebugLog(@"theToolbar = ", [preferencesController theToolbar]);
+	[[preferencesController theToolbar] insertItemWithItemIdentifier:@"Plugins" atIndex:1];
     [preferencesController showWindow:self];
 	//[[preferencesController window] makeKeyAndOrderFront:self];
 }

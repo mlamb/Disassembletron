@@ -9,18 +9,19 @@
 #import "Disassembletron.h"
 #import <Cocoa/Cocoa.h>
 #import "PluginManager.h"
+#import "PreferencesController.h"
 
 
 @interface MyApplicationDelegate : NSObject 
 {
 	PluginManager* _thePluginManager;
-	NSWindowController *preferencesController;
+	PreferencesController* preferencesController;
 }
 
-@property (nonatomic, retain) NSWindowController *preferencesController;
+@property (nonatomic, retain) PreferencesController *preferencesController;
 
 -(BOOL) applicationShouldOpenUntitledFile:(NSApplication*) sender;
 -(void) applicationDidFinishLaunching:(NSNotification*) aNotification;
 -(IBAction) showPrefs: sender;	
-
+-(IBAction) openDocument: sender;
 @end
