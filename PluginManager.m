@@ -113,6 +113,7 @@ static PluginManager* _sharedPluginManager = nil;
 	// iterate through the pluginPaths and get the paths for any resources with the type "plugin"
 	for (NSString* pluginPath in pluginPaths) 
 	{
+                // TODO: change this to use custom plugin type so that we can install/register/load plugins with a double-click operation from finder
 		NSArray* bundlePathsForPlugins = [NSBundle pathsForResourcesOfType:@"plugin" inDirectory:pluginPath];
 		for (NSString* bundlePathForPlugin in bundlePathsForPlugins) 
 		{
@@ -143,9 +144,11 @@ static PluginManager* _sharedPluginManager = nil;
 -(void) loadPlugin:(NSString*)path 
 {
 	NSBundle* pluginBundle = [NSBundle bundleWithPath:path];
+//TODO: rewrite this to use NSBundle preflightAndReturnError and loadAndReturnError
 
 	if (pluginBundle) 
 	{
+                // calling principalClass automatically gets the NSPrincipalClass key (and we don't use pluginName for anything other than getting the Class* so that we can instantiate the class later.  the NSBundle load functionality is much cleaner.
 		NSString* pluginName = [pluginBundle objectForInfoDictionaryKey:@"NSPrincipalClass"];
 		if (pluginName) 
 		{
