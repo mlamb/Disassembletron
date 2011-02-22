@@ -66,9 +66,10 @@
 	NSToolbarItem* theToolbarItem = [[NSToolbarItem alloc] initWithItemIdentifier:@"Plugins"];
 	[theToolbarItem setLabel:@"Plugins"];
 	
-	DebugLog(@"theToolbar = ", [preferencesController theToolbar]);
+	//DebugLog(@"theToolbar = ", [preferencesController theToolbar]);
 	[[preferencesController theToolbar] insertItemWithItemIdentifier:@"Plugins" atIndex:1];
     [preferencesController showWindow:self];
+	[theToolbarItem release];
 	//[[preferencesController window] makeKeyAndOrderFront:self];
 }
 

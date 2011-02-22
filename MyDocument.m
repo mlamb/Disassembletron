@@ -61,6 +61,48 @@
 	// Add any code here that needs to be executed once the windowController has loaded the document's window.
 } 
 
+- (BOOL)readFromURL:(NSURL *)absoluteURL ofType:(NSString *)typeName error:(NSError **)outError
+{
+	// if this is a core data file (i.e. a "project" file) ... 
+	// then we need to call [NSPersistentDocument configurePersistentStoreCoordinatorForURL:ofType:modelConfiguration:storeOptions:error:] 
+	// and instantiate the manged object context with whatever needs to be there 
+
+	// if it's not, then open it as a regular NSDocument (create a NSFileWrapper and call readFromFileWrapper)
+	NSFileWrapper *theFileWrapper = [[NSFileWrapper alloc] initWithURL:absoluteURL options: (NSFileWrapperReadingImmediate && NSFileWrapperReadingWithoutMapping) error:outError];
+	[self readFromFileWrapper:theFileWrapper ofType:typeName error:outError];
+	
+    								 
+	if ( outError != NULL ) {
+		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
+	}
+    return YES;
+}
+
+
+- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
+{
+    // Insert code here to read your document from the given data of the specified type.  If the given outError != NULL, ensure that you set *outError when returning NO.
+	
+    // You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead. 
+    
+    // For applications targeted for Panther or earlier systems, you should use the deprecated API -loadDataRepresentation:ofType. In this case you can also choose to override -readFromFile:ofType: or -loadFileWrapperRepresentation:ofType: instead.
+    char buffer[5];
+	
+	
+	[[data subdataWithRange:NSMakeRange(0,4)] getBytes: buffer];
+	buffer[4] = '\0';
+	
+	// buffer now has \xca\xfe\xba\xbe
+	// check to see if this is a fat binary, and proceed.
+	NSLog(@"%s",buffer);
+	
+    if ( outError != NULL ) {
+		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
+	}
+    return YES;
+}
+
+
 -(NSData*) dataOfType:(NSString*) typeName error:(NSError **) outError
 {
     // Insert code here to write your document to data of the specified type. If the given outError != NULL, ensure that you set *outError when returning nil.
@@ -111,6 +153,8 @@
 
 	*/
 	DebugLog(@"plugin = %@" , thePlugin); 
+	
+	[self readFromData:[fileWrapper regularFileContents] ofType:typeName error:outError];
 	
 	if (outError != NULL) 
 	{

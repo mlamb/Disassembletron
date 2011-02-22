@@ -11,7 +11,7 @@
 
 static NSString* ToolbarIdentifier = @"DAToolBarIdentifier";
 
-@interface MyDocument : NSDocument <NSToolbarDelegate>
+@interface MyDocument : NSPersistentDocument <NSToolbarDelegate>
 {
 	//IBOutlet NSWindow *window;
 	IBOutlet NSToolbar *theToolbar;
