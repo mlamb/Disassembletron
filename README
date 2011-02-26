@@ -31,3 +31,66 @@ Investigate Apple's documentation of nsbundle contexthelpforkey as it
 has info on help files
 
 Investigate Apple's documentation of how to add scripting support (http://developer.apple.com/mac/library/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40001982-BCICHGIE)
+
+(Feature List)
+Show/Edit bundle information (Info.plist) - Provide "Open in property list editor" option if installed
+Show/Edit Application Icon
+	Export/Import Icons (Application, and DocType)
+Show/Edit DocTypes
+	Show/Edit DocType Icon, extension, MIME-Type, UTI, etc
+	Show/Edit role (editor,viewer,etc) for preferred app
+Show/Edit NIB list
+Show/Edit Resources (Plugins, Resources, etc)
+Show "Finder Get Info" pane
+Reveal in finder
+"Show contents" in finder
+Show/Edit Dependencies (Frameworks, Libraries, etc)
+	Show library timestamp, currentvers, compatvers
+	Show @rpath, @executable_path, system paths
+Show (outline view) Mach-o file format (See MachOView for details):
+	FAT binary
+		Show each platform image
+			Header
+				Basic info (CPU Type, CPU Sub-Type, Filetype, Flags)
+			Load Commands
+			Sections
+			Dylib
+			Symbol Table
+			Dynamic Symbol Table
+			String Table
+			Threads
+				Entrypoint
+			ObjectiveC info
+				Modules
+					name
+						Version
+						Size
+						Classes
+						Categories
+						
+Objective-C:
+	Show All OBJC classes
+		Show Class Methods
+		Show Instance Methods
+		Show IVars
+	Decompile/Disassemble methods
+		"Disassemble from address" - "Disassemble by symbol/name/arbitrary string search?"
+		"Find function start" (Check on what OCDisasm is doing for this?)
+		Checkbox(?) to hide/show preamble/calling convention
+		Show Address, mnemonic (att/intel syntax), "Notes" (attempt to convert to OBJC calls, but at least resolve symbols)
+			Address should be searchable, have disclosure triangle to collapse "basic blocks"
+			mnemonic: if jmp/branch/call/etc, create link to target, on "hover-over" show arrow (up/down) to dest address, on "hover-over" check-box for if this branch should be taken or not (hide code that will be skipped - collapse code with disclosure triangle)
+		Show register status (as much as can be calculated in static analysis) - reg, value, typeof(value) in a separate window/pane
+		Return calls should have pop-up for cross-references (to be able to jump back to the caller from the callee)
+
+	Goto Offset
+	Add breakpoint for line (see Machonist for example)
+	Load/Save "patch"?
+	Show xreferences for all symbols
+	Show CStrings (VMAddress, stringdata)
+	Export disassembly as HTML
+	Search anything/everything
+	Forward/Back buttons to keep track of where user has been in disassembly
+	Show HexView of any section (include HexCalc in new window/pane?)
+	Show Call Graph of any method
+
