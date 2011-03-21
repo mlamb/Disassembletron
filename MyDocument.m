@@ -18,7 +18,7 @@
 -(id) init
 {
     self = [super init];
-    if (self) 
+    if (self)
 	{
         // Add your subclass-specific initialization here.
         // If an error occurs here, send a [self release] message and return nil.
@@ -38,40 +38,40 @@
 -(void) windowControllerDidLoadNib:(NSWindowController*) aController
 {
     [super windowControllerDidLoadNib:aController];
-	
+
 	// TODO: Move toolbar into it's own class?
-	
+
 	// create the toolbar object
     NSToolbar* toolbar = [[NSToolbar alloc] initWithIdentifier:@"MySampleToolbar"];
-	
+
     // set initial toolbar properties
     [toolbar setAllowsUserCustomization:YES];
     [toolbar setAutosavesConfiguration:YES];
     [toolbar setDisplayMode:NSToolbarDisplayModeIconAndLabel];
-	
+
     // set our controller as the toolbar delegate
     [toolbar setDelegate:self];
-	
+
     // attach the toolbar to our window
     [[aController window] setToolbar:toolbar];
-	
+
     // clean up
     [toolbar release];
-	
+
 	// Add any code here that needs to be executed once the windowController has loaded the document's window.
-} 
+}
 
 - (BOOL)readFromURL:(NSURL *)absoluteURL ofType:(NSString *)typeName error:(NSError **)outError
 {
-	// if this is a core data file (i.e. a "project" file) ... 
-	// then we need to call [NSPersistentDocument configurePersistentStoreCoordinatorForURL:ofType:modelConfiguration:storeOptions:error:] 
-	// and instantiate the manged object context with whatever needs to be there 
+	// if this is a core data file (i.e. a "project" file) ...
+	// then we need to call [NSPersistentDocument configurePersistentStoreCoordinatorForURL:ofType:modelConfiguration:storeOptions:error:]
+	// and instantiate the manged object context with whatever needs to be there
 
 	// if it's not, then open it as a regular NSDocument (create a NSFileWrapper and call readFromFileWrapper)
 	NSFileWrapper *theFileWrapper = [[NSFileWrapper alloc] initWithURL:absoluteURL options: (NSFileWrapperReadingImmediate && NSFileWrapperReadingWithoutMapping) error:outError];
 	[self readFromFileWrapper:theFileWrapper ofType:typeName error:outError];
-	
-    								 
+
+
 	if ( outError != NULL ) {
 		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
 	}
@@ -82,20 +82,20 @@
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
 {
     // Insert code here to read your document from the given data of the specified type.  If the given outError != NULL, ensure that you set *outError when returning NO.
-	
-    // You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead. 
-    
+
+    // You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead.
+
     // For applications targeted for Panther or earlier systems, you should use the deprecated API -loadDataRepresentation:ofType. In this case you can also choose to override -readFromFile:ofType: or -loadFileWrapperRepresentation:ofType: instead.
     char buffer[5];
-	
-	
+
+		// TODO: put this into CodeParser sub-class, and just pass in the NSData object for it to parse.
 	[[data subdataWithRange:NSMakeRange(0,4)] getBytes: buffer];
 	buffer[4] = '\0';
-	
-	// buffer now has \xca\xfe\xba\xbe
+
+	// buffer now has \xca\xfe\xba\xbe (assuming the opened file is a Mach-O binary
 	// check to see if this is a fat binary, and proceed.
 	NSLog(@"%s",buffer);
-	
+
     if ( outError != NULL ) {
 		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
 	}
@@ -111,7 +111,7 @@
 
     // For applications targeted for Panther or earlier systems, you should use the deprecated API -dataRepresentationOfType:. In this case you can also choose to override -fileWrapperRepresentationOfType: or -writeToFile:ofType: instead.
 
-    if ( outError != NULL ) 
+    if ( outError != NULL )
 	{
 		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
 	}
@@ -122,7 +122,7 @@
 -(BOOL) readFromFileWrapper:(NSFileWrapper *)fileWrapper ofType:(NSString *)typeName error:(NSError **)outError
 {
 	NSString *fileType = nil;
-	
+
 	if ([fileWrapper isDirectory]) {
 		// TODO: if the file is a directory, check to see it's an app, and open the info dict to find the main executable, and open that.
 		if ([typeName compare:@"com.apple.application-bundle"] == NSOrderedSame || [typeName compare:@"com.apple.framework"] == NSOrderedSame) {
@@ -136,27 +136,27 @@
 		// if the file is a regular file, open it up directly
 		fileType = [typeName stringByAppendingFormat:@" %@", @"RegularFile"];
 	}
-	
+
 	Plugin* thePlugin = [[PluginManager sharedInstance] pluginForFileType: fileType];
-	
+
 	/*id plugins;
-	
+
 	plugins = [[PluginManager sharedInstance].plugins objectForKey:@"CodeParser"];
-	
-	
+
+
 
 	if ([[[[plugins objectAtIndex:0] _PluginPrincipalClass] registerFileTypesHandled] containsObject:typeName]) {
 			id pluginInstance = [[[[[plugins objectAtIndex:0] _PluginPrincipalClass] alloc] init] autorelease];
 			DebugLog(@"%@",pluginInstance);
-		} 
-	
+		}
+
 
 	*/
-	DebugLog(@"plugin = %@" , thePlugin); 
-	
+	DebugLog(@"plugin = %@" , thePlugin);
+
 	[self readFromData:[fileWrapper regularFileContents] ofType:typeName error:outError];
-	
-	if (outError != NULL) 
+
+	if (outError != NULL)
 	{
 		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
 	}
@@ -169,11 +169,11 @@
 
 // TODO: move these into a toolbar manager class so that plugins can add themselves to the toolbar
 
--(NSToolbarItem*) toolbar:(NSToolbar*) toolbar itemForItemIdentifier:(NSString*) itemIdentifier willBeInsertedIntoToolbar:(BOOL) flag 
+-(NSToolbarItem*) toolbar:(NSToolbar*) toolbar itemForItemIdentifier:(NSString*) itemIdentifier willBeInsertedIntoToolbar:(BOOL) flag
 {
 	NSToolbarItem* toolbarItem = nil;
-	
-    if ([itemIdentifier isEqualTo:ToolbarIdentifier]) 
+
+    if ([itemIdentifier isEqualTo:ToolbarIdentifier])
 	{
         toolbarItem = [[NSToolbarItem alloc] initWithItemIdentifier:itemIdentifier];
         [toolbarItem setLabel:@"Save"];
@@ -182,23 +182,23 @@
         //[toolbarItem setImage:[NSImage imageNamed:@"save.png"]];
         [toolbarItem setTarget:self];
         [toolbarItem setAction:@selector(save:)];
-    } 
-	
+    }
+
     return [toolbarItem autorelease];
 }
 
--(NSArray*) toolbarAllowedItemIdentifiers:(NSToolbar*) toolbar 
+-(NSArray*) toolbarAllowedItemIdentifiers:(NSToolbar*) toolbar
 {
 	return [NSArray arrayWithObjects:ToolbarIdentifier,
-			NSToolbarFlexibleSpaceItemIdentifier, 
-			NSToolbarSpaceItemIdentifier, 
+			NSToolbarFlexibleSpaceItemIdentifier,
+			NSToolbarSpaceItemIdentifier,
 			NSToolbarSeparatorItemIdentifier, nil];
 }
 
--(NSArray*) toolbarDefaultItemIdentifiers:(NSToolbar*) toolbar 
+-(NSArray*) toolbarDefaultItemIdentifiers:(NSToolbar*) toolbar
 {
 	return [NSArray arrayWithObjects:ToolbarIdentifier,
-			NSToolbarFlexibleSpaceItemIdentifier, 
+			NSToolbarFlexibleSpaceItemIdentifier,
 			nil];
 }
 

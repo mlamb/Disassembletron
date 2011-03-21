@@ -11,4 +11,9 @@
 
 @synthesize theToolbar;
 
+-(void) awakeFromNib {
+
+	id bob = nil;
+}
+
 @end

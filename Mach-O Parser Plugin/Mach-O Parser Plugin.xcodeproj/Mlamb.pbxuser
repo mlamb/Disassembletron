@@ -52,17 +52,17 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 303439629;
-			PBXWorkspaceStateSaveDate = 303439629;
+			PBXPerProjectTemplateStateSaveDate = 321856181;
+			PBXWorkspaceStateSaveDate = 321856181;
 		};
 		perUserProjectItems = {
-			7B9A550F12161F1B006ABE28 /* PBXTextBookmark */ = 7B9A550F12161F1B006ABE28 /* PBXTextBookmark */;
-			7B9A551012161F1B006ABE28 /* PBXTextBookmark */ = 7B9A551012161F1B006ABE28 /* PBXTextBookmark */;
-			7B9A551112161F1B006ABE28 /* PBXTextBookmark */ = 7B9A551112161F1B006ABE28 /* PBXTextBookmark */;
-			7BC9C50710D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50710D5C4D50028B570 /* PBXTextBookmark */;
+			7BB2384E132F26C400BD2753 /* PBXTextBookmark */ = 7BB2384E132F26C400BD2753 /* PBXTextBookmark */;
+			7BB2384F132F26C400BD2753 /* PBXTextBookmark */ = 7BB2384F132F26C400BD2753 /* PBXTextBookmark */;
+			7BC69D331328BF440034E5B5 /* PlistBookmark */ = 7BC69D331328BF440034E5B5 /* PlistBookmark */;
+			7BC69D341328BF440034E5B5 /* PBXTextBookmark */ = 7BC69D341328BF440034E5B5 /* PBXTextBookmark */;
+			7BC69D351328BF440034E5B5 /* PBXTextBookmark */ = 7BC69D351328BF440034E5B5 /* PBXTextBookmark */;
 			7BC9C50810D5C4D50028B570 /* PBXTextBookmark */ = 7BC9C50810D5C4D50028B570 /* PBXTextBookmark */;
 			7BE3940710EB1507009EC77F /* PBXTextBookmark */ = 7BE3940710EB1507009EC77F /* PBXTextBookmark */;
-			7BFD8EA8117D2D4600F28F5D /* PlistBookmark */ = 7BFD8EA8117D2D4600F28F5D /* PlistBookmark */;
 		};
 		sourceControlManager = 7BC9C40A10D5BA170028B570 /* Source Control */;
 		userBuildSettings = {
@@ -82,7 +82,7 @@
 			sepNavVisRange = "{0, 172}";
 		};
 	};
-	7B9A550F12161F1B006ABE28 /* PBXTextBookmark */ = {
+	7BB2384E132F26C400BD2753 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 7BC9C41110D5BA490028B570 /* MachOParser.h */;
 		name = "MachOParser.h: 15";
@@ -92,25 +92,48 @@
 		vrLen = 259;
 		vrLoc = 0;
 	};
-	7B9A551012161F1B006ABE28 /* PBXTextBookmark */ = {
+	7BB2384F132F26C400BD2753 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 7BC9C41210D5BA490028B570 /* MachOParser.m */;
-		name = "MachOParser.m: 24";
+		fRef = 7BC9C41110D5BA490028B570 /* MachOParser.h */;
+		name = "MachOParser.h: 15";
 		rLen = 0;
-		rLoc = 475;
+		rLoc = 253;
 		rType = 0;
-		vrLen = 482;
+		vrLen = 259;
 		vrLoc = 0;
 	};
-	7B9A551112161F1B006ABE28 /* PBXTextBookmark */ = {
+	7BC69D331328BF440034E5B5 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			DAPluginConfig,
+			CodeParserHandledFileTypes,
+		);
+		name = "/Users/mlamb/Documents/Disassembletron/Mach-O Parser Plugin/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	7BC69D341328BF440034E5B5 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 7BC9C41210D5BA490028B570 /* MachOParser.m */;
-		name = "MachOParser.m: 24";
+		name = "MachOParser.m: 18";
 		rLen = 0;
-		rLoc = 475;
+		rLoc = 361;
 		rType = 0;
-		vrLen = 482;
-		vrLoc = 0;
+		vrLen = 479;
+		vrLoc = 3;
+	};
+	7BC69D351328BF440034E5B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7BC9C40C10D5BA180028B570 /* CodeParser.h */;
+		name = "CodeParser.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 980;
+		vrLoc = 147;
 	};
 	7BC9C40A10D5BA170028B570 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -128,15 +151,15 @@
 	};
 	7BC9C40C10D5BA180028B570 /* CodeParser.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {519, 728}}";
+			sepNavIntBoundsRect = "{{0, 0}, {574, 728}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{143, 719}";
+			sepNavVisRange = "{147, 980}";
 			sepNavWindowFrame = "{{38, 281}, {1079, 871}}";
 		};
 	};
 	7BC9C41110D5BA490028B570 /* MachOParser.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {574, 346}}";
+			sepNavIntBoundsRect = "{{0, 0}, {574, 321}}";
 			sepNavSelRange = "{253, 0}";
 			sepNavVisRange = "{0, 259}";
 			sepNavWindowFrame = "{{61, 260}, {1079, 871}}";
@@ -145,20 +168,10 @@
 	7BC9C41210D5BA490028B570 /* MachOParser.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {574, 351}}";
-			sepNavSelRange = "{475, 0}";
-			sepNavVisRange = "{0, 482}";
+			sepNavSelRange = "{361, 0}";
+			sepNavVisRange = "{3, 479}";
 			sepNavWindowFrame = "{{15, 302}, {1079, 871}}";
 		};
-	};
-	7BC9C50710D5C4D50028B570 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7BC9C40C10D5BA180028B570 /* CodeParser.h */;
-		name = "CodeParser.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 719;
-		vrLoc = 143;
 	};
 	7BC9C50810D5C4D50028B570 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -179,20 +192,6 @@
 		rType = 0;
 		vrLen = 45;
 		vrLoc = 0;
-	};
-	7BFD8EA8117D2D4600F28F5D /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			DAPluginConfig,
-			HandledFileTypes,
-			0,
-		);
-		name = "/Users/Mlamb/Disassembletron/Mach-O Parser Plugin/Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
 	};
 	8D5B49AC048680CD000E48DA /* Mach-O Parser Plugin */ = {
 		activeExec = 0;

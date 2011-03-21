@@ -9,20 +9,18 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* MyDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
+		7B2A85EE1320B769000AA967 /* MyDocument.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A85ED1320B769000AA967 /* MyDocument.xcdatamodel */; };
 		7B6B4023108506C1004FB44D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		7B7420E81075705300670A2F /* DisassembletronTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7420E71075705300670A2F /* DisassembletronTests.m */; };
 		7B7A41A51149D1BD00646F29 /* DisassembleTron.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7B7A41A41149D1BD00646F29 /* DisassembleTron.icns */; };
-		7B7A41A61149D1BD00646F29 /* DisassembleTron.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7B7A41A41149D1BD00646F29 /* DisassembleTron.icns */; };
 		7B9C2819104DE64E00F588D4 /* PluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9C2818104DE64E00F588D4 /* PluginManager.m */; };
 		7BA964B110327F970025FCF1 /* MyApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */; };
 		7BAA33FD11B724AA00B7DF0F /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BAA33FC11B724AA00B7DF0F /* Preferences.xib */; };
-		7BB4A16310D03F05009A81A2 /* Application Plug-in.plugin in Resources */ = {isa = PBXBuildFile; fileRef = 7BB4A15310D03F05009A81A2 /* Application Plug-in.plugin */; };
-		7BB4A16410D03F05009A81A2 /* Application Plug-in.plugin in Resources */ = {isa = PBXBuildFile; fileRef = 7BB4A15310D03F05009A81A2 /* Application Plug-in.plugin */; };
+		7BB23854132F26D900BD2753 /* plugin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB23853132F26D900BD2753 /* plugin.png */; };
 		7BB4A16710D03F0D009A81A2 /* Application Plug-in.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BB4A15310D03F05009A81A2 /* Application Plug-in.plugin */; };
 		7BC9C47610D5BCFC0028B570 /* Mach-O Parser Plugin.plugin in Resources */ = {isa = PBXBuildFile; fileRef = 7BC9C46910D5BCFC0028B570 /* Mach-O Parser Plugin.plugin */; };
 		7BC9C47710D5BCFC0028B570 /* Mach-O Parser Plugin.plugin in Resources */ = {isa = PBXBuildFile; fileRef = 7BC9C46910D5BCFC0028B570 /* Mach-O Parser Plugin.plugin */; };
 		7BC9C47810D5BD0A0028B570 /* Mach-O Parser Plugin.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BC9C46910D5BCFC0028B570 /* Mach-O Parser Plugin.plugin */; };
-		7BCB4F721192408A0041964C /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCB4F711192408A0041964C /* PreferencesController.m */; };
 		7BCB4F821192412F0041964C /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCB4F711192408A0041964C /* PreferencesController.m */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
@@ -32,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7B2A853913207A95000AA967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B2A853213207A95000AA967 /* Mach-O Parser Plugin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = "Mach-O Parser Plugin";
+		};
 		7B7420CE10740F8D00670A2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -77,6 +82,8 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* Disassembletron_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disassembletron_Prefix.pch; sourceTree = "<group>"; };
+		7B2A853213207A95000AA967 /* Mach-O Parser Plugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Mach-O Parser Plugin.xcodeproj"; path = "Mach-O Parser Plugin/Mach-O Parser Plugin.xcodeproj"; sourceTree = "<group>"; };
+		7B2A85ED1320B769000AA967 /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
 		7B52318A10B229F0005B8B73 /* CodeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeParser.h; sourceTree = "<group>"; };
 		7B566A3210D8AEDF00272483 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
 		7B7420C810740EB400670A2F /* MyUnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyUnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +96,9 @@
 		7BA964AF10327F970025FCF1 /* MyApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApplicationDelegate.h; sourceTree = "<group>"; };
 		7BA964B010327F970025FCF1 /* MyApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApplicationDelegate.m; sourceTree = "<group>"; };
 		7BABB2D11178FACA00A0C664 /* Disassembletron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disassembletron.h; sourceTree = "<group>"; };
+		7BB23853132F26D900BD2753 /* plugin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugin.png; sourceTree = "<group>"; };
 		7BB4A15310D03F05009A81A2 /* Application Plug-in.plugin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.bundle"; path = "Application Plug-in.plugin"; sourceTree = "<group>"; };
+		7BC774441320C8B40089751D /* coverage */ = {isa = PBXFileReference; explicitFileType = folder; path = coverage; sourceTree = "<group>"; };
 		7BC9C3EF10D5B5B50028B570 /* PluginInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginInterface.h; sourceTree = "<group>"; };
 		7BC9C46910D5BCFC0028B570 /* Mach-O Parser Plugin.plugin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.bundle"; name = "Mach-O Parser Plugin.plugin"; path = "Mach-O Parser Plugin/build/Debug/Mach-O Parser Plugin.plugin"; sourceTree = "<group>"; };
 		7BCB4F701192408A0041964C /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
@@ -148,6 +157,9 @@
 		2A37F4AAFDCFA73011CA2CEA /* Disassembletron */ = {
 			isa = PBXGroup;
 			children = (
+				7BC774441320C8B40089751D /* coverage */,
+				7B2A85EC1320B741000AA967 /* Models */,
+				7B2A853213207A95000AA967 /* Mach-O Parser Plugin.xcodeproj */,
 				7B7420E91075705E00670A2F /* UnitTests */,
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
@@ -188,6 +200,7 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7BB23853132F26D900BD2753 /* plugin.png */,
 				7B7A41A41149D1BD00646F29 /* DisassembleTron.icns */,
 				7BC9C46910D5BCFC0028B570 /* Mach-O Parser Plugin.plugin */,
 				7BB4A15310D03F05009A81A2 /* Application Plug-in.plugin */,
@@ -208,6 +221,22 @@
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B2A853313207A95000AA967 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B2A853A13207A95000AA967 /* Mach-O Parser Plugin.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B2A85EC1320B741000AA967 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B2A85ED1320B769000AA967 /* MyDocument.xcdatamodel */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		7B7420E91075705E00670A2F /* UnitTests */ = {
@@ -279,6 +308,12 @@
 			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* Disassembletron */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7B2A853313207A95000AA967 /* Products */;
+					ProjectRef = 7B2A853213207A95000AA967 /* Mach-O Parser Plugin.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D15AC270486D014006FF6A4 /* Disassembletron */,
@@ -287,14 +322,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		7B2A853A13207A95000AA967 /* Mach-O Parser Plugin.plugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Mach-O Parser Plugin.plugin";
+			remoteRef = 7B2A853913207A95000AA967 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		7B7420C310740EB400670A2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BB4A16310D03F05009A81A2 /* Application Plug-in.plugin in Resources */,
 				7BC9C47610D5BCFC0028B570 /* Mach-O Parser Plugin.plugin in Resources */,
-				7B7A41A61149D1BD00646F29 /* DisassembleTron.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,10 +349,10 @@
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
 				1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */,
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
-				7BB4A16410D03F05009A81A2 /* Application Plug-in.plugin in Resources */,
 				7BC9C47710D5BCFC0028B570 /* Mach-O Parser Plugin.plugin in Resources */,
 				7BAA33FD11B724AA00B7DF0F /* Preferences.xib in Resources */,
 				7B7A41A51149D1BD00646F29 /* DisassembleTron.icns in Resources */,
+				7BB23854132F26D900BD2753 /* plugin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +370,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n\n# Run gcov on the target getting tested \nif [ \"${CONFIGURATION}\" = 'Debug' ]; then\n\tmkdir -p coverage\n\tpushd coverage\n\tfind ${PROJECT_TEMP_DIR} -name '*.gc[nd][ao]' -exec cp {} . \\;\n\topen -a /Applications/CoverStory.app .\n\tpopd\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -337,7 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B7420E81075705300670A2F /* DisassembletronTests.m in Sources */,
-				7BCB4F721192408A0041964C /* PreferencesController.m in Sources */,
+				7B2A85EE1320B769000AA967 /* MyDocument.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

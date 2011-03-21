@@ -12,22 +12,20 @@
 
 @implementation PluginManager
 
-@synthesize disabledPlugins;
-@synthesize parserFiletypes;
 @synthesize plugins;
 @synthesize supportedPluginProtocols;
 
-static PluginManager* _sharedPluginManager = nil;
+static PluginManager* sharedPluginManager = nil;
 
-// TODO: create a master "disassembletron plugin" protocol, have generic meta-data methods in it, as well as a pluginDidLoad method 
+// TODO: create a master "disassembletron plugin" protocol, have generic meta-data methods in it, as well as a pluginDidLoad method
 // TODO: include methods in PluginManager to register toolbar and menu items, so that developer can call them from pluginDidLoad
-// TODO: investigate using the delegate pattern for plugins 
+// TODO: investigate using the delegate pattern for plugins
 
 // Plugin Types
-// - visualizers (call graph,block grouped/linked outline view, AT&T/Intel syntax)?, 
-// - executable parsers (a.out,ELF,PE,Mach-o)?, 
-// - disassembers (PPC, x86, ARM)?, 
-// - code analyzers (mem leaks, unused vars)?, 
+// - visualizers (call graph,block grouped/linked outline view, AT&T/Intel syntax)?,
+// - executable parsers (a.out,ELF,PE,Mach-o)?,
+// - disassembers (PPC, x86, ARM)?,
+// - code analyzers (mem leaks, unused vars)?,
 // - CPU/register emulators(PPC, x86, ARM)?)
 
 // TODO: figure out how to handle plugin type specific requirements (code parser needs to register file types, how do we do that in a generic loop like in loadPlugins )
@@ -36,21 +34,21 @@ static PluginManager* _sharedPluginManager = nil;
 #pragma mark • INIT, DEALLOC & SETUP
 //===========================================================================
 
-+(PluginManager *) sharedInstance 
++(PluginManager *) sharedInstance
 {
-	if(_sharedPluginManager) 
+	if(sharedPluginManager)
 	{
-			return _sharedPluginManager;
+			return sharedPluginManager;
 	}
-	
-	@synchronized(self) 
+
+	@synchronized(self)
 	{
-		if (_sharedPluginManager == nil) 
+		if (sharedPluginManager == nil)
 		{
-			_sharedPluginManager = [[self alloc] init];
+			sharedPluginManager = [[self alloc] init];
 		}
 	}
-	return _sharedPluginManager;
+	return sharedPluginManager;
 }
 
 
@@ -58,221 +56,184 @@ static PluginManager* _sharedPluginManager = nil;
 {
 	@synchronized([PluginManager class])
 	{
-		NSAssert(_sharedPluginManager == nil, @"Attempted to allocate a second instance of a singleton.");
-		_sharedPluginManager = [super alloc];
-		return _sharedPluginManager;
+		NSAssert(sharedPluginManager == nil, @"Attempted to allocate a second instance of a singleton.");
+		sharedPluginManager = [super alloc];
+		return sharedPluginManager;
 	}
-	
+
 	return nil;
 }
 
 -(id) init {
-	if (![super init]) 
+	if (![super init])
 	{
 		return nil;
 	}
-	
-	if (self != nil) 
+
+	if (self != nil)
 	{
 		// TODO: investigate modifying this to be an enum
 		supportedPluginProtocols = [[NSArray alloc] initWithObjects:@"PAPluginProtocol",@"CodeParser",nil];
-		
+
 		plugins = [[NSMutableDictionary dictionaryWithCapacity:1] retain];
-		
-		for (id pluginType in supportedPluginProtocols) 
+
+		for (id pluginType in supportedPluginProtocols)
 		{
 			[plugins setObject:[[[NSMutableArray alloc] init] autorelease] forKey:pluginType];
 		}
-											
-		// TODO: load "disabled plugins" list from user preferences.
-		disabledPlugins = [[NSMutableArray arrayWithCapacity:1] retain];
-		
-		// TODO: remove this when we have loaded disabled plugins from user preferences (this is so that unit tests pass)
-		[self disablePlugin:@"/Users/Mlamb/Disassembletron/build/Debug/Disassembletron.app/Contents/PlugIns/Application Plug-in.plugin"];
-		
-		// TODO?: create a thread to scan standard directories for new plugins (load them into running instance asap)
-		// find plugins in these directories		
+
+		// find plugins in the standard directories
 		[self findAndLoadPluginsForPaths: [self pluginPathsForDirectoriesInDomains]];
-		
-		
-		
+
 	}
-	
+
 	return self;
 }
 
--(void) dealloc 
+-(void) dealloc
 {
-	[_sharedPluginManager release];
+	[sharedPluginManager release];
 	[plugins release];
 	[supportedPluginProtocols release];
 	[super dealloc];
 }
 
-- (void) findAndLoadPluginsForPaths: (NSArray *) pluginPaths  {
+-(void) findAndLoadPluginsForPaths: (NSArray *) pluginPaths  {
+
 	// iterate through the pluginPaths and get the paths for any resources with the type "plugin"
-	for (NSString* pluginPath in pluginPaths) 
+	for (NSString* pluginPath in pluginPaths)
 	{
-                // TODO: change this to use custom plugin type so that we can install/register/load plugins with a double-click operation from finder
+		// TODO: change this to use custom plugin type so that we can install/register/load plugins with a double-click operation from finder
 		NSArray* bundlePathsForPlugins = [NSBundle pathsForResourcesOfType:@"plugin" inDirectory:pluginPath];
-		for (NSString* bundlePathForPlugin in bundlePathsForPlugins) 
+		for (NSString* bundlePathForPlugin in bundlePathsForPlugins)
 		{
 			NSLog (@"Found plugin: %@", bundlePathForPlugin);
-			
-			if (![self isPluginDisabled:bundlePathForPlugin]) 
-			{
-				[self loadPlugin:bundlePathForPlugin];
-			} 
-			else 
-			{
-				NSLog (@"Plugin is disabled: %@", bundlePathForPlugin);
-			}
+			[self loadPlugin:bundlePathForPlugin];
 		}
 	}
-	
+
 }
 
-- (Plugin*) pluginForFileType: (NSString*) fileType {
+-(Plugin*) pluginForFileType: (NSString*) fileType {
 	// TODO: conflict resolution.  what do we do if two (or more) plugins register the same file type handled?
 	// TODO: rather than searching each plugin, this should be a pluginManager list, and mapped to the plugin that handles it
-	
+
 	NSRunAlertPanel(@"pluginForFileType - " , fileType, @"Ok", nil, nil);
 	return [[[Plugin alloc] init] autorelease];
 
 }
 
--(void) loadPlugin:(NSString*)path 
-{
-	NSBundle* pluginBundle = [NSBundle bundleWithPath:path];
-//TODO: rewrite this to use NSBundle preflightAndReturnError and loadAndReturnError
+-(void) loadPlugin:(NSString*)path {
 
-	if (pluginBundle) 
+	NSBundle* pluginBundle = [NSBundle bundleWithPath:path];
+
+	if (pluginBundle)
 	{
-                // calling principalClass automatically gets the NSPrincipalClass key (and we don't use pluginName for anything other than getting the Class* so that we can instantiate the class later.  the NSBundle load functionality is much cleaner.
-		NSString* pluginName = [pluginBundle objectForInfoDictionaryKey:@"NSPrincipalClass"];
-		if (pluginName) 
-		{
-			Class pluginClass = NSClassFromString (pluginName);
-			if (!pluginClass) 
-			{
-				pluginClass = [pluginBundle principalClass];
-				
+		NSError *theError = nil;
+		if ([pluginBundle preflightAndReturnError:&theError]) {
+
+			[pluginBundle loadAndReturnError:&theError];
+			if (theError) {
+				[self disablePlugin: (NSString*) path];
+				[NSApp presentError:theError];
+				return;
 			}
 
-				// loop through the supported plugin types and check if the plugin in question conforms to the protocol
-				Protocol *pluginProtocol;
-				
-				for (NSString *pluginTypeKey in supportedPluginProtocols) {
-					pluginProtocol = NSProtocolFromString(pluginTypeKey);
-					
-					if([pluginClass conformsToProtocol:pluginProtocol]) {
-						Plugin* thePlugin;
-						
-						thePlugin = [[Plugin alloc] init];
-						
-						// set all the attributes from the plugin objects info dictionary
-						thePlugin._PluginName = [pluginBundle objectForInfoDictionaryKey: @"DAPluginName"];
-						thePlugin._PluginType = pluginTypeKey;
-						thePlugin._PluginAuthor = [pluginBundle objectForInfoDictionaryKey: @"DAPluginAuthorName"];
-						thePlugin._PluginAuthorWebsite = [pluginBundle objectForInfoDictionaryKey: @"DAPluginAuthorWebsite"];
-						thePlugin._PluginVersion = [pluginBundle objectForInfoDictionaryKey: @"DAPluginVersion"];
-						thePlugin._PluginShortDescription = [pluginBundle objectForInfoDictionaryKey: @"DAPluginShortDesc"];
-						thePlugin._PluginFullDescription = [pluginBundle objectForInfoDictionaryKey: @"DAPluginFullDesc"];
-						thePlugin._PluginAuthorEmail = [pluginBundle objectForInfoDictionaryKey: @"DAPluginAuthorEmail"];
-						thePlugin._PluginPath = pluginBundle.bundlePath;
-						thePlugin._PluginBundle = pluginBundle;
-						thePlugin._PluginPrincipalClass = pluginClass;
-						
-						// TODO: if plugin is a CodeParser, register filetypes handled  - call a "doTypeSpecificSetup/Initialization/Loading" function to keep this method clean and use dependency injection pattern :)
-						
-						// Not sure if these are needed yet/at all
-						//thePlugin._PluginEnabled = [pluginBundle objectForInfoDictionaryKey: @"DAPluginEnabledState"];
-						//thePlugin._PluginNibLoaded = YES;
-						
-						// add object to the plugins array
-						[[plugins objectForKey:pluginTypeKey] addObject:thePlugin];
-						
-						// plugins array will retain, so we can safely clean up our reference
-						[thePlugin release];
-					}
-				}
-				
-				// TODO: update toolbar/menus/etc with new plugin features 
+			Class pluginClass = [pluginBundle principalClass];
 
+			// loop through the supported plugin types and check if the plugin in question conforms to the protocol
+			Protocol *pluginProtocol;
+
+			for (NSString *pluginTypeKey in supportedPluginProtocols) {
+				pluginProtocol = NSProtocolFromString(pluginTypeKey);
+
+					// TODO: make a framework, and create an abstract baseclass for all plugins...
+					//		then add '&& [pluginClass isSubclassOfClass:[AbstractBaseClass class]]' to this if clause
+				if([pluginClass conformsToProtocol:pluginProtocol]) {
+					Plugin* thePlugin;
+
+					thePlugin = [[Plugin alloc] init];
+
+					// set all the metadata attributes from the plugin objects info dictionary
+					NSDictionary *pluginConfigDict = [pluginBundle objectForInfoDictionaryKey:@"DAPluginConfig"];
+					thePlugin.PluginName = [pluginConfigDict objectForKey: @"DAPluginName"];
+					thePlugin.PluginType = pluginTypeKey;
+					thePlugin.PluginAuthor = [pluginConfigDict objectForKey:  @"DAPluginAuthorName"];
+					thePlugin.PluginAuthorEmail = [pluginConfigDict objectForKey:  @"DAPluginAuthorEmail"];
+					thePlugin.PluginAuthorWebsite = [pluginConfigDict objectForKey:  @"DAPluginAuthorWebsite"];
+					thePlugin.PluginVersion = [pluginConfigDict objectForKey:  @"DAPluginVersion"];
+					thePlugin.PluginShortDescription = [pluginConfigDict objectForKey:  @"DAPluginShortDesc"];
+					thePlugin.PluginFullDescription = [pluginConfigDict objectForKey:  @"DAPluginFullDesc"];
+					thePlugin.PluginPath = pluginBundle.bundlePath;
+					thePlugin.PluginBundle = pluginBundle;
+					thePlugin.PluginPrincipalClass = pluginClass;
+
+					// TODO: if plugin is a CodeParser, register filetypes handled  - call a "doTypeSpecificSetup/Initialization/Loading" function to keep this method clean and use dependency injection pattern :)
+
+					// Not sure if this is needed yet/at all
+					//thePlugin.PluginNibLoaded = YES;
+
+					// add object to the plugins array
+					[[plugins objectForKey:pluginTypeKey] addObject:thePlugin];
+
+					// plugins array retained the plugin, so we can safely clean up our reference
+					[thePlugin release];
+				}
+			}
 		}
+
+		if (theError) {
+			[self disablePlugin: (NSString*) path];
+			DebugLog(theError.description);
+			[NSApp presentError:theError];
+			return;
+		}
+
+		// TODO: update toolbar/menus/etc with new plugin features
+
 	}
 }
 
 
-- (NSArray*) pluginPathsForDirectoriesInDomains
-{
+-(NSArray*) pluginPathsForDirectoriesInDomains {
 	// domain paths are used as a basis for searching for plugins.
 	// appending subfolders like 'plugins' to them should list all folders that are used to store plugins.
 	if (domains)
 	{
 		return domains;
-	}  
-	
+	}
+
 	domains = [[NSMutableArray alloc] init];
-	
+
 	//get the processes name, it's used as subfolder in the app-support folders
 	NSString* appName = [[NSProcessInfo processInfo] processName];
-	
+
 	NSArray* SearchPaths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSAllDomainsMask, YES);
-		
-	for (id domain in SearchPaths) 
+
+	for (id domain in SearchPaths)
 	{
 		[domains addObject:[[domain stringByAppendingPathComponent:appName] stringByAppendingPathComponent:@"PlugIns"]];
 	}
-		 
+
 	// finally add the bundle's plugin's folder
 	[domains addObject:[[NSBundle mainBundle] builtInPlugInsPath]];
-	
+
 	return domains;
 }
 
-//===========================================================================
-#pragma mark • PLUGIN STATUS, ENABLE & DISABLE 
-//===========================================================================
 
--(BOOL) isPluginDisabled:(NSString*)path {
-	
-	if ([disabledPlugins containsObject:path]) 
-	{
-		return YES;
-	}
-	else 
-	{
-		return NO;
-	}
-	
+#pragma mark -
+#pragma mark - PLUGIN STATUS, ENABLE & DISABLE
+
+-(BOOL) disablePlugin: (NSString*) path {
+	// TODO: move the bad plugin to Plugins (Disabled) - create dir if it doesn't exist
+	return YES;
 }
 
--(BOOL) disablePlugin:(NSString*) path 
-{	
-	if(![disabledPlugins containsObject:path]) 
-	{
-		[disabledPlugins addObject:path];
-		return YES;
-	}
-	else 
-	{
-		return NO;
-	}
-}
-
--(BOOL) enablePlugin:(NSString*) path 
-{
-	if ([disabledPlugins containsObject:path]) 
-	{
-		[disabledPlugins removeObject:path];
-		return YES;
-	} 
-	else 
-	{
-		return NO;
-	}
-
+-(BOOL) enablePlugin: (NSString*) path {
+		// TODO: move plugin out of Plugins (Disabled) folder
+		// run loadPlugin: on it
+	return YES;
 }
 
 
@@ -285,19 +246,18 @@ static PluginManager* _sharedPluginManager = nil;
 
 @implementation Plugin
 
-@synthesize _PluginName;
-@synthesize _PluginType;
-@synthesize _PluginAuthor;
-@synthesize _PluginAuthorWebsite;
-@synthesize _PluginVersion;
-@synthesize _PluginShortDescription;
-@synthesize _PluginFullDescription;
-@synthesize _PluginAuthorEmail;
-@synthesize _PluginPath;
-@synthesize _PluginBundle;
-@synthesize _PluginPrincipalClass;
-@synthesize _PluginEnabled;
-@synthesize _PluginNibLoaded;
-@synthesize _PluginInstance;
+@synthesize PluginName;
+@synthesize PluginType;
+@synthesize PluginAuthor;
+@synthesize PluginAuthorWebsite;
+@synthesize PluginVersion;
+@synthesize PluginShortDescription;
+@synthesize PluginFullDescription;
+@synthesize PluginAuthorEmail;
+@synthesize PluginPath;
+@synthesize PluginBundle;
+@synthesize PluginPrincipalClass;
+@synthesize PluginNibLoaded;
+@synthesize PluginInstance;
 
 @end

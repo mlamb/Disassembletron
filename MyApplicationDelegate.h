@@ -12,7 +12,7 @@
 #import "PreferencesController.h"
 
 
-@interface MyApplicationDelegate : NSObject 
+@interface MyApplicationDelegate : NSObject <NSToolbarDelegate>
 {
 	PluginManager* _thePluginManager;
 	PreferencesController* preferencesController;
@@ -22,6 +22,6 @@
 
 -(BOOL) applicationShouldOpenUntitledFile:(NSApplication*) sender;
 -(void) applicationDidFinishLaunching:(NSNotification*) aNotification;
--(IBAction) showPrefs: sender;	
+-(IBAction) showPrefs: sender;
 -(IBAction) openDocument: sender;
 @end

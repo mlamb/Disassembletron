@@ -26,11 +26,27 @@
 	<string>MachOParser</string>
 	<key>DAPluginConfig</key>
 	<dict>
-		<key>Category</key>
+		<key>DAPluginName</key>
+		<string>Mach-O Parser</string>
+		<key>DAPluginAuthorName</key>
+		<string>Michael Lamb</string>
+		<key>DAPluginVersion</key>
+		<string>1.0</string>
+		<key>DAPluginShortDesc</key>
+		<string>Parses mach-o binaries</string>
+		<key>DAPluginFullDesc</key>
+		<string>Parses mach-o binaries (Applications, Frameworks, Plugins, etc) into the macho ABI structures</string>
+		<key>DAPluginAuthorEmail</key>
+		<string>mlamb1976@yahoo.com</string>
+		<key>DAPluginAuthorWebsite</key>
+		<string>http://www.somewhere.com</string>
+		<key>DAPluginCategory</key>
 		<string>CodeParser</string>
-		<key>HandledFileTypes</key>
+		<key>CodeParserHandledFileTypes</key>
 		<array>
-			<string>Application/</string>
+			<string>Application</string>
+			<string>Framework</string>
+			<string>Plugin</string>
 		</array>
 	</dict>
 </dict>
