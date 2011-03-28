@@ -99,4 +99,21 @@ Objective-C:
         Right-clicking on a asm instructions parameters allows you to change the way it's displayed (types: hex, binary, oct, decimal, string, address, etc) - i.e. a data-formatter control
 
 
+Create a search interface that allows you to dynamically create nsfetchrequest/nspredicate templates (see apple documentation) - IB has object already?
 
+Todo:
+1. Build task for API documentation (doxygen,headerdoc?)
+2. Build task for code coverage (gcov)
+3. Build task for help files (Apple help)
+4. Build task for scripting dictionary (sdef)
+5. XCode templates for 3rd party plugin devs
+6. Build task for DMG creation.
+7. Finish design/implementation of plugin registration interface
+8. Start design/implementation of Macho-O parser
+9 Design core data models
+10. Figure out coredata model "merging"
+11. Figure out bindings
+
+Research how to provide "user scripts" and text-macros (like XCode) inside app (NSAppleScript)
+
+UI design idea: have outline view in the left (navigation) pane (a la iTunes/XCode 4) with each of the Mach-O segments as a disclosure triangle.  The main pane shows details of each segment (LC_Commands, __Text segment, asm).  When selectedat top level (root) object, show an "info.plist" view.  
