@@ -16,6 +16,8 @@ Allow editing of symbols, save as standard debug symbol formats.
 Visualizers: call graph, outline (collapsible) view with arrow/links,  
 hex view, ????
 
+instructions, parameters, comments, addresses, etc. should all have their own colors in the view (user settable in preferences)
+
 Parsers: mach-o binary, pe binary, elf binary
 
 CPU emulators: x86, x86_64, ppc, ARM
@@ -86,11 +88,15 @@ Objective-C:
 	Goto Offset
 	Add breakpoint for line (see Machonist for example)
 	Load/Save "patch"?
-	Show xreferences for all symbols
+	Show xreferences for all symbols, anonymous functions too!
 	Show CStrings (VMAddress, stringdata)
 	Export disassembly as HTML
 	Search anything/everything
 	Forward/Back buttons to keep track of where user has been in disassembly
 	Show HexView of any section (include HexCalc in new window/pane?)
 	Show Call Graph of any method
+        Mark any line as "code" or "data" (in case the automated disassembly got it wrong)
+        Right-clicking on a asm instructions parameters allows you to change the way it's displayed (types: hex, binary, oct, decimal, string, address, etc) - i.e. a data-formatter control
+
+
 
